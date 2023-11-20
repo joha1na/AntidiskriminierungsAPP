@@ -1,0 +1,68 @@
+body {
+    overflow: hidden;
+    width: 100%;
+    padding: 4%;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.header {
+    height: 100px;
+    padding-top: 4%;
+}
+
+h1 {
+    font-family: 'HTWBerlin';
+    text-align: center;
+
+}
+
+.buttons {
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.btn-primary {
+    background-color: #76B900;
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.btn-primary:active:focus {
+    background-color: gray;
+}
+
+.faq {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+a {
+    color: #76B900;
+}
+
+
+/* styling for desktop */
+
+.d-md-block {
+    display: flex;
+    text-align: center;
+}
+
+.d-md-block img {
+    width: 60%;
+    margin-top: 60px;
+    margin-bottom: 50px;
+
+}
