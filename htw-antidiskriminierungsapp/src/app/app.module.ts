@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { ImprintComponent } from './imprint/imprint.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 
 @NgModule({
@@ -12,6 +13,7 @@ import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component'
     AppComponent,
     FooterComponent,
     HomeComponent,
+    ImprintComponent,
     PrivacypolicyComponent
   ],
   imports: [
