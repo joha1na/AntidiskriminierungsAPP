@@ -13,7 +13,7 @@ import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component'
     AppComponent,
     FooterComponent,
     HomeComponent,
-    ImprintComponent
+    ImprintComponent,
     PrivacypolicyComponent
   ],
   imports: [
