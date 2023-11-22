@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ImprintComponent } from './imprint/imprint.component';
+import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { ImprintComponent } from './imprint/imprint.component';
     FooterComponent,
     HomeComponent,
     ImprintComponent
+    PrivacypolicyComponent
   ],
   imports: [
     BrowserModule,
