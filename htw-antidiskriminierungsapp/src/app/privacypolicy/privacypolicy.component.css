@@ -1,0 +1,31 @@
+.notiz {
+    color: red;
+}
+
+a {
+    color: black
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+h5 {
+    font-weight: 600;
+}
+
+.sub {
+    font-weight: 600;
+}
+
+.container {
+    padding: 4% 6%;
+}
