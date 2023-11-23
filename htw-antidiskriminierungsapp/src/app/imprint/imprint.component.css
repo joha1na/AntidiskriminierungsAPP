@@ -1,12 +1,12 @@
 body {
-    overflow: hidden;
+    /*overflow: hidden;*/
     width: 100%;
     padding: 4%;
 }
 
-.container {
+/*.container {
     overflow: hidden;
-}
+}*/
 
 .header {
     height: 100px;
@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-    font-family: 'HTWBerlin';
+    font-family: 'HTWBerlinBold';
     text-align: center;
 
 }
