@@ -1,0 +1,36 @@
+body {
+    /*overflow: hidden;*/
+    width: 100%;
+    padding: 4%;
+}
+
+/*.container {
+    overflow: hidden;
+}*/
+
+.header {
+    height: 100px;
+    padding-top: 4%;
+}
+
+h1 {
+    font-family: 'HTWBerlinBold';
+    text-align: center;
+
+}
+
+img {
+    margin-top: 10px;
+}
+
+a {
+    color: #76B900;
+}
+
+
+/* styling for desktop */
+
+.d-md-block {
+    display: flex;
+    text-align: center;
+}
