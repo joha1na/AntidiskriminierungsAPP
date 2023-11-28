@@ -6,3 +6,7 @@ a {
 a :hover {
     color: #76B900;
 }
+
+.active-link {
+    color: #76B900;
+}
