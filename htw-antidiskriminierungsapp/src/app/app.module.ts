@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 import { KontaktformularComponent } from './kontaktformular/kontaktformular.component';
+import { KontaktseiteComponent } from './kontaktseite/kontaktseite.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { KontaktformularComponent } from './kontaktformular/kontaktformular.comp
     HomeComponent,
     ImprintComponent,
     PrivacypolicyComponent,
-    KontaktformularComponent
+    KontaktformularComponent,
+    KontaktseiteComponent
   ],
   imports: [
     BrowserModule,
