@@ -9,6 +9,7 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 import { KontaktformularComponent } from './kontaktformular/kontaktformular.component';
 import { KontaktseiteComponent } from './kontaktseite/kontaktseite.component';
+import { MeldeformularComponent } from './meldeformular/meldeformular.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { KontaktseiteComponent } from './kontaktseite/kontaktseite.component';
     ImprintComponent,
     PrivacypolicyComponent,
     KontaktformularComponent,
-    KontaktseiteComponent
+    KontaktseiteComponent,
+    MeldeformularComponent
   ],
   imports: [
     BrowserModule,

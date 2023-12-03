@@ -5,13 +5,15 @@ import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component'
 import { HomeComponent } from './home/home.component';
 import { KontaktformularComponent } from './kontaktformular/kontaktformular.component';
 import { KontaktseiteComponent } from './kontaktseite/kontaktseite.component';
+import { MeldeformularComponent } from './meldeformular/meldeformular.component';
 
 const routes: Routes = [
   {path: "", component:HomeComponent, pathMatch: 'full'},
   {path: 'imprint', component: ImprintComponent},
   {path: 'privacypolicy', component:PrivacypolicyComponent},
   {path: 'kontaktformular', component:KontaktformularComponent},
-  {path: 'kontaktseite', component:KontaktseiteComponent}
+  {path: 'kontaktseite', component:KontaktseiteComponent},
+  {path: 'meldeformular', component:MeldeformularComponent}
 ];
 
 @NgModule({
