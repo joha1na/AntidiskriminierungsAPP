@@ -1,1 +1,67 @@
-<p>kontaktformular works!</p>
+<h1>Kontaktformular</h1>
+<br>
+<form (ngSubmit)="submitForm()" #contactForm="ngForm">
+    <div>
+        <label for="mitgliedergruppe">Mitgliedergruppe?</label>
+        <br>
+        <select id="mitgliedergruppe" name="mitgliedergruppe" required [(ngModel)]="formData.mitgliedergruppe">
+          <option value="" disabled selected>Auswählen</option>
+          <option value="Professor*in">Professor*in</option>
+          <option value="Student*in">Student*in</option>
+          <option value="Other">Other</option>
+          <!-- Weitere Kategorien hinzufügen -->
+        </select>
+      </div>
+      <br>
+      <div>
+        <label for="betroffenheit">Betroffenheit?</label>
+        <br>
+        <select id="betroffenheit" name="betroffenheit" required [(ngModel)]="formData.betroffenheit">
+          <option value="" disabled selected>Auswählen</option>
+          <option value="Betroffene">Ich bin Betroffene*r</option>
+          <option value="Zeugin">Zeug*in</option>
+          <option value="Other">Other</option>
+          <!-- Weitere Kategorien hinzufügen -->
+        </select>
+      </div>
+      <br>
+      <div>
+        <label for="geschichte">Was ist passiert?</label>
+        <br>
+        Welche Art der Diskriminierung hast du erlebt?
+        <br>
+        <select id="geschichte" name="geschichte" required [(ngModel)]="formData.geschichte">
+          <option value="" disabled selected>Auswählen</option>
+          <option value="sexism">Sexismus</option>
+          <option value="racism">Rassismus</option>
+          <option value="Other">Other</option>
+          <!-- Weitere Kategorien hinzufügen -->
+        </select>
+      </div>
+      <br>
+    <div>
+      <label for="message">Wichtigkeit:</label>
+      <br>
+      Bitte erzähl uns genau was passiert ist und welche Wichtigkeit dies hat.
+      <br>
+      <textarea id="message" name="message" rows="4" required [(ngModel)]="formData.message"></textarea>
+    </div>
+    <br>
+    <label>Wie sollen wir in Kontakt mit Ihnen treten?</label>
+    <div>
+        <label for="lastname">Nachname:</label>
+        <input type="text" id="lastname" name="lastname" required [(ngModel)]="formData.lastname">
+      </div>
+      <div>
+        <label for="firstname">Vorname:</label>
+        <input type="text" id="firstname" name="firstname" required [(ngModel)]="formData.firstname">
+      </div>
+      <div>
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required [(ngModel)]="formData.email">
+      </div>
+    <button class="btn-primary "type="submit" [disabled]="!contactForm.valid">Absenden</button>
+  </form>
+  <br>
+  <br>
+  <br>
