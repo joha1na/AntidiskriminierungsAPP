@@ -1,1 +1,58 @@
-<p>meldeformular works!</p>
+<h1>Meldeformular</h1>
+<br>
+<form (ngSubmit)="submitForm()" #contactForm="ngForm">
+    <div>
+        <label for="geschichte">Was ist passiert?</label>
+        <br>
+        Welche Art der Diskriminierung hast du erlebt?
+        <br>
+        <select id="geschichte" name="geschichte" required [(ngModel)]="formData.geschichte">
+          <option value="" disabled selected>Auswählen</option>
+          <option value="sexism">Sexismus</option>
+          <option value="racism">Rassismus</option>
+          <option value="Other">Other</option>
+          <!-- Weitere Kategorien hinzufügen -->
+        </select>
+      </div>
+      <br>
+    <div>
+        <label for="mitgliedergruppe">Zu welcher Gruppe gehören Sie?</label>
+        <br>
+        <select id="mitgliedergruppe" name="mitgliedergruppe" required [(ngModel)]="formData.mitgliedergruppe">
+          <option value="" disabled selected>Auswählen</option>
+          <option value="Student*in">Ich studiere an der HTW</option>
+          <option value="Professor*in">Ich bin an der HTW Berlin fest beschäftigt </option>
+          <option value="Lehrauftrag">Ich habe einen Lehrauftrag an der HTW</option>
+          <option value="professur">Ich habe an der HTW Berlin eine Professur inne</option>
+          <option value="gelaende">Mein Arbeitgeber ist zwar nicht die HTW, aber ich arbeite auf dem Gelände der Hochschule</option>
+          <option value="Other">Andere</option>
+          <!-- Weitere Kategorien hinzufügen -->
+        </select>
+      </div>
+      <br>
+  
+      <div>
+      <label for="message">Vorfall:</label>
+      <br>
+      Bitte schildern Sie den Vorfall möglichst detailliert. (Was ist passiert? Wann und wo? Wer war beteiligt?)      <br>
+      <textarea id="message" name="message" rows="4" required [(ngModel)]="formData.message"></textarea>
+    </div>
+    <br>
+    <label>Wie sollen wir in Kontakt mit Ihnen treten?</label>
+    <div>
+        <label for="lastname">Nachname:</label>
+        <input type="text" id="lastname" name="lastname" required [(ngModel)]="formData.lastname">
+      </div>
+      <div>
+        <label for="firstname">Vorname:</label>
+        <input type="text" id="firstname" name="firstname" required [(ngModel)]="formData.firstname">
+      </div>
+      <div>
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required [(ngModel)]="formData.email">
+      </div>
+    <button class="btn-primary "type="submit" [disabled]="!contactForm.valid">Absenden</button>
+  </form>
+  <br>
+  <br>
+  <br>
