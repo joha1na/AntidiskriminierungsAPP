@@ -1,0 +1,54 @@
+<body>
+    <div class="container">
+        <div class="col-12">
+            <div class="header">
+                <h1>FAQ
+                </h1>
+            </div>
+
+
+
+            <div class="cards">
+                <div class="faq-card col-12">
+                    <div class="question row">
+                        <p class="col-10">How can i download the app?</p>
+                        <i class="fa-solid fa-circle-plus col-2 fa-lg" (click)="toggleAnswer(1)"
+                            *ngIf="openedCard !== 1"></i>
+                        <i class="fa-solid fa-circle-minus col-2 fa-lg" (click)="closeCard()"
+                            *ngIf="openedCard === 1"></i>
+                    </div>
+                    <div class="answer row" *ngIf="openedCard === 1">
+                        <p class="col-10">
+                            You do not need to download an app. This is a responsive web application, there is no need
+                            to install anything.
+                            What you can do is create a shortcut to the website on your home screen. How to do that?
+                            Google your operating system and the question `How to create shortcuts.´
+                        </p>
+
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="faq-card col-12">
+                    <div class="question row">
+                        <p class="col-10">What are the different types
+                            of discrimination?</p>
+                        <i class="fa-solid fa-circle-plus col-2 fa-lg" (click)="toggleAnswer(2)"
+                            *ngIf="openedCard !== 2"></i>
+                        <i class="fa-solid fa-circle-minus col-2 fa-lg" (click)="closeCard()"
+                            *ngIf="openedCard === 2"></i>
+                    </div>
+                    <div class="answer row" *ngIf="openedCard === 2">
+                        <p class="col-10">
+                            The main type of discrimination students at HTW experience is sexism followed by racism.
+                            There are many types of discrimination. The are listed in the report section.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+        </div>
+    </div>
+</body>

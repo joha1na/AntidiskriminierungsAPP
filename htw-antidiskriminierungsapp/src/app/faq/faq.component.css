@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+}
+
+.cards {
+    margin-top: 2rem;
+}
+
+.question {
+    display: flex;
+}
+
+.fa-circle-plus {
+    color: #76B900;
+    align-self: center;
+}
+
+.fa-circle-minus {
+    color: #76B900;
+    align-self: center;
+}
+
+.question p {
+    align-self: center;
+    padding-top: 1rem;
+}
+
+.answer {
+    display: flex;
+    justify-content: center;
+}
+
+.answer p {
+    color: gray;
+}

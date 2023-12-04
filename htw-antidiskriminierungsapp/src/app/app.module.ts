@@ -7,6 +7,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
+import { FaqComponent } from './faq/faq.component';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component'
     FooterComponent,
     HomeComponent,
     ImprintComponent,
-    PrivacypolicyComponent
+    PrivacypolicyComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
