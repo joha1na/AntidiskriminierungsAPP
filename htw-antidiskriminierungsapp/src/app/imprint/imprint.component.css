@@ -19,6 +19,13 @@ h1 {
 
 }
 
+img {
+    max-width: 24px;
+    min-width: 20px;
+    height: auto;
+    margin-top: 7px;
+}
+
 a {
     color: #76B900;
 }
@@ -26,7 +33,6 @@ a {
 
 /* styling for desktop */
 
-.d-md-block {
-    display: flex;
-    text-align: center;
+.d-md-block img {
+    margin-top: 18px;
 }
