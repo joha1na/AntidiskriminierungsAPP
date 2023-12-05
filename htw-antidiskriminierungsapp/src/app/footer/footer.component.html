@@ -1,17 +1,41 @@
-<footer class="text-center text-lg-start bg-light text-muted fixed-bottom">
+<!-- Footer for Mobile -->
+<footer class="text-center text-lg-start bg-light text-muted fixed-bottom d-md-none">
     <div class="text-start p-4 row">
         <div class="col-3">
-            <a class="nav-link" [routerLink]="''">Home</a>
+            <a href="" [routerLink]="''" class="me-4" routerLinkActive="active-link"
+                [routerLinkActiveOptions]="{ exact: true }">Home</a>
         </div>
         <div class="col-3">
-            <a class="nav-link" [routerLink]="'/imprint'">Imprint</a>
+            <a class="nav-link" [routerLink]="'/imprint'" routerLinkActive="active-link">Imprint</a>
         </div>
         <div class="col-4">
-            <a class="nav-link" [routerLink]="'/privacypolicy'">Privacy Policy</a>
+            <a class="nav-link" [routerLink]="'/privacypolicy'" routerLinkActive="active-link">Privacy Policy</a>
         </div>
         <div class="col-2">
             DE
         </div>
     </div>
+</footer>
 
+
+<!-- Footer for desktop -->
+<footer class="text-center text-lg-start bg-light text-muted fixed-bottom d-none d-md-block">
+    <div class="container d-flex justify-content-center p-4">
+        <div class="col-1 .d-none .d-lg-block .d-xl-none"></div>
+        <div class="col-2">
+            <a href="" [routerLink]="''" class="me-4" routerLinkActive="active-link"
+                [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        </div>
+        <div class="col-2">
+            <a class="nav-link" [routerLink]="'/imprint'" routerLinkActive="active-link">Imprint</a>
+        </div>
+        <div class="col-2">
+            <a class="nav-link" [routerLink]="'/privacypolicy'" routerLinkActive="active-link">Privacy Policy</a>
+        </div>
+        <div class="col-2">
+            DE
+        </div>
+
+
+    </div>
 </footer>

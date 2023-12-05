@@ -7,8 +7,8 @@ import { FaqComponent } from './faq/faq.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent, pathMatch: 'full' },
-  { path: 'imprint', component: ImprintComponent },
-  { path: 'privacypolicy', component: PrivacypolicyComponent },
+  { path: 'imprint', component: ImprintComponent, pathMatch: 'full' },
+  { path: 'privacypolicy', component: PrivacypolicyComponent, pathMatch: 'full' },
   { path: 'faq', component: FaqComponent }
 
 ];

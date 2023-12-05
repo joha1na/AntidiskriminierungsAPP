@@ -1,12 +1,17 @@
-body {
+body,
+.container {
     overflow: hidden;
-    width: 100%;
-    padding: 4%;
+
 }
 
 .container {
-    overflow: hidden;
+    width: 100%;
+    padding: 4% 4% 4% 6%;
+    margin: 0;
+    height: 100%;
 }
+
+
 
 .header {
     height: 100px;
