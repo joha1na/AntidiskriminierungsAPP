@@ -9,6 +9,10 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 import { KontaktformularComponent } from './kontaktformular/kontaktformular.component';
 import { KontaktseiteComponent } from './kontaktseite/kontaktseite.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatStepper, MatStepperModule } from '@angular/material/stepper';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { KontaktseiteComponent } from './kontaktseite/kontaktseite.component';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatStepperModule,
+    MatChipsModule,
+    MatIconModule
      // Füge FormsModule hier hinzu
   ],
   providers: [],

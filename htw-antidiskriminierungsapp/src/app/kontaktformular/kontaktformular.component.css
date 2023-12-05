@@ -4,6 +4,24 @@ body {
     padding: 4%;
 }
 
+/* CSS für den aktiven Link im mat-stepper */
+.mat-step-header[aria-selected="true"] .mat-step-label,
+.mat-step-header[aria-selected="true"] .mat-step-icon {
+  background-color: #76B900; /* Hintergrundfarbe des aktiven Schritts */
+  color: white; /* Textfarbe des aktiven Schritts */
+}
+
+.mat-chip-selected {
+  background-color: green;
+  color: white; /* Ändern Sie die Textfarbe je nach Bedarf */
+}
+
+.mat-step-label{
+  background-color: #76B900;
+  color: white;
+}
+
+
 .container {
     overflow: hidden;
 }
@@ -14,9 +32,8 @@ body {
 }
 
 h1 {
-    font-family: 'HTWBerlinBold';
-    text-align: center;
-
+  font-family: 'HTWBerlinBold';
+  text-align: center;
 }
 
 .buttons {
@@ -131,3 +148,6 @@ a {
     margin-top: 5px;
     font-size: 14px;
   }
+
+
+ 

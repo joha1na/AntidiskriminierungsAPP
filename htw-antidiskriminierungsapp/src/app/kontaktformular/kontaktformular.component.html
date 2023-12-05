@@ -1,18 +1,36 @@
 <h1>Kontaktformular</h1>
 <br>
-<form (ngSubmit)="submitForm()" #contactForm="ngForm">
-    <div>
+<mat-horizontal-stepper #stepper>
+  <!-- Schritt 1 -->
+  <mat-step>
+    <ng-template matStepLabel>Mitgliedergruppe</ng-template>
+    <form (ngSubmit)="nextStep()">
+      <div>
         <label for="mitgliedergruppe">Mitgliedergruppe?</label>
         <br>
-        <select id="mitgliedergruppe" name="mitgliedergruppe" required [(ngModel)]="formData.mitgliedergruppe">
-          <option value="" disabled selected>Auswählen</option>
-          <option value="Professor*in">Professor*in</option>
-          <option value="Student*in">Student*in</option>
-          <option value="Other">Other</option>
-          <!-- Weitere Kategorien hinzufügen -->
-        </select>
+        <mat-chip-list>
+          
+          <mat-chip (click)="selectMitgliedergruppe('Professor*in')" [selected]="formData.mitgliedergruppe === 'Professor*in'">
+            Professor*in
+          </mat-chip>
+          
+          <mat-chip (click)="selectMitgliedergruppe('Student*in')" [selected]="formData.mitgliedergruppe === 'Student*in'">
+            Student*in
+          </mat-chip>
+          <mat-chip (click)="selectMitgliedergruppe('Other')" [selected]="formData.mitgliedergruppe === 'Other'">
+            Other
+          </mat-chip>
+        </mat-chip-list>
       </div>
-      <br>
+      <div>
+        <button class="btn-primary" type="submit">Weiter</button>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step>
+    <ng-template matStepLabel>Betroffenheit</ng-template>
+    <form (ngSubmit)="nextStep()">
       <div>
         <label for="betroffenheit">Betroffenheit?</label>
         <br>
@@ -24,7 +42,16 @@
           <!-- Weitere Kategorien hinzufügen -->
         </select>
       </div>
+      <div>
+        <button class="btn-primary" type="submit">Weiter</button>
+      </div>
       <br>
+    </form>
+  </mat-step>
+  <!-- Schritt 3 -->
+  <mat-step>
+    <ng-template matStepLabel>Was ist passiert?</ng-template>
+    <form (ngSubmit)="nextStep()">
       <div>
         <label for="geschichte">Was ist passiert?</label>
         <br>
@@ -38,7 +65,18 @@
           <!-- Weitere Kategorien hinzufügen -->
         </select>
       </div>
+      <div>
+        
+        <button class="btn-primary" type="submit">Weiter</button>
+      </div>
+    </form>
+  </mat-step>
+  
       <br>
+       <!-- Schritt 4 -->
+  <mat-step>
+    <ng-template matStepLabel>Wichtigkeit</ng-template>
+    <form (ngSubmit)="nextStep()">
     <div>
       <label for="message">Wichtigkeit:</label>
       <br>
@@ -47,6 +85,15 @@
       <textarea id="message" name="message" rows="4" required [(ngModel)]="formData.message"></textarea>
     </div>
     <br>
+    <div>
+      <button class="btn-primary" type="submit">Weiter</button>
+    </div>
+  </form>
+</mat-step>
+<mat-step>
+  <ng-template matStepLabel>Kontakt?</ng-template>
+  <form (ngSubmit)="submitForm()">
+  <div>
     <label>Wie sollen wir in Kontakt mit Ihnen treten?</label>
     <div>
         <label for="lastname">Nachname:</label>
@@ -60,8 +107,12 @@
         <label for="email">E-Mail:</label>
         <input type="email" id="email" name="email" required [(ngModel)]="formData.email">
       </div>
-    <button class="btn-primary "type="submit" [disabled]="!contactForm.valid">Absenden</button>
-  </form>
+      <div>
+        <button class="btn-primary" type="submit">Absenden</button>
+      </div>
+  </div>
+  </form></mat-step>
   <br>
   <br>
   <br>
+</mat-horizontal-stepper>
