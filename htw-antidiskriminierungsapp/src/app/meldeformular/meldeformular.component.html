@@ -2,10 +2,7 @@
 <br>
 <form (ngSubmit)="submitForm()" #contactForm="ngForm">
     <div>
-        <label for="geschichte">Was ist passiert?</label>
-        <br>
-        Welche Art der Diskriminierung hast du erlebt?
-        <br>
+        <label for="geschichte">Welche Art der Diskriminierung hast du erlebt?</label>
         <select id="geschichte" name="geschichte" required [(ngModel)]="formData.geschichte">
           <option value="" disabled selected>Auswählen</option>
           <option value="sexism">Sexismus</option>
@@ -30,15 +27,17 @@
         </select>
       </div>
       <br>
-  
       <div>
-      <label for="message">Vorfall:</label>
-      <br>
-      Bitte schildern Sie den Vorfall möglichst detailliert. (Was ist passiert? Wann und wo? Wer war beteiligt?)      <br>
+      <label for="message">Bitte schildern Sie den Vorfall möglichst detailliert. (Was ist passiert? Wann und wo? Wer war beteiligt?)</label>
       <textarea id="message" name="message" rows="4" required [(ngModel)]="formData.message"></textarea>
     </div>
     <br>
-    <label>Wie sollen wir in Kontakt mit Ihnen treten?</label>
+    
+    <input type="checkbox" id="fluency" >
+    <label for="Kontaktaufnahme">Bitte nehmen Sie mit mir Kontakt auf</label>
+    <br>
+
+    <div>
     <div>
         <label for="lastname">Nachname:</label>
         <input type="text" id="lastname" name="lastname" required [(ngModel)]="formData.lastname">
@@ -51,6 +50,20 @@
         <label for="email">E-Mail:</label>
         <input type="email" id="email" name="email" required [(ngModel)]="formData.email">
       </div>
+    </div>
+    <br>
+    <div>
+      <div id="Datenschutz">Datenschutzhinweis und Einverständniserklärung</div>
+         <br>
+      <div>Ich erkläre mich damit einverstanden, dass Daten zur Bearbeitung meines Anliegens von der HTW Berlin erhoben, gespeichert, verarbeitet und intern übermittelt werden. Die Daten werden gelöscht, sobald sie für den Zweck ihrer Verarbeitung nicht mehr erforderlich sind.
+  
+        Weitere Informationen zur Datenschutzerklärung der HTW Berlin finden Sie unter: <a href="">Datenschutz der HTW</a>  sowie in der Antidiskriminierungsrichtlinie der HTW Berlin (§10)</div>
+    </div>
+    <br>
+    <input type="checkbox" id="Bestätigung" >
+    <label for="Bestätigung">Ich stimme der Datenschutz- und Einverständniserklärung zu. </label>
+    <br>
+    <br>
     <button class="btn-primary "type="submit" [disabled]="!contactForm.valid">Absenden</button>
   </form>
   <br>
