@@ -12,7 +12,11 @@
             <a class="nav-link" [routerLink]="'/privacypolicy'" routerLinkActive="active-link">Privacy Policy</a>
         </div>
         <div class="col-2">
-            DE
+            <select [(ngModel)]="selectedLanguage" (ngModelChange)="selectLang()">
+                <option [value]="deutsch">DE</option>
+                <option [value]="english">EN</option>
+            </select>
+
         </div>
     </div>
 </footer>
@@ -33,7 +37,11 @@
             <a class="nav-link" [routerLink]="'/privacypolicy'" routerLinkActive="active-link">Privacy Policy</a>
         </div>
         <div class="col-2">
-            DE
+
+            <select [(ngModel)]="selectedLanguage" (ngModelChange)="selectLang()">
+                <option [value]="deutsch">Deutsch</option>
+                <option [value]="english">English</option>
+            </select>
         </div>
 
 
