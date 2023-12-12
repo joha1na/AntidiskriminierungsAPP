@@ -7,7 +7,7 @@ import { Contacts } from '../shared/contacts';
   /*standalone: true,
   imports: [],*/
   templateUrl: './contactlist.component.html',
-  styleUrl: './contactlist.component.css'
+  styleUrls: ['./contactlist.component.css']
 })
 export class ContactlistComponent implements OnInit {
   /*contacts: Contacts[];
