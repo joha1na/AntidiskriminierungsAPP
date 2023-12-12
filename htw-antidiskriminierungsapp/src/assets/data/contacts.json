@@ -1,0 +1,57 @@
+[
+   {
+      "forename": "Max",
+      "surname": "Mustermann",
+      "email": "max@mustermann.de"
+   },
+   {
+      "forename": "Anne",
+      "surname": "Ansen",
+      "email": "anne@ansen.de"
+   },
+   {
+      "forename": "Bert",
+      "surname": "Brugge",
+      "email": "bert@brugge.de"
+   },
+   {
+      "forename": "Clara",
+      "surname": "Conrad",
+      "email": "clara@conrad.de"
+   },
+   {
+      "forename": "Dirk",
+      "surname": "Dudley",
+      "email": "dirk@dudley.de"
+   },
+   {
+      "forename": "Erna",
+      "surname": "Ewald",
+      "email": "erna@ewals.de"
+   },
+   {
+      "forename": "Fritz",
+      "surname": "Frahms",
+      "email": "fritz@frahms.de"
+   },
+   {
+      "forename": "Gisa",
+      "surname": "Grumm",
+      "email": "gisa@grumm.de"
+   },
+   {
+      "forename": "Hans",
+      "surname": "Herrmann",
+      "email": "hans@herrmann.de"
+   },
+   {
+      "forename": "Ida",
+      "surname": "Imsel",
+      "email": "ida@imsel.de"
+   },
+   {
+      "forename": "Jan",
+      "surname": "Jochmann",
+      "email": "jan@jochmann.de"
+   }
+]

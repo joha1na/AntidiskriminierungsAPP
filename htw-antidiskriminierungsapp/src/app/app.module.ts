@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 import { FaqComponent } from './faq/faq.component';
+import { GetincontactComponent } from './getincontact/getincontact.component';
+import { ContactlistComponent } from './contactlist/contactlist.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
@@ -25,7 +27,9 @@ export function httpTranslateLoaderFactory(http: HttpClient) {
     HomeComponent,
     ImprintComponent,
     PrivacypolicyComponent,
-    FaqComponent
+    FaqComponent,
+    GetincontactComponent,
+    ContactlistComponent
   ],
   imports: [
     BrowserModule,
