@@ -5,13 +5,16 @@ import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component'
 import { HomeComponent } from './home/home.component';
 import { FaqComponent } from './faq/faq.component';
 import { GetincontactComponent } from './getincontact/getincontact.component'
+import { ErrorComponent } from './error/error.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent, pathMatch: 'full' },
   { path: 'imprint', component: ImprintComponent, pathMatch: 'full' },
   { path: 'privacypolicy', component: PrivacypolicyComponent, pathMatch: 'full' },
   { path: 'faq', component: FaqComponent },
-  { path: 'getincontact', component: GetincontactComponent}
+  { path: 'getincontact', component: GetincontactComponent},
+  /*ggf. wieder entfernen, zunächst nur fürs Zeigen benötigt*/
+  { path: 'error', component: ErrorComponent}
 
 ];
 
