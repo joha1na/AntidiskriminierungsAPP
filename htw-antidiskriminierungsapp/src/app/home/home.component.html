@@ -11,29 +11,28 @@
                     <p>{{ 'home.page.p.2' | translate }}
                     </p>
                 </div>
+                <div class="col-12 faq">
+                    <p [innerHTML]="'home.page.p.3.1' | translate">
+                    </p>
+                </div>
                 <div class="buttons">
-                    <div>
-                        <button class="btn btn-primary" type="submit">{{ 'home.page.button.report.incident' | translate
-                            }}</button>
-                    </div>
                     <div>
                         <button class="btn btn-primary" type="submit" [routerLink]="'/getincontact'">{{ 'home.page.button.get.in.contact' | translate
                             }} </button>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" type="submit">{{ 'home.page.button.report.incident' | translate
+                            }}</button>
                     </div>
                 </div>
             </div>
             <!-- image for mobile -->
             <div class="image d-md-none">
-                <img src="../../assets/images/dreaming-woman.png" alt="">
+                <img src="../../assets/images/csm_HTW_Berlin_AntidiskriminierungsIllustration_1280x700_2_b6611479dc.jpg" alt="">
             </div>
             <!-- image for desktop -->
             <div class="image d-none d-md-block">
-                <img src="../../assets/images/dreaming-woman.png" alt="">
-            </div>
-            <div class="col-12 faq">
-                <p [innerHTML]="'home.page.p.3.1' | translate">
-
-                </p>
+                <img src="../../assets/images/csm_HTW_Berlin_AntidiskriminierungsIllustration_1280x700_2_b6611479dc.jpg" alt="">
             </div>
         </div>
     </div>
