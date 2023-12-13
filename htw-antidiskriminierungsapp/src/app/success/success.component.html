@@ -1,0 +1,41 @@
+<body>
+    <div class="container">
+        <div class="col-12">
+            <div class="header row">
+                <i class="col-1 fa-solid fa-chevron-left" [routerLink]="''"></i>
+                <h1 class="col-9">{{ 'success.page.title.thanks' | translate }}</h1>
+                <div class="col-1"></div>
+            </div>
+            <div class="text">
+                <div class="case">
+                    Case-ID: xxx
+                </div>
+                <div>
+                    {{ 'success.page.p.1' | translate }}
+                </div>
+            </div>
+            <div class="next">
+                <h2>{{ 'success.page.p.2' | translate }}</h2>
+                <div class="list-group list-group-flush">
+                    <button type="button" class="list-group-item list-group-item-action">{{ 'success.page.l.1' |
+                        translate }}</button>
+                    <button type="button" class="list-group-item list-group-item-action" disabled>{{ 'success.page.l.2'
+                        | translate }}</button>
+                    <button type="button" class="list-group-item list-group-item-action">{{ 'success.page.l.3' |
+                        translate }}</button>
+                    <button type="button" class="list-group-item list-group-item-action">{{ 'success.page.l.4' |
+                        translate }}</button>
+                </div>
+            </div>
+            <div class="col-12 faq">
+                <p [innerHTML]="'home.page.p.3.1' | translate">
+                </p>
+            </div>
+            <div class="buttons">
+                <button class="btn btn-primary" type="submit" [routerLink]="'/getincontact'">{{
+                    'home.page.button.get.in.contact' | translate
+                    }} </button>
+            </div>
+        </div>
+    </div>
+</body>

@@ -4,5 +4,12 @@
     "home.page.p.2": "Here you can get help quickly and directly: you can report an incident - anonymously if you wish, you can research and reach out to a contact person and you can search for helpful information in the FAQ.",
     "home.page.button.report.incident": "Report An Incident",
     "home.page.button.get.in.contact": "Get In Contact",
-    "home.page.p.3.1": "Any questions? Visit the <a class=\"link-inside-translation\" href=\"/faq\">FAQ</a> for more information."
+    "home.page.p.3.1": "Any questions? Visit the <a class=\"link-inside-translation\" href=\"/faq\">FAQ</a> for more information.",
+    "success.page.title.thanks": "Thank You!",
+    "success.page.p.1": "Your data has been sent successfully. We will send you a confirmation email if you have not opted in to keep your identity anonymous.",
+    "success.page.p.2": "Next Steps",
+    "success.page.l.1": "1. Manual verification of your provided information",
+    "success.page.l.2": "2. Known Identity: Email notifications of new discoveries in your case",
+    "success.page.l.3": "3. Dealing with your case in an appropriate manner",
+    "success.page.l.4": "4. Inclusion in our statistics"
 }
