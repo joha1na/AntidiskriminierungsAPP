@@ -60,6 +60,18 @@
         <label for="email">E-Mail:</label>
         <input type="email" id="email" name="email" required [(ngModel)]="formData.email">
       </div>
+      <br>
+      <div>
+        <div id="Datenschutz">Datenschutzhinweis und Einverständniserklärung</div>
+           <br>
+        <div>Ich erkläre mich damit einverstanden, dass Daten zur Bearbeitung meines Anliegens von der HTW Berlin erhoben, gespeichert, verarbeitet und intern übermittelt werden. Die Daten werden gelöscht, sobald sie für den Zweck ihrer Verarbeitung nicht mehr erforderlich sind.
+    
+          Weitere Informationen zur Datenschutzerklärung der HTW Berlin finden Sie unter: <a href="">Datenschutz der HTW</a>  sowie in der Antidiskriminierungsrichtlinie der HTW Berlin (§10)</div>
+      </div>
+      <br>
+      <input type="checkbox" id="Bestätigung" >
+      <label for="Bestätigung">Ich stimme der Datenschutz- und Einverständniserklärung zu. </label>
+      
     <button class="btn-primary "type="submit" [disabled]="!contactForm.valid">Absenden</button>
   </form>
   <br>
