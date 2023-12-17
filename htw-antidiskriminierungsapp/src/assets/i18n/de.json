@@ -5,6 +5,13 @@
     "home.page.button.report.incident": "Einen Vorfall melden",
     "home.page.button.get.in.contact": "Kontakt aufnehmen",
     "home.page.p.3.1": "Irgendwelche Fragen? Besuche die <a class=\"link-inside-translation\" href=\"/faq\">FAQ</a> für weitere Informationen.",
+    "success.page.title.thanks": "Vielen Dank!",
+    "success.page.p.1": "Deine Daten wurden erfolgreich gesendet. Wir senden dir eine Bestätigungs-E-Mail, wenn du dich nicht für die Anonymisierung deiner Identität entschieden hast.",
+    "success.page.p.2": "Nächste Schritte",
+    "success.page.l.1": "1. Manuelle Überprüfung der von dir angegebenen Informationen",
+    "success.page.l.2": "2. Bekannte Identität: E-Mail-Benachrichtigungen über neue Entdeckungen in deinem Fall",
+    "success.page.l.3": "3. Angemessene Bearbeitung deines Falls",
+    "success.page.l.4": "4. Aufnahme in unsere Statistik",
     "error.page.title.oops": "Huch!",
     "error.page.p.1": "Etwas ist schief gegangen.",
     "error.page.p.2": "Bitte versuche es später noch einmal."
