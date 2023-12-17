@@ -11,5 +11,8 @@
     "success.page.l.1": "1. Manual verification of your provided information",
     "success.page.l.2": "2. Known Identity: Email notifications of new discoveries in your case",
     "success.page.l.3": "3. Dealing with your case in an appropriate manner",
-    "success.page.l.4": "4. Inclusion in our statistics"
+    "success.page.l.4": "4. Inclusion in our statistics",
+    "error.page.title.oops": "Oops!",
+    "error.page.p.1": "Something went wrong.",
+    "error.page.p.2": "Please try again later."
 }

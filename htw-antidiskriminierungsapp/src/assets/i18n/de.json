@@ -11,5 +11,8 @@
     "success.page.l.1": "1. Manuelle Überprüfung der von dir angegebenen Informationen",
     "success.page.l.2": "2. Bekannte Identität: E-Mail-Benachrichtigungen über neue Entdeckungen in deinem Fall",
     "success.page.l.3": "3. Angemessene Bearbeitung deines Falls",
-    "success.page.l.4": "4. Aufnahme in unsere Statistik"
+    "success.page.l.4": "4. Aufnahme in unsere Statistik",
+    "error.page.title.oops": "Huch!",
+    "error.page.p.1": "Etwas ist schief gegangen.",
+    "error.page.p.2": "Bitte versuche es später noch einmal."
 }

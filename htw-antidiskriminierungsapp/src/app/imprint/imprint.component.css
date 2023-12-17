@@ -1,38 +1,29 @@
-body {
-    /*overflow: hidden;*/
+.container {
     width: 100%;
-    padding: 4%;
+    padding: 4% 4% 4% 10%;
+    margin: 0;
+    height: 100%;
 }
 
-/*.container {
-    overflow: hidden;
-}*/
-
 .header {
-    height: 100px;
-    padding-top: 4%;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
 }
 
 h1 {
-    font-family: 'HTWBerlinBold';
     text-align: center;
-
 }
 
-img {
-    max-width: 24px;
-    min-width: 20px;
-    height: auto;
-    margin-top: 7px;
+.text {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+i {
+    cursor: pointer;
 }
 
 a {
     color: #76B900;
-}
-
-
-/* styling for desktop */
-
-.d-md-block img {
-    margin-top: 18px;
 }
