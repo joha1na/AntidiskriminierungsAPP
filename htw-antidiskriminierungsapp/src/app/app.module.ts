@@ -14,6 +14,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { FormsModule } from '@angular/forms';
+import { ErrorComponent } from './error/error.component';
 
 export function httpTranslateLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -29,7 +30,8 @@ export function httpTranslateLoaderFactory(http: HttpClient) {
     PrivacypolicyComponent,
     FaqComponent,
     GetincontactComponent,
-    ContactlistComponent
+    ContactlistComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,

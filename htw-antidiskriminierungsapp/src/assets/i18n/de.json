@@ -4,5 +4,8 @@
     "home.page.p.2": "Hier kannst du schnell und direkt Hilfe erhalten: du kannst einen Vorfall melden - anonym, wenn du möchtest, du kannst Recherchen durchführen und dich an eine Kontaktperson wenden. Außerdem kannst du in den FAQ nach hilfreichen Informationen suchen.",
     "home.page.button.report.incident": "Einen Vorfall melden",
     "home.page.button.get.in.contact": "Kontakt aufnehmen",
-    "home.page.p.3.1": "Irgendwelche Fragen? Besuche die <a class=\"link-inside-translation\" href=\"/faq\">FAQ</a> für weitere Informationen."
+    "home.page.p.3.1": "Irgendwelche Fragen? Besuche die <a class=\"link-inside-translation\" href=\"/faq\">FAQ</a> für weitere Informationen.",
+    "error.page.title.oops": "Huch!",
+    "error.page.p.1": "Etwas ist schief gegangen.",
+    "error.page.p.2": "Bitte versuche es später noch einmal."
 }

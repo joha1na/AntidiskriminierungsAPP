@@ -4,5 +4,8 @@
     "home.page.p.2": "Here you can get help quickly and directly: you can report an incident - anonymously if you wish, you can research and reach out to a contact person and you can search for helpful information in the FAQ.",
     "home.page.button.report.incident": "Report An Incident",
     "home.page.button.get.in.contact": "Get In Contact",
-    "home.page.p.3.1": "Any questions? Visit the <a class=\"link-inside-translation\" href=\"/faq\">FAQ</a> for more information."
+    "home.page.p.3.1": "Any questions? Visit the <a class=\"link-inside-translation\" href=\"/faq\">FAQ</a> for more information.",
+    "error.page.title.oops": "Oops!",
+    "error.page.p.1": "Something went wrong.",
+    "error.page.p.2": "Please try again later."
 }
