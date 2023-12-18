@@ -1,0 +1,96 @@
+<body>
+  
+  <div class="container">
+    <div class="col-12">
+        <div class="header row">
+            <i class="col-1 fa-solid fa-chevron-left" [routerLink]="''"></i>
+            <h1 class="col-9">Meldeformular</h1>
+            <div class="col-1"></div>
+        </div>
+
+        <br>
+<form (ngSubmit)="submitForm()" #contactForm="ngForm">
+  <div>
+        <label for="mitgliedergruppe">Zu welcher Gruppe gehören Sie? *</label>
+        <br>
+        <select id="mitgliedergruppe" name="mitgliedergruppe" required [(ngModel)]="formData.mitgliedergruppe">
+          <option value="" disabled selected>Auswählen</option>
+          <option value="Student*in">Ich studiere an der HTW</option>
+          <option value="Professor*in">Ich bin an der HTW Berlin fest beschäftigt </option>
+          <option value="Lehrauftrag">Ich habe einen Lehrauftrag an der HTW</option>
+          <option value="professur">Ich habe an der HTW Berlin eine Professur inne</option>
+          <option value="gelaende">Mein Arbeitgeber ist zwar nicht die HTW, aber ich arbeite auf dem Gelände der Hochschule</option>
+          <option value="Other">Andere</option>
+          <!-- Weitere Kategorien hinzufügen -->
+        </select>
+  </div>
+      <br>
+  <div>
+            <label for="message">Bitte schildern Sie den Vorfall möglichst detailliert. (Was ist passiert? Wann und wo? Wer war beteiligt?) *</label>
+            <textarea id="message" name="message" rows="4" required [(ngModel)]="formData.message"></textarea>
+  </div>
+       <br>
+
+    <div>
+        <label for="geschichte">In welche Kategorie würden Sie diese Art von Diskriminierung einteilen?</label>
+        <select id="geschichte" name="geschichte" required [(ngModel)]="formData.geschichte">
+          <option value="" disabled selected>Auswählen</option>
+          <option value="1">unmittelbare Diskrimierung</option>
+          <option value="2">mittelbare Diskriminierung</option>
+          <option value="3">Rassistische Zuschreibung</option>
+          <option value="4">sexualisierte Diskriminierung</option>
+          <option value="5">sexualisierte Gewalt</option>
+          <option value="6">Belästigung</option>
+          <option value="7">Mobbing</option>
+          <option value="8">Stalking</option>
+          <option value="9">Andere</option>
+          <!-- Weitere Kategorien hinzufügen -->
+        </select>
+    </div>
+      <br>
+    
+
+    <input type="checkbox" id="fluency" checked onchange="checkboxChanged($event)">
+    <label for="Kontaktaufnahme">Bitte nehmen Sie mit mir Kontakt auf</label>
+    <br>
+    <div id="Kontaktdaten">
+    <div>
+        <label for="lastname">Nachname:</label>
+        <input type="text" id="lastname" name="lastname" required [(ngModel)]="formData.lastname">
+      </div>
+      <div>
+        <label for="firstname">Vorname:</label>
+        <input type="text" id="firstname" name="firstname" required [(ngModel)]="formData.firstname">
+      </div>
+      <div>
+        <label for="email">E-Mail: *</label>
+        <input type="email" id="email" name="email" required [(ngModel)]="formData.email">
+      </div>
+    </div>
+    <br>
+
+    <div id="Warnung"></div>
+
+    <div>
+      <div id="Datenschutz">Datenschutzhinweis und Einverständniserklärung</div>
+         <br>
+      <div>Ich erkläre mich damit einverstanden, dass Daten zur Bearbeitung meines Anliegens von der HTW Berlin erhoben, gespeichert, verarbeitet und intern übermittelt werden. 
+        Weitere Informationen zur Datenschutzerklärung der HTW Berlin finden Sie unter: <a href="">Datenschutz der HTW</a>  sowie in der Antidiskriminierungsrichtlinie der HTW Berlin (§10)
+      + Verlinkung zu externer Hilfe + was als nächstes unternommen wird?</div>
+    </div>
+    <br>
+    <label for="Bestätigung">Ich stimme der Datenschutz- und Einverständniserklärung zu. </label>
+     <input type="checkbox" id="Bestätigung" >
+    <br>
+    <br>
+
+    <button class="btn-primary "type="submit" [disabled]="!contactForm.valid">Absenden</button>
+  </form>
+
+  
+</div>
+</div>
+<br>
+<br>
+</body>
+
