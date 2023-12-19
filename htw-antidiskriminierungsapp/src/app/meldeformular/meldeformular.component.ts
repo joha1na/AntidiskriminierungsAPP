@@ -14,8 +14,16 @@ export class MeldeformularComponent {
     lastname: '',
     firstname:'',
     email:'',
-    message: ''
+    message: '',
+
   };
+
+  isLoggedIn = true;
+  
+  isLogged()
+  {
+    this.isLoggedIn = false;
+  }
 
   submitForm() {
     // Hier kannst du die Logik für das Absenden des Formulars implementieren,

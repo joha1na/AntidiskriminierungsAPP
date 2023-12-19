@@ -50,13 +50,13 @@
       <br>
     
 
-    <input type="checkbox" id="fluency" checked onchange="checkboxChanged($event)">
+    <input type="checkbox" id="fluency" checked (change) = "isLoggedIn = !isLoggedIn" >
     <label for="Kontaktaufnahme">Bitte nehmen Sie mit mir Kontakt auf</label>
     <br>
-    <div id="Kontaktdaten">
+    <div id="Kontaktdaten" *ngIf="isLoggedIn">
     <div>
         <label for="lastname">Nachname:</label>
-        <input type="text" id="lastname" name="lastname" required [(ngModel)]="formData.lastname">
+        <input type="text" id="lastname" name="lastname" required [(ngModel)]="formData.lastname"  >
       </div>
       <div>
         <label for="firstname">Vorname:</label>
@@ -69,7 +69,7 @@
     </div>
     <br>
 
-    <div id="Warnung"></div>
+    <div id="hinweisdiv"*ngIf="!isLoggedIn" ><p id="Hinweis"> Hinweis: Wenn Sie nicht ihre Kontaktdaten hinterlassen, können wir nicht mit Ihnen in Kontakt treten um weitere Beratung sowie Unterstützung anbieten zu können. </p></div>
 
     <div>
       <div id="Datenschutz">Datenschutzhinweis und Einverständniserklärung</div>
