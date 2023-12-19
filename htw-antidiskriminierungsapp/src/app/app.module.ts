@@ -16,6 +16,8 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { FormsModule } from '@angular/forms';
 import { SuccessComponent } from './success/success.component';
 import { ErrorComponent } from './error/error.component';
+import { MeldeformularComponent } from './meldeformular/meldeformular.component';
+
 
 export function httpTranslateLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -33,7 +35,8 @@ export function httpTranslateLoaderFactory(http: HttpClient) {
     GetincontactComponent,
     ContactlistComponent,
     SuccessComponent,
-    ErrorComponent
+    ErrorComponent,
+    MeldeformularComponent
   ],
   imports: [
     BrowserModule,

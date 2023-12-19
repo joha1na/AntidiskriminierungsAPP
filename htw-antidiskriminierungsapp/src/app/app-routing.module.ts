@@ -7,6 +7,7 @@ import { FaqComponent } from './faq/faq.component';
 import { GetincontactComponent } from './getincontact/getincontact.component'
 import { SuccessComponent } from './success/success.component';
 import { ErrorComponent } from './error/error.component';
+import { MeldeformularComponent } from './meldeformular/meldeformular.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent, pathMatch: 'full' },
@@ -16,8 +17,8 @@ const routes: Routes = [
   { path: 'getincontact', component: GetincontactComponent},
   /*ggf. wieder entfernen, zunächst nur fürs Zeigen benötigt*/
   { path: 'success', component: SuccessComponent},
-  { path: 'error', component: ErrorComponent}
-
+  { path: 'error', component: ErrorComponent},
+  { path: 'meldeformular', component: MeldeformularComponent}
 ];
 
 @NgModule({
