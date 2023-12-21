@@ -97,6 +97,9 @@ input[type="email"] {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 14px;
+}
+
+select {
   -webkit-appearance: none;
   appearance: none;
   background-image: url("../../assets/images/down-arrow.webp");
