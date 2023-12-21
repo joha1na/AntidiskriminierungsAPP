@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   /*standalone: true,
   imports: [],*/
   templateUrl: './getincontact.component.html',
-  styleUrl: './getincontact.component.css'
+  styleUrls: ['./getincontact.component.css']
 })
 export class GetincontactComponent {
 
