@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-meldeformular',
   templateUrl: './meldeformular.component.html',
   styleUrls: ['./meldeformular.component.css']
 })
-export class MeldeformularComponent {
+export class MeldeformularComponent implements OnInit{
   formData = {
     mitgliedergruppe: '',
     betroffenheit:'',
@@ -15,8 +16,14 @@ export class MeldeformularComponent {
     firstname:'',
     email:'',
     message: '',
-
   };
+
+  constructor() { }
+
+  ngOnInit(): void {
+    // Initialisierungslogik, z.B. Daten abrufen
+    this.openModel();
+  }
 
   isLoggedIn = true;
   
@@ -31,22 +38,22 @@ export class MeldeformularComponent {
     console.log('Formulardaten:', this.formData);
     // Hier könnte die Logik stehen, um die Formulardaten zu senden oder zu verarbeiten.
   }
-  
 
-  /*checkboxChanged(){
-    var h1arr = document.getElementById('fluency');
+  openModel() {
+    const modelDiv = document.getElementById('MyModal');
+    if (modelDiv!= null)
+    {
+      modelDiv.style.display = 'block';
+    } 
+  }
 
-    if (!checkbox.checked) {
-     let string = "Wir könne sie nicht erreichen";
-     let a = document.getElementById('hinweis');
-    
-     if (a !== null) {
-      a.innerHTML = "Wir können Sie nicht erreichen";
-      // Hier kannst du weitere Aktionen ausführen, wenn die Checkbox deaktiviert wird
-    }
-    
-  }*/
-
+  CloseModel() {
+    const modelDiv = document.getElementById('MyModal');
+    if (modelDiv!= null)
+    {
+      modelDiv.style.display = 'none';
+    }  
+  }
   
   }
 
