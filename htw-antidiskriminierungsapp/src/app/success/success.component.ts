@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   /*standalone: true,
   imports: [],*/
   templateUrl: './success.component.html',
-  styleUrl: './success.component.css'
+  styleUrls: ['./success.component.css']
 })
 export class SuccessComponent {
 

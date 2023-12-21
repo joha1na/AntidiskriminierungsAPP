@@ -99,6 +99,7 @@ input[type="email"] {
   font-size: 14px;
 }
 
+
 select {
   -webkit-appearance: none;
   appearance: none;
@@ -148,8 +149,7 @@ button[type="submit"] {
   color: #ff0000;
 }
 
-#Bestätigung,
-#fluency {
+#Bestätigung {
   margin-right: 1rem;
 }
 
