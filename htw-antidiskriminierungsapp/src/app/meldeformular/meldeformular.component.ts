@@ -9,13 +9,11 @@ import { Component, OnInit } from '@angular/core';
 export class MeldeformularComponent implements OnInit{
   formData = {
     mitgliedergruppe: '',
-    betroffenheit:'',
-    geschichte:'',
+    message:'',
     category: '',
     lastname: '',
     firstname:'',
-    email:'',
-    message: '',
+    email:''
   };
 
   constructor() { }
@@ -37,6 +35,7 @@ export class MeldeformularComponent implements OnInit{
     // z. B. eine HTTP-Anfrage an den Server senden, um die Daten zu verarbeiten.
     console.log('Formulardaten:', this.formData);
     // Hier könnte die Logik stehen, um die Formulardaten zu senden oder zu verarbeiten.
+
   }
 
   openModel() {
