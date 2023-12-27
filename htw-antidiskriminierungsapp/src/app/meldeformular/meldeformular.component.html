@@ -1,19 +1,37 @@
 <body>
-
   <div class="container">
     <div class="col-12">
       <div class="header row">
-        <i class="col-1 fa-solid fa-chevron-left" [routerLink]="''"></i>
-        <h1 class="col-9">Meldeformular</h1>
-        <div class="col-1"></div>
-      </div>
 
+   <div class="modal" id=MyModal tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="CloseModel()"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+        <i class="col-1 fa-solid fa-chevron-left" *ngIf="!weiter" [routerLink]="''" ></i>
+        <i class="col-1 fa-solid fa-chevron-left" *ngIf="weiter" (click)="goBack()"></i>
+         
+        <h1 class="col-9">Meldeformular</h1>
+        
+      <div class="col-1"></div>
+      </div>
+      
       <br>
-      <form (ngSubmit)="submitForm()" #contactForm="ngForm">
-        <div>
+      
+      <form (ngSubmit)="submitForm()" #contactForm="ngForm" >
+      <div class="formdiv" *ngIf="!weiter">
+       <div>
           <label for="mitgliedergruppe">Zu welcher Gruppe gehören Sie? *</label>
           <br>
-          <select id="mitgliedergruppe" name="mitgliedergruppe" required [(ngModel)]="formData.mitgliedergruppe">
+          <select #errorGruppe="ngModel" id="mitgliedergruppe" name="mitgliedergruppe" required [(ngModel)]="formData.mitgliedergruppe">
             <option value="" disabled selected>Auswählen</option>
             <option value="Student*in">Ich studiere an der HTW</option>
             <option value="Professor*in">Ich bin an der HTW Berlin fest beschäftigt </option>
@@ -25,17 +43,20 @@
             <!-- Weitere Kategorien hinzufügen -->
           </select>
         </div>
+        <div *ngIf="errorGruppe.touched && errorGruppe.invalid" class="error-message" >Bitte wählen Sie etwas aus.</div>
         <br>
         <div>
           <label for="message">Bitte schildern Sie den Vorfall möglichst detailliert. (Was ist passiert? Wann und wo?
             Wer war beteiligt?) *</label>
-          <textarea id="message" name="message" rows="4" required [(ngModel)]="formData.message"></textarea>
+          <textarea #errorGeschichte="ngModel" id="message" name="message" rows="4"  required [(ngModel)]="formData.message"></textarea>
         </div>
+        <div *ngIf="errorGeschichte.touched && errorGeschichte.invalid" class="error-message" >Bitte füllen Sie dieses Feld aus.</div>
         <br>
 
+        
         <div>
-          <label for="geschichte">In welche Kategorie würden Sie diese Art von Diskriminierung einteilen?</label>
-          <select id="geschichte" name="geschichte" required [(ngModel)]="formData.geschichte">
+          <label for="category">In welche Kategorie würden Sie diese Art von Diskriminierung einteilen?</label>
+          <select id="category" name="category" [(ngModel)]="formData.category" >
             <option value="" disabled selected>Auswählen</option>
             <option value="1">unmittelbare Diskrimierung</option>
             <option value="2">mittelbare Diskriminierung</option>
@@ -58,17 +79,18 @@
         <br>
         <div id="Kontaktdaten" *ngIf="isLoggedIn">
           <div>
-            <label for="lastname">Nachname:</label>
-            <input type="text" id="lastname" name="lastname" required [(ngModel)]="formData.lastname">
+            <label for="lastname" [(ngModel)]="formData.lastname">Nachname:</label>
+            <input type="text" id="lastname" name="lastname">
           </div>
           <div>
-            <label for="firstname">Vorname:</label>
-            <input type="text" id="firstname" name="firstname" required [(ngModel)]="formData.firstname">
+            <label for="firstname" required [(ngModel)]="formData.firstname">Vorname:</label>
+            <input type="text" id="firstname" name="firstname">
           </div>
           <div>
             <label for="email">E-Mail: *</label>
-            <input type="email" id="email" name="email" required [(ngModel)]="formData.email">
-          </div>
+            <input #errorEmail="ngModel" type="email" id="email" name="email" required [(ngModel)]="formData.email">
+          </div> 
+          <div *ngIf="errorEmail.touched && errorEmail.invalid" class="error-message" >Dies ist keine gültige Email Adresse.</div>
         </div>
         <br>
 
@@ -88,18 +110,38 @@
         </div>
         <br>
         <div class="checkbox-text">
-          <input type="checkbox" id="Bestätigung">
-          <label for="Bestätigung">Ich stimme der Datenschutz- und Einverständniserklärung zu. </label>
+          <input #errorDatenschutz type="checkbox" id="Bestätigung">
+          <label for="Bestätigung">Ich stimme der Datenschutz- und Einverständniserklärung zu. *</label>
         </div>
+        <div *ngIf="errorDatenschutz.oninvalid" class="error-message" >Zur weiteren Bearbietung brauchen wir die Zustimmung der Datenschutzbedingungen.</div>
         <br>
         <br>
+        <button class="btn-primary" (click)="onWeiter()" [disabled]="!contactForm.valid" >Weiter</button>
+</div>
+          
+          <div class="summary" *ngIf="weiter">
+            
+          <div> Zu welcher Gruppe gehören Sie?: <br> {{ formData.mitgliedergruppe | json }} </div>
+          <br>
+          <div> Bitte schildern Sie den Vorfall möglichst detailliert. (Was ist passiert? Wann und wo?
+            Wer war beteiligt?) <br>{{ formData.message | json }}</div>
+          <br>
+          <div> In welche Kategorie würden Sie diese Art von Diskriminierung einteilen? <br>
+            {{ formData.category | json }}</div>
+          <br>
+          <div *ngIf="isLoggedIn"> Bitte nehmen Sie mit mir Kontakt auf
+            <br>
+          <div> 
+            Nachname <br> {{ formData.lastname | json }}</div>
+          <div> Vorname <br>{{ formData.firstname | json }}</div>
+          <div> Email <br>{{ formData.email | json }}</div>
+          </div>
+          <button class="btn-primary " type="submit" [disabled]="!contactForm.valid">Absenden</button>
+          </div>
 
-        <button class="btn-primary " type="submit" [disabled]="!contactForm.valid">Absenden</button>
       </form>
-
-
-    </div>
-  </div>
+</div>
+</div>
   <br>
   <br>
 </body>
