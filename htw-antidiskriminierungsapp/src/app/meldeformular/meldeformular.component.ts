@@ -54,7 +54,13 @@ export class MeldeformularComponent implements OnInit{
     }  
   }
   
-  }
+  weiter = false;
 
+  onWeiter() { this.weiter = true; }
 
+  
+
+  goBack() {this.weiter = false;}
+
+}
 

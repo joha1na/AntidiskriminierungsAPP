@@ -16,15 +16,19 @@
       </div>
     </div>
   </div>
-        <i class="col-1 fa-solid fa-chevron-left" [routerLink]="''"></i>
+        <i class="col-1 fa-solid fa-chevron-left" *ngIf="!weiter" [routerLink]="''" ></i>
+        <i class="col-1 fa-solid fa-chevron-left" *ngIf="weiter" (click)="goBack()"></i>
+         
         <h1 class="col-9">Meldeformular</h1>
         
       <div class="col-1"></div>
       </div>
       
       <br>
-      <form (ngSubmit)="submitForm()" #contactForm="ngForm">
-        <div>
+      
+      <form (ngSubmit)="submitForm()" #contactForm="ngForm" >
+      <div class="formdiv" *ngIf="!weiter">
+       <div>
           <label for="mitgliedergruppe">Zu welcher Gruppe gehören Sie? *</label>
           <br>
           <select #errorGruppe="ngModel" id="mitgliedergruppe" name="mitgliedergruppe" required [(ngModel)]="formData.mitgliedergruppe">
@@ -49,6 +53,7 @@
         <div *ngIf="errorGeschichte.touched && errorGeschichte.invalid" class="error-message" >Bitte füllen Sie dieses Feld aus.</div>
         <br>
 
+        
         <div>
           <label for="category">In welche Kategorie würden Sie diese Art von Diskriminierung einteilen?</label>
           <select id="category" name="category" [(ngModel)]="formData.category" >
@@ -106,15 +111,34 @@
         <br>
         <div class="checkbox-text">
           <input #errorDatenschutz type="checkbox" id="Bestätigung">
-          <label for="Bestätigung">Ich stimme der Datenschutz- und Einverständniserklärung zu. </label>
+          <label for="Bestätigung">Ich stimme der Datenschutz- und Einverständniserklärung zu. *</label>
         </div>
         <div *ngIf="errorDatenschutz.oninvalid" class="error-message" >Zur weiteren Bearbietung brauchen wir die Zustimmung der Datenschutzbedingungen.</div>
         <br>
         <br>
-
+        <button class="btn-primary" (click)="onWeiter()" [disabled]="!contactForm.valid" >Weiter</button>
+</div>
+          
+          <div class="summary" *ngIf="weiter">
+            
+          <div> Zu welcher Gruppe gehören Sie?: <br> {{ formData.mitgliedergruppe | json }} </div>
+          <br>
+          <div> Bitte schildern Sie den Vorfall möglichst detailliert. (Was ist passiert? Wann und wo?
+            Wer war beteiligt?) <br>{{ formData.message | json }}</div>
+          <br>
+          <div> In welche Kategorie würden Sie diese Art von Diskriminierung einteilen? <br>
+            {{ formData.category | json }}</div>
+          <br>
+          <div *ngIf="isLoggedIn"> Bitte nehmen Sie mit mir Kontakt auf
+            <br>
+          <div> 
+            Nachname <br> {{ formData.lastname | json }}</div>
+          <div> Vorname <br>{{ formData.firstname | json }}</div>
+          <div> Email <br>{{ formData.email | json }}</div>
+          </div>
           <button class="btn-primary " type="submit" [disabled]="!contactForm.valid">Absenden</button>
-       
-       
+          </div>
+
       </form>
 </div>
 </div>
