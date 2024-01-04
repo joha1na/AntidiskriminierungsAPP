@@ -3,25 +3,25 @@
         <div class="col-12">
             <div class="header row">
                 <i class="col-1 fa-solid fa-chevron-left" [routerLink]="''"></i>
-                <h1 class="col-9">Kontaktiere uns</h1>
+                <h1 class="col-9">{{ 'getincontact.page.title.contact' | translate }}</h1>
                 <div class="col-1"></div>
             </div>
             <div class="buttons">
-                <div>
-                    <button class="btn btn-primary" type="submit">Finde eine passende Ansprechperson</button>
-                </div>
-                <div>
-                    <button class="btn btn-primary" type="submit" [routerLink]="'/kontaktformular'">Kontaktformular</button>
-                </div>
+                <button class="btn btn-primary" type="submit">{{ 'getincontact.page.button.find.contact.person' |
+                    translate }}</button>
+                <button class="btn btn-primary" type="submit" [routerLink]="'/kontaktformular'">{{
+                    'getincontact.page.button.get.in.contact' | translate
+                    }} </button>
             </div>
             <div class="col-12 text">
-                <p>
-                    Wenn du weitere Fragen hast, zögere nicht, uns zu kontaktieren:
-                </p>
+                <p>{{ 'getincontact.page.p.1' | translate }}</p>
                 <p>
                     <app-contactlist></app-contactlist>
                 </p>
             </div>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
 </body>
