@@ -1,0 +1,66 @@
+<body>
+    <div class="container">
+        <div class="col-12">
+            <div class="header row">
+                <i class="col-1 fa-solid fa-chevron-left" [routerLink]="'/getincontact'"></i>
+                <h1 class="col-9">
+                    Ansprechperson finden</h1>
+                <div class="col-1"></div>
+            </div>
+
+            <div class="form">
+                <form (ngSubmit)="submitForm()" #filterForm="ngForm">
+                    <div>
+                        <label for="mitgliedergruppe">Mitgliedergruppe</label>
+                        <br>
+                        <select id="mitgliedergruppe" name="mitgliedergruppe" required
+                            [(ngModel)]="formData.mitgliedergruppe">
+                            <option value="" disabled selected>Auswählen</option>
+                            <option value="Student*in">Student*in</option>
+                            <option value="Professor*in">Professor*in</option>
+                            <option value="Wiss-mitarbeiter">Wissenschaftliche*r Mitarbeiter*in</option>
+                            <option value="Technik-Service">Mitarbeiter*in in Technik, Service</option>
+                            <!-- Weitere Kategorien hinzufügen -->
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="amt">Amt/Gremium</label>
+                        <br>
+                        <select id="amt" name="amt" required [(ngModel)]="formData.amt">
+                            <option value="" disabled selected>Auswählen</option>
+                            <option value="Asta">AStA</option>
+                            <option value="Vertrauensteams">Mitglied des Vertrauensteams</option>
+                            <option value="Antidiskriminierungsrats">Hauptberufliche Frauen- und
+                                GleichstellungsbeMaiutgftlriaegdtdees Antidiskriminierungsrats</option>
+                            <option value="1Stellvertreterin">1. Stellvertreterin der hauptberuflichen Frauen- und
+                                Gleichstellungsbeauftragten</option>
+                            <option value="2Stellvertreterin">2. Stellvertreterin der hauptberuflichen Frauen- und
+                                Gleichstellungsbeauftragten</option>
+                            <option value="Gleichstellungsbeauftragte">Frauen- und Gleichstellungsbeauftragte</option>
+                            <option value="Behinderte">Beauftragte für behinderte und chronisch kran</option>
+                            <option value="Vertrauensperson">Vertrauensperson der schwerbehinderten Bes</option>
+
+
+                            <!-- Weitere Kategorien hinzufügen -->
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="mitgliedergruppe">Mitgliedergruppe</label>
+                        <br>
+                        <select id="mitgliedergruppe" name="mitgliedergruppe" required
+                            [(ngModel)]="formData.mitgliedergruppe">
+                            <option value="" disabled selected>Auswählen</option>
+                            <option value="Student*in">Student*in</option>
+                            <option value="Professor*in">Professor*in</option>
+                            <option value="Wiss-mitarbeiter">Wissenschaftliche*r Mitarbeiter*in</option>
+                            <option value="Technik-Service">Mitarbeiter*in in Technik, Service</option>
+                            <!-- Weitere Kategorien hinzufügen -->
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

@@ -9,18 +9,20 @@ import { SuccessComponent } from './success/success.component';
 import { ErrorComponent } from './error/error.component';
 import { MeldeformularComponent } from './meldeformular/meldeformular.component';
 import { KontaktformularComponent } from './kontaktformular/kontaktformular.component';
+import { FilterComponent } from './filter/filter.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent, pathMatch: 'full' },
   { path: 'imprint', component: ImprintComponent, pathMatch: 'full' },
   { path: 'privacypolicy', component: PrivacypolicyComponent, pathMatch: 'full' },
   { path: 'faq', component: FaqComponent },
-  { path: 'getincontact', component: GetincontactComponent},
+  { path: 'getincontact', component: GetincontactComponent },
   /*ggf. wieder entfernen, zunächst nur fürs Zeigen benötigt*/
-  { path: 'success', component: SuccessComponent},
-  { path: 'error', component: ErrorComponent},
-  { path: 'meldeformular', component: MeldeformularComponent},
-  { path: 'kontaktformular', component: KontaktformularComponent}
+  { path: 'success', component: SuccessComponent },
+  { path: 'error', component: ErrorComponent },
+  { path: 'meldeformular', component: MeldeformularComponent },
+  { path: 'kontaktformular', component: KontaktformularComponent },
+  { path: 'filter', component: FilterComponent }
 ];
 
 @NgModule({
