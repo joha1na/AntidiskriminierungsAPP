@@ -128,8 +128,21 @@ button[type="submit"] {
   transition: background-color 0.3s ease;
 }
 
-button{
-  color: white;
+#bttnweiter{
+  background-color: #76B900;
+  color: white ;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  
+}
+
+#myForm:invalid #bttnweiter {
+  background-color:#AFAFAF ;
+  color: white ;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -137,6 +150,8 @@ button{
   font-size: 16px;
   transition: background-color 0.3s ease;
 }
+
+
 
 
 
@@ -176,5 +191,14 @@ button{
   border-radius: 4px;
   font-size: 14px;
   background-color: #cccccc51;
+}
+
+#optional {
+  font-size: x-small;
+  display: inline;
+}
+
+#weiterbttn {
+  color: #ccc;
 }
 

@@ -12,8 +12,9 @@ export class MeldeformularComponent implements OnInit{
     message:'',
     category: '',
     lastname: '',
-    firstname:'',
-    email:''
+    firstname: '',
+    email:'',
+    checkbox: ''
   };
 
   constructor() { }
