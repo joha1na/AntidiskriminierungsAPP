@@ -14,5 +14,8 @@
     "success.page.l.4": "4. Inclusion in our statistics",
     "error.page.title.oops": "Oops!",
     "error.page.p.1": "Something went wrong.",
-    "error.page.p.2": "Please try again later."
+    "error.page.p.2": "Please try again later.",
+    "footer.home": "Home",
+    "footer.imprint": "Imprint",
+    "footer.privacy": "Privacy Policy"
 }
