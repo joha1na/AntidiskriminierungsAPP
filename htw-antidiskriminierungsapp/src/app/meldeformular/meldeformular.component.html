@@ -51,10 +51,9 @@
         </div>
         <br>
 
-        <div class="checkbox-text">
-          <input type="checkbox" id="fluency" checked (change)="isLoggedIn = !isLoggedIn">
-          <label for="Kontaktaufnahme">Bitte nehmen Sie mit mir Kontakt auf</label>
-        </div>
+
+        <input type="checkbox" id="fluency" checked (change)="isLoggedIn = !isLoggedIn">
+        <label for="Kontaktaufnahme">Bitte nehmen Sie mit mir Kontakt auf</label>
         <br>
         <div id="Kontaktdaten" *ngIf="isLoggedIn">
           <div>

@@ -8,20 +8,19 @@ import { Component } from '@angular/core';
 export class MeldeformularComponent {
   formData = {
     mitgliedergruppe: '',
-    betroffenheit:'',
-    geschichte:'',
+    betroffenheit: '',
+    geschichte: '',
     category: '',
     lastname: '',
-    firstname:'',
-    email:'',
+    firstname: '',
+    email: '',
     message: '',
 
   };
 
   isLoggedIn = true;
-  
-  isLogged()
-  {
+
+  isLogged() {
     this.isLoggedIn = false;
   }
 
@@ -31,7 +30,7 @@ export class MeldeformularComponent {
     console.log('Formulardaten:', this.formData);
     // Hier könnte die Logik stehen, um die Formulardaten zu senden oder zu verarbeiten.
   }
-  
+
 
   /*checkboxChanged(){
     var h1arr = document.getElementById('fluency');
@@ -47,8 +46,8 @@ export class MeldeformularComponent {
     
   }*/
 
-  
-  }
+
+}
 
 
 
