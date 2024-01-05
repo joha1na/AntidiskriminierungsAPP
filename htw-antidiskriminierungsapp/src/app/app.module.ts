@@ -17,7 +17,7 @@ import { FormsModule } from '@angular/forms';
 import { SuccessComponent } from './success/success.component';
 import { ErrorComponent } from './error/error.component';
 import { MeldeformularComponent } from './meldeformular/meldeformular.component';
-
+import { KontaktformularComponent } from './kontaktformular/kontaktformular.component';
 
 export function httpTranslateLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -36,7 +36,8 @@ export function httpTranslateLoaderFactory(http: HttpClient) {
     ContactlistComponent,
     SuccessComponent,
     ErrorComponent,
-    MeldeformularComponent
+    MeldeformularComponent,
+    KontaktformularComponent
   ],
   imports: [
     BrowserModule,
