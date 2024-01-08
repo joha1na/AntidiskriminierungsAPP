@@ -1,17 +1,14 @@
 <div class="container table-responsive">
     <table class="table table-striped">
-        <caption>Ausgewählte Kontakte</caption>
         <thead>
             <tr>
-                <th scope="col">Nr.</th>
-                <th scope="col">Vorname</th>
-                <th scope="col">Nachname</th>
-                <th scope="col">E-Mail</th>
+                <th scope="col">{{ 'contactlist.page.l.1' | translate }}</th>
+                <th scope="col">{{ 'contactlist.page.l.2' | translate }}</th>
+                <th scope="col">{{ 'contactlist.page.l.3' | translate }}</th>
             </tr>
         </thead>
         <tbody>
             <tr *ngFor=" let contact of allcontacts ; let i=index ">
-                <td>{{ i+1 }} </td>
                 <td>{{ contact.forename }}</td>
                 <td>{{ contact.surname }}</td>
                 <td>{{ contact.email }}</td>
