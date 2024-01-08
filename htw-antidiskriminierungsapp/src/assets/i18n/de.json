@@ -35,5 +35,8 @@
     "getincontact.page.title.contact": "Kontaktieren Sie uns",
     "getincontact.page.button.find.contact.person": "Eine passende Ansprechperson finden",
     "getincontact.page.button.get.in.contact": "Jetzt Kontakt aufnehmen",
-    "getincontact.page.p.1": "Für die Beratung können Sie sich an folgende Personen richten:"
+    "getincontact.page.p.1": "Für die Beratung können Sie sich an folgende Personen richten:",
+    "contactlist.page.l.1": "Vorname",
+    "contactlist.page.l.2": "Nachname",
+    "contactlist.page.l.3": "E-Mail"
 }

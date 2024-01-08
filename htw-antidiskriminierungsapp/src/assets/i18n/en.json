@@ -35,5 +35,8 @@
     "getincontact.page.title.contact": "Contact Us",
     "getincontact.page.button.find.contact.person": "Find the right contact person",
     "getincontact.page.button.get.in.contact": "Get in touch now",
-    "getincontact.page.p.1": "You can contact the following persons for advice:"
+    "getincontact.page.p.1": "You can contact the following persons for advice:",
+    "contactlist.page.l.1": "First Name",
+    "contactlist.page.l.2": "Surname",
+    "contactlist.page.l.3": "Email"
 }
