@@ -16,15 +16,18 @@
                         <select id="mitgliedergruppe" name="mitgliedergruppe" required
                             [(ngModel)]="formData.mitgliedergruppe">
                             <option value="" disabled selected>Auswählen</option>
+                            <option value="Mitarbeiter*in in Technik, Service und Verwaltung">Mitarbeiter*in in Technik,
+                                Service und Verwaltung</option>
                             <option value="Student*in">Student*in</option>
                             <option value="Professor*in">Professor*in</option>
-                            <option value="Wiss-mitarbeiter">Wissenschaftliche*r Mitarbeiter*in</option>
-                            <option value="Technik-Service">Mitarbeiter*in in Technik, Service</option>
+                            <option value="wissenschaftliche*r Mitarbeiter*in">wissenschaftliche*r Mitarbeiter*in
+                            </option>
+
                             <!-- Weitere Kategorien hinzufügen -->
                         </select>
                     </div>
                     <br>
-                    <div>
+                    <!-- <div>
                         <label for="amt">Amt/Gremium</label>
                         <br>
                         <select id="amt" name="amt" required [(ngModel)]="formData.amt">
@@ -39,14 +42,14 @@
                                 Gleichstellungsbeauftragten</option>
                             <option value="Gleichstellungsbeauftragte">Frauen- und Gleichstellungsbeauftragte</option>
                             <option value="Behinderte">Beauftragte für behinderte und chronisch kran</option>
-                            <option value="Vertrauensperson">Vertrauensperson der schwerbehinderten Bes</option>
+                            <option value="Vertrauensperson">Vertrauensperson der schwerbehinderten Bes</option> -->
 
 
-                            <!-- Weitere Kategorien hinzufügen -->
-                        </select>
-                    </div>
+                    <!-- Weitere Kategorien hinzufügen -->
+                    <!-- </select>
+                    </div> -->
 
-                    <div>
+                    <!-- <div>
                         <label for="mitgliedergruppe">Mitgliedergruppe</label>
                         <br>
                         <select id="mitgliedergruppe" name="mitgliedergruppe" required
@@ -56,9 +59,9 @@
                             <option value="Professor*in">Professor*in</option>
                             <option value="Wiss-mitarbeiter">Wissenschaftliche*r Mitarbeiter*in</option>
                             <option value="Technik-Service">Mitarbeiter*in in Technik, Service</option>
-                            <!-- Weitere Kategorien hinzufügen -->
                         </select>
-                    </div>
+                    </div> -->
+                    <button class="btn-primary " type="submit">Submit</button>
                 </form>
             </div>
         </div>
