@@ -9,12 +9,12 @@ export class KontaktformularComponent {
   formData = {
     mitgliedergruppe: '',
     betroffenheit:'',
+    message: '',
     geschichte:'',
-    category: '',
     lastname: '',
     firstname:'',
     email:'',
-    message: ''
+    
   };
 
   submitForm() {
