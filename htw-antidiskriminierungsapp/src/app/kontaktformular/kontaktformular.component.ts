@@ -14,7 +14,8 @@ export class KontaktformularComponent {
     lastname: '',
     firstname:'',
     email:'',
-    message: ''
+    message: '',
+    checkbox:''
   };
 
   submitForm() {
@@ -23,4 +24,13 @@ export class KontaktformularComponent {
     console.log('Formulardaten:', this.formData);
     // Hier könnte die Logik stehen, um die Formulardaten zu senden oder zu verarbeiten.
   }
+  
+  weiter = false;
+
+  onWeiter() { this.weiter = true; }
+
+  
+
+  goBack() {this.weiter = false;}
+
 }
