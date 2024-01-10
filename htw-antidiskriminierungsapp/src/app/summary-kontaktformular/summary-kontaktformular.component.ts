@@ -1,12 +1,19 @@
-import { Component } from '@angular/core';
+// summary-kontaktformular.component.ts
+
+import { Component, OnInit } from '@angular/core';
+import { KontaktformularService } from '../kontaktformular.service';
 
 @Component({
   selector: 'app-summary-kontaktformular',
-  standalone: true,
-  imports: [],
   templateUrl: './summary-kontaktformular.component.html',
-  styleUrl: './summary-kontaktformular.component.css'
+  styleUrls: ['./summary-kontaktformular.component.css'],
 })
-export class SummaryKontaktformularComponent {
+export class SummaryKontaktformularComponent implements OnInit {
+  formData: any = {};
 
+  constructor(private kontaktformularService: KontaktformularService) {}
+
+  ngOnInit() {
+    this.formData = this.kontaktformularService.getFormData();
+  }
 }
