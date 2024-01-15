@@ -182,3 +182,22 @@ button[type="submit"] {
 .checkbox-text {
   display: flex;
 }
+
+.summary div {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #cccccc51;
+}
+
+#optional {
+  font-size: x-small;
+  display: inline;
+}
+
+#weiterbttn {
+  color: #ccc;
+}
