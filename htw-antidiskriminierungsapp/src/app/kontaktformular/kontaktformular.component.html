@@ -1,10 +1,11 @@
 <body>
-
+  <i class="col-1 fa-solid fa-chevron-left" *ngIf="!weiter" [routerLink]="''" ></i>
+  <i class="col-1 fa-solid fa-chevron-left" *ngIf="weiter" (click)="goBack()"></i>
+   
   <div class="container">
     <div class="col-12">
       <div class="header row">
-        <i class="col-1 fa-solid fa-chevron-left" [routerLink]="''"></i>
-        <h1 class="col-9">Kontaktformular</h1>
+        <h1 class="col-12">Kontaktformular</h1>
         <div class="col-1"></div>
       </div>
 
@@ -111,10 +112,29 @@
   </div>
   <br>
         <br>
-        <button class="btn-primary" type="submit" (click)="onWeiter()" [disabled]="!contactForm.valid" id="bttnweiter">Weiter</button>
+        <button class="btn-primary " (click)="onWeiter()" [disabled]="!contactForm.valid" id="bttnweiter">Weiter</button>
       <br>
         * Pflichtfeld
         </div>
+
+        <div class="summary" *ngIf="weiter">
+          <header>Die Zusammenfassung Ihrer Daten:</header>
+          <br>
+          <div>Zu welcher Gruppe gehören Sie? <br> {{ formData.mitgliedergruppe }}</div>
+          <br>
+          <div>Betroffenheit? <br> {{ formData.betroffenheit }}</div>
+          <br>
+          <div>Dringlichkeit <br>{{ formData.message }}</div>
+          <br>
+          <div>Welcher Kategorie würden Sie diese Art von Diskriminierung spontan zuordnen? <br>
+            {{ formData.category }}</div>
+          <br>
+          <div>Nachname: <br> {{ formData.lastname }}</div>
+          <div>Vorname: <br>{{ formData.firstname }}</div>
+          <div>Email: <br>{{ formData.email }}</div>
+          <button class="btn-primary" type="submit">Absenden</button>
+        </div>
+        
       </form>
       <br>
       <br>

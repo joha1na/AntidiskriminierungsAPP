@@ -32,12 +32,9 @@ export class KontaktformularComponent {
   
   weiter = false;
 
-  onWeiter() { 
-    this.kontaktformularService.setFormData(this.formData);
-    this.weiter = true; 
   
-    this.router.navigate(['/summary-kontaktformular']);
-  }
+  onWeiter() { this.weiter = true; }
+
 
   
 

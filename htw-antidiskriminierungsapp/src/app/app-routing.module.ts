@@ -9,7 +9,6 @@ import { SuccessComponent } from './success/success.component';
 import { ErrorComponent } from './error/error.component';
 import { MeldeformularComponent } from './meldeformular/meldeformular.component';
 import { KontaktformularComponent } from './kontaktformular/kontaktformular.component';
-import { SummaryKontaktformularComponent } from './summary-kontaktformular/summary-kontaktformular.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent, pathMatch: 'full' },
@@ -22,7 +21,6 @@ const routes: Routes = [
   { path: 'error', component: ErrorComponent},
   { path: 'meldeformular', component: MeldeformularComponent},
   { path: 'kontaktformular', component: KontaktformularComponent},
-  { path: 'summary-kontaktformular', component: SummaryKontaktformularComponent },
 
 ];
 
