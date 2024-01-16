@@ -20,7 +20,8 @@ const routes: Routes = [
   { path: 'success', component: SuccessComponent},
   { path: 'error', component: ErrorComponent},
   { path: 'meldeformular', component: MeldeformularComponent},
-  { path: 'kontaktformular', component: KontaktformularComponent}
+  { path: 'kontaktformular', component: KontaktformularComponent},
+
 ];
 
 @NgModule({
