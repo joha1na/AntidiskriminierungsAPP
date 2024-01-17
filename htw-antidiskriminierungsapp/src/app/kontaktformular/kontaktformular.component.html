@@ -16,7 +16,7 @@
           <label for="mitgliedergruppe">{{ 'kontaktformular.page.q.1' | translate }}</label>
           <br>
           <select #errorGruppe="ngModel" id="mitgliedergruppe" name="mitgliedergruppe" required [(ngModel)]="formData.mitgliedergruppe">
-            <option value="" disabled selected>{{ 'kontaktformular.page.s.1' | translate }}</option>
+            <option value="" disabled selected>{{ 'kontaktformular.page.s.1' | translate }} *</option>
             <option value="Ich studiere an der HTW Berlin.">{{ 'kontaktformular.page.a.1' | translate }}</option>
             <option value="Ich nehme an einem Bildungsangebot der HTW Berlin teil.">{{ 'kontaktformular.page.a.2' | translate }}</option>
             <option value="Ich bin an der HTW Berlin fest beschäftigt.">{{ 'kontaktformular.page.a.3' | translate }}</option>
@@ -30,7 +30,7 @@
         <div *ngIf="errorGruppe.touched && errorGruppe.invalid"  class="error-message" >{{ 'kontaktformular.page.e.1' | translate }}</div>
         <br>
         <div>
-          <label for="betroffenheit">{{ 'kontaktformular.page.q.2' | translate }}</label>
+          <label for="betroffenheit">{{ 'kontaktformular.page.q.2' | translate }}*</label>
           <br>
           <select #errorBetroffenheit="ngModel" id="betroffenheit" name="betroffenheit" required [(ngModel)]="formData.betroffenheit">
             <option value="" disabled selected>{{ 'kontaktformular.page.s.1' | translate }}</option>
@@ -44,7 +44,7 @@
         <br>
 
         <div>
-          <label for="message">{{ 'kontaktformular.page.q.3' | translate }}</label>
+          <label for="message">{{ 'kontaktformular.page.q.3' | translate }}*</label>
           <br>
           {{ 'kontaktformular.page.p.1' | translate }}          <br>
           <textarea #errorGeschichte="ngModel" minlength="10" id="message" name="message" rows="4"  required [(ngModel)]="formData.message"></textarea>
@@ -77,7 +77,7 @@
           </div>
          
           <div>
-            <label for="email">{{ 'kontaktformular.page.n.3' | translate }}</label>
+            <label for="email">{{ 'kontaktformular.page.n.3' | translate }}*</label>
             <input #errorEmail="ngModel" type="email" id="email" name="email" required email [(ngModel)]="formData.email">
             {{ 'kontaktformular.page.p.2' | translate }}          </div> 
           <div *ngIf="errorEmail.touched && errorEmail.invalid"
@@ -114,21 +114,21 @@
     </div>
 
         <div class="summary" *ngIf="weiter">
-          <header>Die Zusammenfassung Ihrer Daten:</header>
+          <header>{{ 'kontaktformular.page.h.2' | translate }}</header>
           <br>
-          <div>Zu welcher Gruppe gehören Sie? <br> {{ formData.mitgliedergruppe }}</div>
+          <div>{{ 'kontaktformular.page.q.1' | translate }} <br> {{ formData.mitgliedergruppe }}</div>
           <br>
-          <div>Betroffenheit? <br> {{ formData.betroffenheit }}</div>
+          <div>{{ 'kontaktformular.page.q.2' | translate }}<br> {{ formData.betroffenheit }}</div>
           <br>
-          <div>Dringlichkeit <br>{{ formData.message }}</div>
+          <div>{{ 'kontaktformular.page.q.3' | translate }} <br>{{ formData.message }}</div>
           <br>
-          <div>Welcher Kategorie würden Sie diese Art von Diskriminierung spontan zuordnen? <br>
+          <div>{{ 'kontaktformular.page.q.4' | translate }} <br>
             {{ formData.category }}</div>
           <br>
-          <div>Nachname: <br> {{ formData.lastname }}</div>
-          <div>Vorname: <br>{{ formData.firstname }}</div>
-          <div>Email: <br>{{ formData.email }}</div>
-          <button class="btn-primary" type="submit">Absenden</button>
+          <div>{{ 'kontaktformular.page.n.1' | translate }} <br> {{ formData.lastname }}</div>
+          <div>{{ 'kontaktformular.page.n.2' | translate }} <br>{{ formData.firstname }}</div>
+          <div>{{ 'kontaktformular.page.n.3' | translate }} <br>{{ formData.email }}</div>
+          <button class="btn-primary" type="submit">{{ 'kontaktformular.page.b.2' | translate }}</button>
         </div>
         
       </form>
