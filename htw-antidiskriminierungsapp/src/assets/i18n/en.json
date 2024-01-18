@@ -1,7 +1,7 @@
 {
     "home.page.title.welcome": "Incidents of discrimination at HTW Berlin: advice, support, reporting",
-    "home.page.p.1": "Help yourself and help others!",
-    "home.page.p.2": "Here you can get help quickly and directly: <br><br> Find out how the university deals with incidents of discrimination in the <a class=\"link-inside-translation\" href=\"/faq\">FAQ</a>. <br> Find out who is the best <a class=\"link-inside-translation\" href=\"/getincontact\"> person to contact</a> with your concerns. <br> Report an <a class=\"link-inside-translation\" href=\"/meldeformular\">incident</a> - anonymously if you wish.",
+    "home.page.p.1": "Have you experienced or observed discrimination? You can get help here!",
+    "home.page.p.2": "Find out how the university deals with incidents of discrimination in the <a class=\"link-inside-translation\" href=\"/faq\">FAQ</a>. <br> Find out who is the best <a class=\"link-inside-translation\" href=\"/getincontact\"> person to contact</a> with your concerns. <br> Report an <a class=\"link-inside-translation\" href=\"/meldeformular\">incident</a> - anonymously if you wish.",
     "home.page.button.report.incident": "Report An Incident",
     "home.page.button.get.in.contact": "Get In Contact",
     "success.page.title.thanks": "Thank You!",
@@ -32,7 +32,7 @@
     "getincontact.page.title.contact": "Contact Us",
     "getincontact.page.button.find.contact.person": "Find the right contact person",
     "getincontact.page.button.get.in.contact": "Get in touch now",
-    "getincontact.page.p.1": "You can contact the following university member with your counseling request:",
+    "getincontact.page.p.1": "If you have experienced or observed discrimination, you can contact the following people:",
     "contactlist.page.l.1": "First Name",
     "contactlist.page.l.2": "Surname",
     "contactlist.page.l.3": "Email",
