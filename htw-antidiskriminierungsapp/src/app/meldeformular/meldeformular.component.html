@@ -7,18 +7,17 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
+          <h5 class="modal-title">Hinweis</h5>
           <button type="button" class="btn-close"  aria-label="Close" (click)="CloseModel()"></button>
         </div>
         <div class="modal-body">
           <p>
-            Bevor Sie eine Meldung abschicken, sollten Sie <a href="">Beratung</a> in Anspruch nehmen, z.B. zum Unterschied von Meldung und Beschwerde, zu den Vorteilen einer namentlichen Meldung und zum Umgang mit Ihrer Meldung.
-Sollten Sie dringend Hilfe benötigen, nutzen Sie bitte die Hilfsangebote für Menschen in Krisen in Berlin bzw. bundesweit. <a href="https://www.htw-berlin.de/einrichtungen/zentrale-referate/frauenfoerderung-gleichstellung/sexualisierte-diskriminierung-gewalt/#c10576">Hier</a> finden Sie weiterführende Kontaktinformationen.
-
-             </p>
+            Bevor Sie eine Meldung abschicken, sollten Sie <a [routerLink]="'/getincontact'">Beratung</a> in Anspruch nehmen, z.B. zum Unterschied von Meldung und Beschwerde, zu den Vorteilen einer namentlichen Meldung und zum Umgang mit Ihrer Meldung.
+            Sollten Sie dringend Hilfe benötigen, nutzen Sie bitte die Hilfsangebote für Menschen in Krisen in Berlin bzw. bundesweit. <a href="https://www.htw-berlin.de/einrichtungen/zentrale-referate/frauenfoerderung-gleichstellung/sexualisierte-diskriminierung-gewalt/#c10576">Hier</a> finden Sie weiterführende Kontaktinformationen.
+          </p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="CloseModel()">Close</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="CloseModel()">Schließen</button>
         </div>
       </div>
     </div>
@@ -40,21 +39,22 @@ Sollten Sie dringend Hilfe benötigen, nutzen Sie bitte die Hilfsangebote für M
           <br>
           <select #errorGruppe="ngModel" id="mitgliedergruppe" name="mitgliedergruppe" required [(ngModel)]="formData.mitgliedergruppe">
             <option value="" disabled selected>Auswählen</option>
-            <option value="Student*in">Ich studiere an der HTW</option>
-            <option value="Professor*in">Ich bin an der HTW Berlin fest beschäftigt </option>
-            <option value="Lehrauftrag">Ich habe einen Lehrauftrag an der HTW</option>
-            <option value="professur">Ich habe an der HTW Berlin eine Professur inne</option>
-            <option value="gelaende">Mein Arbeitgeber ist zwar nicht die HTW, aber ich arbeite auf dem Gelände der
-              Hochschule</option>
-            <option value="Other">Andere</option>
+            <option value="Ich studiere an der HTW Berlin.">Ich studiere an der HTW Berlin.</option>
+            <option value="Ich nehme an einem Bildungsangebot der HTW Berlin teil.">Ich nehme an einem Bildungsangebot der HTW Berlin teil. </option>
+            <option value="Ich habe ein Beschäftigungsverhältnis mit der HTW Berlin.">Ich habe ein Beschäftigungsverhältnis mit der HTW Berlin.</option>
+            <option value="Ich habe einen Lehrauftrag an der HTW Berlin.">Ich habe einen Lehrauftrag an der HTW Berlin.</option>
+            <option value="Meine Promotion wird an der HTW Berlin betreut.">Meine Promotion wird an der HTW Berlin betreut.</option>
+            <option value="Ich habe an der HTW Berlin eine Honorarprofessorur, eine außerplanmäßige Professor*inne oder eine Privatdozentur*inne.">Ich habe an der HTW Berlin eine Honorarprofessorur, eine außerplanmäßige Professor*inne oder eine Privatdozentur*inne.</option>
+            <option value="Mein Arbeitgeber ist zwar nicht die HTW, aber ich arbeite auf dem Gelände der Hochschule.">Mein Arbeitgeber ist zwar nicht die HTW, aber ich arbeite auf dem Gelände der Hochschule.</option>
+            <option value="Andere">Andere</option>
             <!-- Weitere Kategorien hinzufügen -->
           </select>
         </div>
         <div *ngIf="errorGruppe.touched && errorGruppe.invalid"  class="error-message" >Bitte wählen Sie etwas aus.</div>
         <br>
         <div>
-          <label for="message">Bitte schildern Sie den Vorfall möglichst detailliert. (Was ist passiert? Wann und wo?
-            Wer war beteiligt?) *</label>
+          <label for="message">Bitte schildern Sie den Vorfall: (Was ist passiert? Wann und wo?
+            Wer war beteiligt?) * Wenn Sie möchten, können Sie auch etwas zur Dringlichkeit Ihres Anliegens schreiben.</label>
           <textarea #errorGeschichte="ngModel" minlength="10" id="message" name="message" rows="4"  required [(ngModel)]="formData.message"></textarea>
         </div>
         <div *ngIf="errorGeschichte.invalid && errorGeschichte.touched" class="error-message" >Bitte füllen Sie dieses Feld aus. Feld muss mind. 10 Zeichen enthalten.</div>
@@ -62,26 +62,22 @@ Sollten Sie dringend Hilfe benötigen, nutzen Sie bitte die Hilfsangebote für M
         
         
         <div>
-          <label for="category">In welche Kategorie würden Sie diese Art von Diskriminierung einteilen? <div id="optional">(optional)</div></label>
+          <label for="category">Welcher Kategorie würden Sie diese Art von Diskriminierung spontan zuordnen? <div id="optional">(optional)</div></label>
           <select id="category" name="category" [(ngModel)]="formData.category" >
             <option value="" disabled selected>Auswählen</option>
-            <option value="1">Unmittelbare Diskrimierung</option>
-            <option value="2">Mittelbare Diskriminierung</option>
-            <option value="3">Rassistische Zuschreibung</option>
-            <option value="4">Sexualisierte Diskriminierung</option>
-            <option value="5">Sexualisierte Gewalt</option>
-            <option value="6">Belästigung</option>
-            <option value="7">Mobbing</option>
-            <option value="8">Stalking</option>
-            <option value="9">Andere</option>
+            <option value="Mittelbare Diskriminierung">Mittelbare Diskriminierung</option>
+            <option value="Rassistische Zuschreibung">Rassistische Zuschreibung</option>
+            <option value="Sexualisierte Diskriminierung und Gewalt">Sexualisierte Diskriminierung und Gewalt</option>
+            <option value="Mobbing">Mobbing</option>
+            <option value="Stalking">Stalking</option>
             <!-- Weitere Kategorien hinzufügen -->
           </select>
         </div>
         <br>
 
         <div class="checkbox-text">
-          <input type="checkbox" id="fluency" checked (change)="isLoggedIn = !isLoggedIn">
-          <label for="Kontaktaufnahme">Bitte nehmen Sie mit mir Kontakt auf</label>
+          <input type="checkbox" id="fluency" [checked]="isLoggedIn" (change)="isLoggedIn = !isLoggedIn">
+          <label for="Kontaktaufnahme">Bitte nehmen Sie mit mir Kontakt auf.</label>
         </div>
         <br>
         <div id="Kontaktdaten" *ngIf="isLoggedIn">
@@ -102,13 +98,12 @@ Sollten Sie dringend Hilfe benötigen, nutzen Sie bitte die Hilfsangebote für M
           
           class="error-message" >Dies ist keine gültige Email Adresse.</div>
         </div>
-        <br>
+        
 
         <div id="hinweisdiv" *ngIf="!isLoggedIn">
-          <p id="Hinweis"> Hinweis: Wenn Sie nicht ihre Kontaktdaten hinterlassen, können wir nicht mit Ihnen in Kontakt
-            treten, um weitere Beratung sowie Unterstützung anbieten zu können. </p>
+          <p id="Hinweis"> Hinweis: Wenn Sie nicht Ihre Kontaktdaten hinterlassen, können wir nicht mit Ihnen in Kontakt treten, um Ihnen Beratung anzubieten und Sie über die Fallbearbeitung zu informieren. Ihr Anliegen behandeln wir dennoch im Rahmen des Möglichen. </p>
         </div>
-        
+        <br>
         <div>
           <div id="Datenschutz">Datenschutzhinweis und Einverständniserklärung</div>
           <br>

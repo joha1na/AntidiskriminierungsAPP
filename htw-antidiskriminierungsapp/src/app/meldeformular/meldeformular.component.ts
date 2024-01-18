@@ -18,13 +18,15 @@ export class MeldeformularComponent implements OnInit{
   };
 
   constructor() { }
-
   ngOnInit(): void {
     // Initialisierungslogik, z.B. Daten abrufen
     this.openModel();
+    
+
   }
 
-  isLoggedIn = true;
+
+  isLoggedIn= true;
   
   isLogged()
   {
