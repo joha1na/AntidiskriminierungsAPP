@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { KontaktformularService } from '../kontaktformular.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-kontaktformular',
@@ -9,13 +12,15 @@ export class KontaktformularComponent {
   formData = {
     mitgliedergruppe: '',
     betroffenheit:'',
-    geschichte:'',
+    message: '',
     category: '',
     lastname: '',
     firstname:'',
     email:'',
-    message: ''
+    checkbox:''
   };
+
+  constructor(private kontaktformularService: KontaktformularService, private router:Router) {}
 
   submitForm() {
     // Hier kannst du die Logik für das Absenden des Formulars implementieren,
@@ -23,4 +28,16 @@ export class KontaktformularComponent {
     console.log('Formulardaten:', this.formData);
     // Hier könnte die Logik stehen, um die Formulardaten zu senden oder zu verarbeiten.
   }
+
+  
+  weiter = false;
+
+  
+  onWeiter() { this.weiter = true; }
+
+
+  
+
+  goBack() {this.weiter = false;}
+
 }

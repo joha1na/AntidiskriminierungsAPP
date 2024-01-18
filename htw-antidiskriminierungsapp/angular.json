@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "htw-antidiskriminierungsapp:build:production"
+              "browserTarget": "htw-antidiskriminierungsapp:build:production"
             },
             "development": {
-              "buildTarget": "htw-antidiskriminierungsapp:build:development"
+              "browserTarget": "htw-antidiskriminierungsapp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "htw-antidiskriminierungsapp:build"
+            "browserTarget": "htw-antidiskriminierungsapp:build"
           }
         },
         "test": {

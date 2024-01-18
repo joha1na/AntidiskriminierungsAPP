@@ -99,7 +99,6 @@ input[type="email"] {
   font-size: 14px;
 }
 
-
 select {
   -webkit-appearance: none;
   appearance: none;
@@ -129,6 +128,32 @@ button[type="submit"] {
   transition: background-color 0.3s ease;
 }
 
+#bttnweiter{
+  background-color: #76B900;
+  color: white ;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  
+}
+
+#myForm:invalid #bttnweiter {
+  background-color:#AFAFAF ;
+  color: white ;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+
+
+
 
 
 /* Fehlermeldung für Pflichtfelder */
@@ -149,10 +174,30 @@ button[type="submit"] {
   color: #ff0000;
 }
 
-#Bestätigung {
+#Bestätigung,
+#fluency {
   margin-right: 1rem;
 }
 
 .checkbox-text {
   display: flex;
+}
+
+.summary div {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #cccccc51;
+}
+
+#optional {
+  font-size: x-small;
+  display: inline;
+}
+
+#weiterbttn {
+  color: #ccc;
 }
