@@ -11,7 +11,7 @@ export class FilterComponent {
 
   formData = {
     mitgliedergruppe: '',
-    amt: '',
+    gremium: '',
     organisationseinheit: '',
     sprache: ''
   };
@@ -24,6 +24,9 @@ export class FilterComponent {
     console.log('Formulardaten:', this.formData);
     // Hier könnte die Logik stehen, um die Formulardaten zu senden oder zu verarbeiten.
     this.filterService.setMitgliedergruppe(this.formData.mitgliedergruppe);
+    this.filterService.setGremium(this.formData.gremium);
+    this.filterService.setOrganisationseinheit(this.formData.organisationseinheit);
+    this.filterService.setSprache(this.formData.sprache);
     this.router.navigate(['/getincontact']);
   }
 

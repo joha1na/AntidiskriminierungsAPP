@@ -22,45 +22,78 @@
                             <option value="Professor*in">Professor*in</option>
                             <option value="wissenschaftliche*r Mitarbeiter*in">wissenschaftliche*r Mitarbeiter*in
                             </option>
-
-                            <!-- Weitere Kategorien hinzufügen -->
                         </select>
                     </div>
                     <br>
-                    <!-- <div>
-                        <label for="amt">Amt/Gremium</label>
+                    <div>
+                        <label for="gremium">Gremium</label>
                         <br>
-                        <select id="amt" name="amt" required [(ngModel)]="formData.amt">
+                        <select id="gremium" name="gremium" required [(ngModel)]="formData.gremium">
                             <option value="" disabled selected>Auswählen</option>
-                            <option value="Asta">AStA</option>
-                            <option value="Vertrauensteams">Mitglied des Vertrauensteams</option>
-                            <option value="Antidiskriminierungsrats">Hauptberufliche Frauen- und
-                                GleichstellungsbeMaiutgftlriaegdtdees Antidiskriminierungsrats</option>
-                            <option value="1Stellvertreterin">1. Stellvertreterin der hauptberuflichen Frauen- und
-                                Gleichstellungsbeauftragten</option>
-                            <option value="2Stellvertreterin">2. Stellvertreterin der hauptberuflichen Frauen- und
-                                Gleichstellungsbeauftragten</option>
-                            <option value="Gleichstellungsbeauftragte">Frauen- und Gleichstellungsbeauftragte</option>
-                            <option value="Behinderte">Beauftragte für behinderte und chronisch kran</option>
-                            <option value="Vertrauensperson">Vertrauensperson der schwerbehinderten Bes</option> -->
-
-
-                    <!-- Weitere Kategorien hinzufügen -->
-                    <!-- </select>
-                    </div> -->
-
-                    <!-- <div>
-                        <label for="mitgliedergruppe">Mitgliedergruppe</label>
-                        <br>
-                        <select id="mitgliedergruppe" name="mitgliedergruppe" required
-                            [(ngModel)]="formData.mitgliedergruppe">
-                            <option value="" disabled selected>Auswählen</option>
-                            <option value="Student*in">Student*in</option>
-                            <option value="Professor*in">Professor*in</option>
-                            <option value="Wiss-mitarbeiter">Wissenschaftliche*r Mitarbeiter*in</option>
-                            <option value="Technik-Service">Mitarbeiter*in in Technik, Service</option>
+                            <option value="Frauen- und Gleichstellungsbeauftragte">Frauen- und
+                                Gleichstellungsbeauftragte</option>
+                            <option value="Stellvertretung Vertrauensperson der schwerbehinderten Beschäftigten">
+                                Stellvertretung Vertrauensperson der schwerbehinderten Beschäftigten</option>
+                            <option value="AStA">AStA</option>
+                            <option value="Mitglied des Antidiskriminierungsrats">Mitglied des Antidiskriminierungsrats
+                            </option>
+                            <option value="Beauftragte für behinderte und chronisch kranke Studierende">Beauftragte für
+                                behinderte und chronisch kranke Studierende</option>
+                            <option value="Vertrauensperson der schwerbehinderten Beschäftigten">Vertrauensperson der
+                                schwerbehinderten Beschäftigten</option>
+                            <option value="Mitglied des Vertrauensteams">Mitglied des Vertrauensteams</option>
+                            <option value="Stellvertretendes Mitglied des Antidiskriminierungsrats">Stellvertretendes
+                                Mitglied des Antidiskriminierungsrats</option>
+                            <option
+                                value="1. Stellvertreterin der hauptberuflichen Frauen- und Gleichstellungsbeauftragten">
+                                1. Stellvertreterin der hauptberuflichen Frauen- und Gleichstellungsbeauftragten
+                            </option>
+                            <option
+                                value="2. Stellvertreterin der hauptberuflichen Frauen- und Gleichstellungsbeauftragten">
+                                2. Stellvertreterin der hauptberuflichen Frauen- und Gleichstellungsbeauftragten
+                            </option>
+                            <option value="Hauptberufliche Frauen- und Gleichstellungsbeauftragte">Hauptberufliche
+                                Frauen- und Gleichstellungsbeauftragte</option>
                         </select>
-                    </div> -->
+                    </div>
+                    <br>
+                    <div>
+                        <label for="organisationseinheit">Organisationseinheit</label>
+                        <br>
+                        <select id="organisationseinheit" name="organisationseinheit" required
+                            [(ngModel)]="formData.organisationseinheit">
+                            <option value="" disabled selected>Auswählen</option>
+                            <option value="FB 1">FB 1</option>
+                            <option value="Zentrales Referat Kommunikation">Zentrales Referat Kommunikation</option>
+                            <option value="FB 2">FB 2
+                            </option>
+                            <option value="FB 3">FB 3</option>
+                            <option value="FB 4">FB 4</option>
+                            <option value="FB 5">FB 5</option>
+                            <option value="Hochschulleitung">Hochschulleitung</option>
+                            <option value="Hochschulbibliothek">Hochschulbibliothek</option>
+                            <option value="Zentrum für Studienberatung & Career Service">Zentrum für Studienberatung &
+                                Career Service</option>
+                            <option value="Zentraleinrichtung Fremdsprachen">Zentraleinrichtung Fremdsprachen</option>
+                            <option value="International Office">International Office</option>
+                            <option value="Hochschulrechenzentrum">Hochschulrechenzentrum</option>
+                            <option value="Personalabteilung">Personalabteilung</option>
+                            <option value="Allgemeiner Studierendenservice">Allgemeiner Studierendenservice</option>
+                            <option value="Zentrales Referat Frauenförderung & Gleichstellung">Zentrales Referat
+                                Frauenförderung & Gleichstellung</option>
+
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="sprache">Sprache</label>
+                        <br>
+                        <select id="sprache" name="sprache" required [(ngModel)]="formData.sprache">
+                            <option value="" disabled selected>Auswählen</option>
+                            <option value="Deutsch">Deutsch</option>
+                            <option value="Englisch">Englisch</option>
+                        </select>
+                    </div>
                     <button class="btn-primary " type="submit">Finden</button>
                 </form>
             </div>

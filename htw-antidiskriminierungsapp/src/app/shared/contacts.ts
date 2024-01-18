@@ -6,7 +6,7 @@ export interface Contacts {
     email: string;
     sprache: string;
     mitgliedergruppe: string;
-    amtsbezeichnung: string;
-    amtsbezeichnung1: string;
+    gremium: string;
+    gremium1: string;
     organisationseinheit: string;
 }
