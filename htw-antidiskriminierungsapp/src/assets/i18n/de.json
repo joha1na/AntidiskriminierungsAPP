@@ -7,17 +7,13 @@
     "home.page.p.3.1": "Haben Sie Fragen? Besuchen Sie die <a class=\"link-inside-translation\" href=\"/faq\">FAQ</a> für weitere Informationen.",
    
     "success.page.title.thanks": "Vielen Dank!",
-    "success.page.p.1": "Ihre Daten wurden erfolgreich gesendet. Wir senden Ihnen eine Bestätigungs-E-Mail, wenn Sie sich nicht für die Anonymisierung Ihrer Identität entschieden haben.",
-    "success.page.p.2": "Nächste Schritte",
-    "success.page.l.1": "1. Manuelle Überprüfung der von Ihnen angegebenen Informationen",
-    "success.page.l.2": "2. Bekannte Identität: E-Mail-Benachrichtigungen über neue Entdeckungen in Ihrem Fall",
-    "success.page.l.3": "3. Angemessene Bearbeitung Ihres Falls",
-    "success.page.l.4": "4. Aufnahme in unsere Statistik",
-    
-    "error.page.title.oops": "Huch!",
+    "success.page.p.1": "Ihre Daten wurden erfolgreich gesendet. Sie erhalten eine Bestätigungs-E-Mail, falls Sie sich nicht für die Anonymisierung Ihrer Identität entschieden haben.",
+    "success.page.p.2": "Was als nächstes passiert:",
+    "success.page.l.1": "Falls Sie Ihre Identität bekannt gegeben haben, wird in Kürze ein_e Berater_in Kontakt zu Ihnen aufnehmen. Nachdem der Fall dokumentiert wurde, wird sich das Vertrauensteam mit Ihrer Meldung beschäftigen, geeignete Schritte beraten und gegebenenfalls einleiten. Dabei wird Sie das Vertrauensteam einbeziehen und auf dem Laufenden halten.",
+    "success.page.l.2": "Falls Sie Ihre Identität nicht bekannt gegeben haben, wird sich das Vertrauensteam mit Ihrer Meldung beschäftigen, geeignete Schritte beraten und gegebenenfalls einleiten.",
+    "success.page.p.3": "Sind Fragen offen geblieben? Bitte besuchen Sie die <a class=\"link-inside-translation\" href=\"/faq\">FAQ</a> für weiterführende Informationen.",
+    "error.page.title.oops": "Entschuldigung!",
     "error.page.p.1": "Etwas ist schief gegangen.",
-    "error.page.p.2": "Bitte versuchen Sie es später noch einmal.",
-   
     "footer.home": "Start",
     "footer.imprint": "Impressum",
     "footer.privacy": "Datenschutz",
@@ -41,7 +37,7 @@
     "getincontact.page.title.contact": "Kontaktieren Sie uns",
     "getincontact.page.button.find.contact.person": "Eine passende Ansprechperson finden",
     "getincontact.page.button.get.in.contact": "Jetzt Kontakt aufnehmen",
-    "getincontact.page.p.1": "Für die Beratung können Sie sich an folgende Personen richten:",
+    "getincontact.page.p.1": "Mit Ihrem Beratungsanliegen können Sie sich an folgenden Hochschulangehörigen wenden:",
    
     "contactlist.page.l.1": "Vorname",
     "contactlist.page.l.2": "Nachname",
