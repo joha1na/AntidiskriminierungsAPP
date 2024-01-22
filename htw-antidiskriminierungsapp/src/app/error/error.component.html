@@ -6,11 +6,9 @@
                 <h1 class="col-9">{{ 'error.page.title.oops' | translate }}</h1>
                 <div class="col-1"></div>
             </div>
-            <!--div class="col-12 text">
-                <p>
-                    {{ 'error.page.p.1' | translate }}
-                </p>
-            </div-->
+            <div class="col-12 text">
+                <p [innerHTML]="'error.page.p.1' | translate"></p>
+            </div>
         </div>
     </div>
     <br>
