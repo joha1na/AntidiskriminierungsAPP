@@ -17,13 +17,13 @@
           <br>
           <select #errorGruppe="ngModel" id="mitgliedergruppe" name="mitgliedergruppe" required [(ngModel)]="formData.mitgliedergruppe">
             <option value="" disabled selected>{{ 'kontaktformular.page.s.1' | translate }} *</option>
-            <option value="Ich studiere an der HTW Berlin.">{{ 'kontaktformular.page.a.1' | translate }}</option>
-            <option value="Ich nehme an einem Bildungsangebot der HTW Berlin teil.">{{ 'kontaktformular.page.a.2' | translate }}</option>
-            <option value="Ich bin an der HTW Berlin fest beschäftigt.">{{ 'kontaktformular.page.a.3' | translate }}</option>
-            <option value="Ich habe einen Lehrauftrag an der HTW Berlin.">{{ 'kontaktformular.page.a.4' | translate }}</option>
-            <option value="Ich habe an der HTW Berlin eine Honorarprofessorur, eine außerplanmäßige Professor oder eine Privatdozentur inne.">{{ 'kontaktformular.page.a.5' | translate }} </option>
-            <option value="Mein Arbeitgeber ist zwar nicht die HTW, aber ich arbeite auf dem Gelände der Hochschule">{{ 'kontaktformular.page.a.6' | translate }}</option>
-            <option value="Andere">{{ 'kontaktformular.page.a.7' | translate }}</option>
+            <option>{{ 'kontaktformular.page.a.1' | translate }}</option>
+            <option>{{ 'kontaktformular.page.a.2' | translate }}</option>
+            <option>{{ 'kontaktformular.page.a.3' | translate }}</option>
+            <option>{{ 'kontaktformular.page.a.4' | translate }}</option>
+            <option>{{ 'kontaktformular.page.a.5' | translate }} </option>
+            <option>{{ 'kontaktformular.page.a.6' | translate }}</option>
+            <option>{{ 'kontaktformular.page.a.7' | translate }}</option>
             <!-- Weitere Kategorien hinzufügen -->
           </select>
         </div>
@@ -34,10 +34,11 @@
           <br>
           <select #errorBetroffenheit="ngModel" id="betroffenheit" name="betroffenheit" required [(ngModel)]="formData.betroffenheit">
             <option value="" disabled selected>{{ 'kontaktformular.page.s.1' | translate }}</option>
-            <option value="Ich bin Betroffene*r.">{{ 'kontaktformular.page.a.8' | translate }}</option>
-            <option value="Ich bin Zeug*in bzw. Unterstützer*in.">{{ 'kontaktformular.page.a.9' | translate }}</option>
+            <option>{{ 'kontaktformular.page.a.8' | translate }}</option>
+            <option>{{ 'kontaktformular.page.a.9' | translate }}</option>
             <!-- Weitere Kategorien hinzufügen -->
           </select>
+
         </div>
         <div *ngIf="errorBetroffenheit.touched && errorBetroffenheit.invalid"  class="error-message" >{{ 'kontaktformular.page.e.1' | translate }}</div>
 
@@ -55,11 +56,11 @@
         <div>
           <label for="category">{{ 'kontaktformular.page.q.4' | translate }}<div id="optional">(optional)</div></label>
           <select id="category" name="category" [(ngModel)]="formData.category" >   <option value="" disabled selected>{{ 'kontaktformular.page.s.1' | translate }}</option>
-            <option value="Rassistische Zuschreibung">{{ 'kontaktformular.page.a.10' | translate }}</option>
-            <option value="Sexualisierte Diskriminierung und Gewalt">{{ 'kontaktformular.page.a.11' | translate }}</option>
-            <option value="Belästigung">{{ 'kontaktformular.page.a.12' | translate }}</option>
-            <option value="Mobbing">{{ 'kontaktformular.page.a.13' | translate }}</option>
-            <option value="Stalking">{{ 'kontaktformular.page.a.14' | translate }}</option>
+            <option>{{ 'kontaktformular.page.a.10' | translate }}</option>
+            <option>{{ 'kontaktformular.page.a.11' | translate }}</option>
+            <option>{{ 'kontaktformular.page.a.12' | translate }}</option>
+            <option>{{ 'kontaktformular.page.a.13' | translate }}</option>
+            <option>{{ 'kontaktformular.page.a.14' | translate }}</option>
             <!-- Weitere Kategorien hinzufügen -->
           </select>
         </div>
@@ -89,7 +90,7 @@
         <div>
           <div id="Datenschutz">{{ 'kontaktformular.page.p.3' | translate }}</div>
           <br>
-          <div>{{ 'kontaktformular.page.p.4' | translate }} <a href="">{{ 'kontaktformular.page.p.5' | translate }}</a> 
+          <div>{{ 'kontaktformular.page.p.4' | translate }} <a href="'./privacypolicy'">{{ 'kontaktformular.page.p.5' | translate }}</a> 
             {{ 'kontaktformular.page.p.6' | translate }}        </div>
         <br>
         </div>
