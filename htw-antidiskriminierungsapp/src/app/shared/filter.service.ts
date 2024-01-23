@@ -16,7 +16,7 @@ export class FilterService {
     return this.mitgliedergruppe;
   }
 
-  setMitgliedergruppe(newMitgliedergruppe: string) {
+  setMitgliedergruppe(newMitgliedergruppe: string | undefined) {
     this.mitgliedergruppe = newMitgliedergruppe;
   }
 
@@ -24,7 +24,7 @@ export class FilterService {
     return this.gremium;
   }
 
-  setGremium(newGremium: string) {
+  setGremium(newGremium: string | undefined) {
     this.gremium = newGremium;
   }
 
@@ -32,7 +32,7 @@ export class FilterService {
     return this.organisationseinheit;
   }
 
-  setOrganisationseinheit(newOrganisationseinheit: string) {
+  setOrganisationseinheit(newOrganisationseinheit: string | undefined) {
     this.organisationseinheit = newOrganisationseinheit;
   }
 
@@ -40,7 +40,7 @@ export class FilterService {
     return this.sprache;
   }
 
-  setSprache(newSprache: string) {
+  setSprache(newSprache: string | undefined) {
     this.sprache = newSprache;
   }
 

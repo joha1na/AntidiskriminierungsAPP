@@ -6,10 +6,10 @@
       "telefon": "+49 30 5019-3911",
       "email": "Andrea.Krischker@HTW-Berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Mitarbeiter*in in Technik, Service und Verwaltung",
-      "gremium": "Frauen- und Gleichstellungsbeauftragte",
+      "mitgliedergruppe": "EMPLOYEE_TECH",
+      "gremium": "WOMEN_AND_EQOP_OFFICER",
       "gremium1": "",
-      "organisationseinheit": "Hochschulbibliothek"
+      "organisationseinheit": "UNIVERSITY_LIBRARY"
    },
    {
       "titel": "",
@@ -18,8 +18,8 @@
       "telefon": "+49 30 5019-3395",
       "email": "Andreas.Muenchow@HTW-Berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Mitarbeiter*in in Technik, Service und Verwaltung",
-      "gremium": "Stellvertretung Vertrauensperson der schwerbehinderten Beschäftigten",
+      "mitgliedergruppe": "EMPLOYEE_TECH",
+      "gremium": "DEPUTY_DISABLED_EMPLOYEES",
       "gremium1": "",
       "organisationseinheit": "FB 1"
    },
@@ -30,9 +30,9 @@
       "telefon": "",
       "email": "asta-antidis@students-htw.de",
       "sprache": "Deutsch, Englisch",
-      "mitgliedergruppe": "Student*in",
-      "gremium": "AStA",
-      "gremium1": "Mitglied des Antidiskriminierungsrats",
+      "mitgliedergruppe": "STUDENT",
+      "gremium": "ASTA",
+      "gremium1": "COUNCIL",
       "organisationseinheit": ""
    },
    {
@@ -42,10 +42,10 @@
       "telefon": "+49 30 5019-3937",
       "email": "anja.schuster",
       "sprache": "Deutsch, Englisch",
-      "mitgliedergruppe": "Mitarbeiter*in in Technik, Service und Verwaltung",
-      "gremium": "Mitglied des Antidiskriminierungsrats",
+      "mitgliedergruppe": "EMPLOYEE_TECH",
+      "gremium": "COUNCIL",
       "gremium1": "",
-      "organisationseinheit": "Zentrales Referat Kommunikation"
+      "organisationseinheit": "COMMUNICATION_DEPARTMENT"
    },
    {
       "titel": "Prof. Dr.-Ing.",
@@ -54,7 +54,7 @@
       "telefon": "+49 30 5019-4231",
       "email": "anja.pfennig@htw-berlin.de",
       "sprache": "Deutsch, Englisch",
-      "mitgliedergruppe": "Professor*in",
+      "mitgliedergruppe": "PROFESSOR",
       "gremium": "",
       "gremium1": "",
       "organisationseinheit": "FB 2"
@@ -66,8 +66,8 @@
       "telefon": "",
       "email": "Anna.Riedel@HTW-Berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Professor*in",
-      "gremium": "Frauen- und Gleichstellungsbeauftragte",
+      "mitgliedergruppe": "PROFESSOR",
+      "gremium": "WOMEN_AND_EQOP_OFFICER",
       "gremium1": "",
       "organisationseinheit": "FB 3"
    },
@@ -78,10 +78,10 @@
       "telefon": "",
       "email": "praesidentin@htw-berlin.de",
       "sprache": "Deutsch, Englisch",
-      "mitgliedergruppe": "Professor*in",
-      "gremium": "Mitglied des Antidiskriminierungsrats",
+      "mitgliedergruppe": "PROFESSOR",
+      "gremium": "COUNCIL",
       "gremium1": "",
-      "organisationseinheit": "Hochschulleitung"
+      "organisationseinheit": "UNIVERSITY_MANAGEMENT"
    },
    {
       "titel": "",
@@ -90,8 +90,8 @@
       "telefon": "+49 30 5019-2124",
       "email": "Anne.Priemer@HTW-Berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Mitarbeiter*in in Technik, Service und Verwaltung",
-      "gremium": "Stellvertretung Vertrauensperson der schwerbehinderten Beschäftigten",
+      "mitgliedergruppe": "EMPLOYEE_TECH",
+      "gremium": "DEPUTY_DISABLED_EMPLOYEES",
       "gremium1": "",
       "organisationseinheit": "FB 2"
    },
@@ -102,8 +102,8 @@
       "telefon": "+49 30 5019-2989",
       "email": "Ann-Morla.Meyer@HTW-Berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "wissenschaftliche*r Mitarbeiter*in",
-      "gremium": "Frauen- und Gleichstellungsbeauftragte",
+      "mitgliedergruppe": "RESEARCH_ASSISTANT",
+      "gremium": "WOMEN_AND_EQOP_OFFICER",
       "gremium1": "",
       "organisationseinheit": "FB 1"
    },
@@ -114,8 +114,8 @@
       "telefon": "+49 30 5019-2532",
       "email": "Barbara.Praetorius@HTW-Berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Professor*in",
-      "gremium": "Frauen- und Gleichstellungsbeauftragte",
+      "mitgliedergruppe": "PROFESSOR",
+      "gremium": "WOMEN_AND_EQOP_OFFICER",
       "gremium1": "",
       "organisationseinheit": "FB 3"
    },
@@ -126,8 +126,8 @@
       "telefon": "",
       "email": "Daniela.Hensel@HTW-Berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Professor*in",
-      "gremium": "Frauen- und Gleichstellungsbeauftragte",
+      "mitgliedergruppe": "PROFESSOR",
+      "gremium": "WOMEN_AND_EQOP_OFFICER",
       "gremium1": "",
       "organisationseinheit": "FB 5"
    },
@@ -138,10 +138,10 @@
       "telefon": "+49 30 5019-2575",
       "email": "Diana.Wlodarczak@HTW-Berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Mitarbeiter*in in Technik, Service und Verwaltung",
-      "gremium": "Beauftragte für behinderte und chronisch kranke Studierende",
-      "gremium1": "Mitglied des Antidiskriminierungsrats",
-      "organisationseinheit": "Zentrum für Studienberatung & Career Service"
+      "mitgliedergruppe": "EMPLOYEE_TECH",
+      "gremium": "REP_DISABLED_STUDENTS",
+      "gremium1": "COUNCIL",
+      "organisationseinheit": "STUDENT_ADVISE"
    },
    {
       "titel": "",
@@ -150,8 +150,8 @@
       "telefon": "+49 30 5019-3623",
       "email": "Dorothee.Schulz-Budick@HTW-Berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "wissenschaftliche*r Mitarbeiter*in",
-      "gremium": "Frauen- und Gleichstellungsbeauftragte",
+      "mitgliedergruppe": "RESEARCH_ASSISTANT",
+      "gremium": "WOMEN_AND_EQOP_OFFICER",
       "gremium1": "",
       "organisationseinheit": "FB 4"
    },
@@ -162,9 +162,9 @@
       "telefon": "",
       "email": "asta-antidis@students-htw.de",
       "sprache": "Deutsch, Englisch",
-      "mitgliedergruppe": "Student*in",
-      "gremium": "AStA",
-      "gremium1": "Mitglied des Antidiskriminierungsrats",
+      "mitgliedergruppe": "STUDENT",
+      "gremium": "ASTA",
+      "gremium1": "COUNCIL",
       "organisationseinheit": ""
    },
    {
@@ -174,8 +174,8 @@
       "telefon": "+49 30 5019-3394",
       "email": "Elena.Schueler@HTW-Berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Professor*in",
-      "gremium": "Frauen- und Gleichstellungsbeauftragte",
+      "mitgliedergruppe": "PROFESSOR",
+      "gremium": "WOMEN_AND_EQOP_OFFICER",
       "gremium1": "",
       "organisationseinheit": "FB 4"
    },
@@ -186,9 +186,9 @@
       "telefon": "+49 30 5019-3946",
       "email": "Frank.Strahlhoff@HTW-Berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Mitarbeiter*in in Technik, Service und Verwaltung",
-      "gremium": "Vertrauensperson der schwerbehinderten Beschäftigten",
-      "gremium1": "Mitglied des Antidiskriminierungsrats",
+      "mitgliedergruppe": "EMPLOYEE_TECH",
+      "gremium": "PERSON_OF_TRUST_DISABLED_EMP",
+      "gremium1": "COUNCIL",
       "organisationseinheit": "FB 4"
    },
    {
@@ -198,10 +198,10 @@
       "telefon": "+49 30 5019-2644",
       "email": "franziska.knopp@htw-berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Mitarbeiter*in in Technik, Service und Verwaltung",
-      "gremium": "Mitglied des Vertrauensteams",
+      "mitgliedergruppe": "EMPLOYEE_TECH",
+      "gremium": "MEMBER_TRUST_TEAM",
       "gremium1": "",
-      "organisationseinheit": "Zentrum für Studienberatung & Career Service"
+      "organisationseinheit": "STUDENT_ADVISE"
    },
    {
       "titel": "",
@@ -210,10 +210,10 @@
       "telefon": "+49 30 5019-2699",
       "email": "Gabriele.Baumann@HTW-Berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Mitarbeiter*in in Technik, Service und Verwaltung",
-      "gremium": "Stellvertretung Vertrauensperson der schwerbehinderten Beschäftigten",
+      "mitgliedergruppe": "EMPLOYEE_TECH",
+      "gremium": "DEPUTY_DISABLED_EMPLOYEES",
       "gremium1": "",
-      "organisationseinheit": "Zentraleinrichtung Fremdsprachen"
+      "organisationseinheit": "FACILITY_FOREIGN_LANG"
    },
    {
       "titel": "",
@@ -222,10 +222,10 @@
       "telefon": "+49 30 5019-2743",
       "email": "Gernot.Welschhoff@HTW-Berlin.de",
       "sprache": "Deutsch, Englisch",
-      "mitgliedergruppe": "Mitarbeiter*in in Technik, Service und Verwaltung",
-      "gremium": "Mitglied des Antidiskriminierungsrats",
+      "mitgliedergruppe": "EMPLOYEE_TECH",
+      "gremium": "COUNCIL",
       "gremium1": "Mitglied des Personalrats",
-      "organisationseinheit": "International Office"
+      "organisationseinheit": "INTERNATIONAL_OFFICE"
    },
    {
       "titel": "",
@@ -234,10 +234,10 @@
       "telefon": "+49 30 5019-2315",
       "email": "Hanna.Dobrovoda@HTW-Berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Mitarbeiter*in in Technik, Service und Verwaltung",
-      "gremium": "Mitglied des Vertrauensteams",
+      "mitgliedergruppe": "EMPLOYEE_TECH",
+      "gremium": "MEMBER_TRUST_TEAM",
       "gremium1": "",
-      "organisationseinheit": "Zentrum für Studienberatung & Career Service"
+      "organisationseinheit": "STUDENT_ADVISE"
    },
    {
       "titel": "",
@@ -246,10 +246,10 @@
       "telefon": "+49 30 5019-2861",
       "email": "ingo.kuschel@htw-berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Mitarbeiter*in in Technik, Service und Verwaltung",
-      "gremium": "Stellvertretendes Mitglied des Antidiskriminierungsrats",
+      "mitgliedergruppe": "EMPLOYEE_TECH",
+      "gremium": "Stellvertretendes COUNCIL",
       "gremium1": "Mitglied des Personalrats",
-      "organisationseinheit": "Hochschulrechenzentrum"
+      "organisationseinheit": "UNIVERSITY_COMP_CENTER"
    },
    {
       "titel": "",
@@ -258,10 +258,10 @@
       "telefon": "+49 30 5019-2224",
       "email": "Jana.Scholtze@HTW-Berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Mitarbeiter*in in Technik, Service und Verwaltung",
-      "gremium": "Mitglied des Antidiskriminierungsrats",
+      "mitgliedergruppe": "EMPLOYEE_TECH",
+      "gremium": "COUNCIL",
       "gremium1": "",
-      "organisationseinheit": "Personalabteilung"
+      "organisationseinheit": "HR"
    },
    {
       "titel": "",
@@ -270,10 +270,10 @@
       "telefon": "+49 30 5019-2704",
       "email": "Janine.Brettin@HTW-Berlin.de",
       "sprache": "Deutsch, Englisch",
-      "mitgliedergruppe": "Mitarbeiter*in in Technik, Service und Verwaltung",
-      "gremium": "Mitglied des Vertrauensteams",
+      "mitgliedergruppe": "EMPLOYEE_TECH",
+      "gremium": "MEMBER_TRUST_TEAM",
       "gremium1": "",
-      "organisationseinheit": "Allgemeiner Studierendenservice"
+      "organisationseinheit": "GENERAL_STUDENT_SERVICE"
    },
    {
       "titel": "Dr.",
@@ -282,10 +282,10 @@
       "telefon": "+49 30 5019-2414",
       "email": "jette.hausotter@htw-berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "wissenschaftliche*r Mitarbeiter*in",
-      "gremium": "1. Stellvertreterin der hauptberuflichen Frauen- und Gleichstellungsbeauftragten",
+      "mitgliedergruppe": "RESEARCH_ASSISTANT",
+      "gremium": "DEPUTY_1",
       "gremium1": "",
-      "organisationseinheit": "Zentrales Referat Frauenförderung & Gleichstellung"
+      "organisationseinheit": "PROMOTION_WOMEN"
    },
    {
       "titel": "Prof. Dr.-Ing.",
@@ -294,7 +294,7 @@
       "telefon": "+49 30 5019-3620",
       "email": "jochen.twele@htw-berlin.de",
       "sprache": "Deutsch, Englisch",
-      "mitgliedergruppe": "Professor*in",
+      "mitgliedergruppe": "PROFESSOR",
       "gremium": "",
       "gremium1": "",
       "organisationseinheit": "FB 1"
@@ -306,8 +306,8 @@
       "telefon": "+49 30 5019-4708",
       "email": "Johanna.Michel@HTW-Berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Professor*in",
-      "gremium": "Frauen- und Gleichstellungsbeauftragte",
+      "mitgliedergruppe": "PROFESSOR",
+      "gremium": "WOMEN_AND_EQOP_OFFICER",
       "gremium1": "",
       "organisationseinheit": "FB 5"
    },
@@ -318,9 +318,9 @@
       "telefon": "",
       "email": "asta-antidis@students-htw.de",
       "sprache": "Deutsch, Englisch",
-      "mitgliedergruppe": "Student*in",
-      "gremium": "AStA",
-      "gremium1": "Mitglied des Antidiskriminierungsrats",
+      "mitgliedergruppe": "STUDENT",
+      "gremium": "ASTA",
+      "gremium1": "COUNCIL",
       "organisationseinheit": ""
    },
    {
@@ -330,8 +330,8 @@
       "telefon": "",
       "email": "kiara.kaiser@htw-berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Student*in",
-      "gremium": "Frauen- und Gleichstellungsbeauftragte",
+      "mitgliedergruppe": "STUDENT",
+      "gremium": "WOMEN_AND_EQOP_OFFICER",
       "gremium1": "",
       "organisationseinheit": "FB 1"
    },
@@ -342,10 +342,10 @@
       "telefon": "+49 30 5019-2971",
       "email": "Kristina.Woege@HTW-Berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Mitarbeiter*in in Technik, Service und Verwaltung",
-      "gremium": "Frauen- und Gleichstellungsbeauftragte",
+      "mitgliedergruppe": "EMPLOYEE_TECH",
+      "gremium": "WOMEN_AND_EQOP_OFFICER",
       "gremium1": "",
-      "organisationseinheit": "Zentraleinrichtung Fremdsprachen"
+      "organisationseinheit": "FACILITY_FOREIGN_LANG"
    },
    {
       "titel": "",
@@ -354,9 +354,9 @@
       "telefon": "+49 30 5019-2353",
       "email": "Nicole.Biehl@htw-berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Mitarbeiter*in in Technik, Service und Verwaltung",
-      "gremium": "Mitglied des Antidiskriminierungsrats",
-      "gremium1": "Mitglied des Vertrauensteams",
+      "mitgliedergruppe": "EMPLOYEE_TECH",
+      "gremium": "COUNCIL",
+      "gremium1": "MEMBER_TRUST_TEAM",
       "organisationseinheit": "FB 3"
    },
    {
@@ -366,10 +366,10 @@
       "telefon": "+49 30 5019-2228",
       "email": "noreen.rumschuessel@htw-berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Mitarbeiter*in in Technik, Service und Verwaltung",
-      "gremium": "2. Stellvertreterin der hauptberuflichen Frauen- und Gleichstellungsbeauftragten",
+      "mitgliedergruppe": "EMPLOYEE_TECH",
+      "gremium": "DEPUTY_2",
       "gremium1": "",
-      "organisationseinheit": "Allgemeiner Studierendenservice"
+      "organisationseinheit": "GENERAL_STUDENT_SERVICE"
    },
    {
       "titel": "",
@@ -378,10 +378,10 @@
       "telefon": "+49 30 5019-2341",
       "email": "oezguen.kaplan@htw-berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Mitarbeiter*in in Technik, Service und Verwaltung",
-      "gremium": "Mitglied des Antidiskriminierungsrats",
-      "gremium1": "Mitglied des Vertrauensteams",
-      "organisationseinheit": "Zentrum für Studienberatung & Career Service"
+      "mitgliedergruppe": "EMPLOYEE_TECH",
+      "gremium": "COUNCIL",
+      "gremium1": "MEMBER_TRUST_TEAM",
+      "organisationseinheit": "STUDENT_ADVISE"
    },
    {
       "titel": "Prof. Dr.",
@@ -390,8 +390,8 @@
       "telefon": "+49 30 5019-4368",
       "email": "Romy.Morana@HTW-Berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Professor*in",
-      "gremium": "Frauen- und Gleichstellungsbeauftragte",
+      "mitgliedergruppe": "PROFESSOR",
+      "gremium": "WOMEN_AND_EQOP_OFFICER",
       "gremium1": "",
       "organisationseinheit": "FB 2"
    },
@@ -402,10 +402,10 @@
       "telefon": "+49 30 5019-3597",
       "email": "sebastian.homer@htw-berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Mitarbeiter*in in Technik, Service und Verwaltung",
-      "gremium": "Mitglied des Vertrauensteams",
+      "mitgliedergruppe": "EMPLOYEE_TECH",
+      "gremium": "MEMBER_TRUST_TEAM",
       "gremium1": "",
-      "organisationseinheit": "Hochschulrechenzentrum"
+      "organisationseinheit": "UNIVERSITY_COMP_CENTER"
    },
    {
       "titel": "",
@@ -414,10 +414,10 @@
       "telefon": "+49 30 5019-2684",
       "email": "Stephanie.Leymann@HTW-Berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Mitarbeiter*in in Technik, Service und Verwaltung",
-      "gremium": "Frauen- und Gleichstellungsbeauftragte",
+      "mitgliedergruppe": "EMPLOYEE_TECH",
+      "gremium": "WOMEN_AND_EQOP_OFFICER",
       "gremium1": "",
-      "organisationseinheit": "Zentraleinrichtung Fremdsprachen"
+      "organisationseinheit": "FACILITY_FOREIGN_LANG"
    },
    {
       "titel": "Dr.",
@@ -426,10 +426,10 @@
       "telefon": "+49 30 5019-2287",
       "email": "Suenne-Maria.Andresen@HTW-Berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Mitarbeiter*in in Technik, Service und Verwaltung",
-      "gremium": "Mitglied des Vertrauensteams",
+      "mitgliedergruppe": "EMPLOYEE_TECH",
+      "gremium": "MEMBER_TRUST_TEAM",
       "gremium1": "",
-      "organisationseinheit": "Personalabteilung"
+      "organisationseinheit": "HR"
    },
    {
       "titel": "Prof. Dr.",
@@ -438,8 +438,8 @@
       "telefon": "+49 30 5019-4229",
       "email": "Susan.Kamel@HTW-Berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "Professor*in",
-      "gremium": "Mitglied des Antidiskriminierungsrats",
+      "mitgliedergruppe": "PROFESSOR",
+      "gremium": "COUNCIL",
       "gremium1": "",
       "organisationseinheit": "FB 5"
    },
@@ -450,9 +450,9 @@
       "telefon": "+49 30 5019-2655",
       "email": "Ulrike.Richter@HTW-Berlin.de",
       "sprache": "Deutsch",
-      "mitgliedergruppe": "wissenschaftliche*r Mitarbeiter*in",
-      "gremium": "Hauptberufliche Frauen- und Gleichstellungsbeauftragte",
-      "gremium1": "Mitglied des Antidiskriminierungsrats, Mitglied des Vertrauensteams",
-      "organisationseinheit": "Zentrales Referat Frauenförderung & Gleichstellung"
+      "mitgliedergruppe": "RESEARCH_ASSISTANT",
+      "gremium": "FT_WOMEN_AND_EQOP_REP",
+      "gremium1": "COUNCIL, MEMBER_TRUST_TEAM",
+      "organisationseinheit": "PROMOTION_WOMEN"
    }
 ]

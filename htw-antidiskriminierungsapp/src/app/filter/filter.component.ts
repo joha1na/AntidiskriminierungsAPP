@@ -10,10 +10,10 @@ import { Router } from '@angular/router';
 export class FilterComponent {
 
   formData = {
-    mitgliedergruppe: '',
-    gremium: '',
-    organisationseinheit: '',
-    sprache: ''
+    mitgliedergruppe: undefined,
+    gremium: undefined,
+    organisationseinheit: undefined,
+    sprache: undefined
   };
 
   constructor(private filterService: FilterService, private router: Router) { }

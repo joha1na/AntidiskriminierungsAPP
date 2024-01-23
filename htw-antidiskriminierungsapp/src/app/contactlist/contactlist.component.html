@@ -4,11 +4,14 @@
         <div class="card-body">
             <h5 class="card-title">{{ contact.titel }} {{ contact.vorname }} {{ contact.nachname }}</h5>
             <h6 class="card-subtitle mb-2 text-muted">{{ contact.sprache }}</h6>
-            <p class="card-text">Telefon: {{ contact.telefon }}</p>
-            <p class="card-text">E-Mail: {{ contact.email }}</p>
-            <p class="card-text">Mitgliedergruppe: {{ contact.mitgliedergruppe }}</p>
-            <p class="card-text">Gremium: {{ contact.gremium }}</p>
-            <p class="card-text">Organisationseinheit: {{ contact.organisationseinheit }}</p>
+            <p class="card-text">{{ 'contactlist.phone' | translate }}: {{ contact.telefon }}</p>
+            <p class="card-text">{{ 'contactlist.email' | translate }}: {{ contact.email }}</p>
+            <p class="card-text">{{ 'contactlist.membergroup' | translate }}: {{ contact.mitgliedergruppe | translate }}
+            </p>
+            <p class="card-text">{{ 'contactlist.committee' | translate }}: {{ contact.gremium | translate }}</p>
+            <p class="card-text">{{ 'contactlist.organizational.unit' | translate }}: {{ contact.organisationseinheit |
+                translate
+                }}</p>
 
         </div>
     </div>
@@ -20,9 +23,9 @@
             <h6 class="card-subtitle mb-2 text-muted">{{ contact.sprache }}</h6>
             <p class="card-text">Telefon: {{ contact.telefon }}</p>
             <p class="card-text">E-Mail: {{ contact.email }}</p>
-            <p class="card-text">Mitgliedergruppe: {{ contact.mitgliedergruppe }}</p>
-            <p class="card-text">Gremium: {{ contact.gremium }}</p>
-            <p class="card-text">Organisationseinheit: {{ contact.organisationseinheit }}</p>
+            <p class="card-text">Mitgliedergruppe: {{ contact.mitgliedergruppe | translate }}</p>
+            <p class="card-text">Gremium: {{ contact.gremium | translate }}</p>
+            <p class="card-text">Organisationseinheit: {{ contact.organisationseinheit | translate }}</p>
 
         </div>
     </div>
