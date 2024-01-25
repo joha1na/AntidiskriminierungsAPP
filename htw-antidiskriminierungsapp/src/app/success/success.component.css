@@ -49,3 +49,8 @@ i {
 .case {
     font-family: HTWBerlinBold;
 }
+
+.bold {
+    font-family: HTWBerlinBold;
+    padding-top: 6%;
+}
