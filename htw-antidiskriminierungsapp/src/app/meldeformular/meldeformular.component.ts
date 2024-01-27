@@ -1,22 +1,29 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { EmailService } from '../shared/email.service';
 
 @Component({
   selector: 'app-meldeformular',
   templateUrl: './meldeformular.component.html',
   styleUrls: ['./meldeformular.component.css']
 })
-export class MeldeformularComponent {
+
+export class MeldeformularComponent implements OnInit {
   formData = {
     mitgliedergruppe: '',
-    betroffenheit: '',
-    geschichte: '',
+    message: '',
     category: '',
     lastname: '',
     firstname: '',
     email: '',
-    message: '',
-
+    checkbox: ''
   };
+
+  constructor(private emailService: EmailService) { }
+
+  ngOnInit(): void {
+    // Initialisierungslogik, z.B. Daten abrufen
+    this.openModel();
+  }
 
   isLoggedIn = true;
 
@@ -25,29 +32,31 @@ export class MeldeformularComponent {
   }
 
   submitForm() {
-    // Hier kannst du die Logik für das Absenden des Formulars implementieren,
-    // z. B. eine HTTP-Anfrage an den Server senden, um die Daten zu verarbeiten.
+    this.emailService.sendEmail(this.formData.lastname).subscribe({
+      complete: console.info
+    }
+    );
     console.log('Formulardaten:', this.formData);
-    // Hier könnte die Logik stehen, um die Formulardaten zu senden oder zu verarbeiten.
   }
 
-
-  /*checkboxChanged(){
-    var h1arr = document.getElementById('fluency');
-
-    if (!checkbox.checked) {
-     let string = "Wir könne sie nicht erreichen";
-     let a = document.getElementById('hinweis');
-    
-     if (a !== null) {
-      a.innerHTML = "Wir können Sie nicht erreichen";
-      // Hier kannst du weitere Aktionen ausführen, wenn die Checkbox deaktiviert wird
+  openModel() {
+    const modelDiv = document.getElementById('MyModal');
+    if (modelDiv != null) {
+      modelDiv.style.display = 'block';
     }
-    
-  }*/
+  }
 
+  CloseModel() {
+    const modelDiv = document.getElementById('MyModal');
+    if (modelDiv != null) {
+      modelDiv.style.display = 'none';
+    }
+  }
+
+  weiter = false;
+
+  onWeiter() { this.weiter = true; }
+
+  goBack() { this.weiter = false; }
 
 }
-
-
-
