@@ -32,9 +32,14 @@ export class MeldeformularComponent implements OnInit {
   }
 
   submitForm() {
-    this.emailService.sendEmail(this.formData.lastname).subscribe({
-      complete: console.info
-    }
+    this.emailService.sendEmail(this.formData.mitgliedergruppe, this.formData.message, this.formData.category, this.formData.lastname, this.formData.firstname, this.formData.email, this.formData.checkbox).subscribe(
+      {
+        next: (response) => {
+          console.log(response);
+        },
+        error: (err) => console.log(err),
+        complete: console.info
+      }
     );
     console.log('Formulardaten:', this.formData);
   }
