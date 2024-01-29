@@ -10,9 +10,15 @@ export class EmailService {
 
   constructor(private http: HttpClient) { }
 
-  sendEmail(lastname: string) {
+  sendEmail(mitgliedergruppe: string, message: string, category: string, lastname: string, firstname: string, email: string, checkbox: string) {
     const data = {
+      mitgliedergruppe: mitgliedergruppe,
+      message: message,
+      category: category,
       lastname: lastname,
+      firstname: firstname,
+      email: email,
+      checkbox: checkbox
     };
     return this.http.post(this.emailUrl, data);
   }
