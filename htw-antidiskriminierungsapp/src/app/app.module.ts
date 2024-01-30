@@ -18,6 +18,7 @@ import { SuccessComponent } from './success/success.component';
 import { ErrorComponent } from './error/error.component';
 import { MeldeformularComponent } from './meldeformular/meldeformular.component';
 import { KontaktformularComponent } from './kontaktformular/kontaktformular.component';
+import { FilterComponent } from './filter/filter.component';
 
 export function httpTranslateLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -37,7 +38,8 @@ export function httpTranslateLoaderFactory(http: HttpClient) {
     SuccessComponent,
     ErrorComponent,
     MeldeformularComponent,
-    KontaktformularComponent
+    KontaktformularComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,
