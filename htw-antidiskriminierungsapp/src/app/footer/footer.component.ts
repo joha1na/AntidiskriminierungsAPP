@@ -14,6 +14,7 @@ export class FooterComponent implements OnInit {
 
 
   constructor(public translate: TranslateService,) {
+    this.selectedLanguage = localStorage.getItem('locale') || 'de';
   }
 
   ngOnInit(): void {
@@ -25,7 +26,8 @@ export class FooterComponent implements OnInit {
 
   selectLang(): void {
     if (this.selectedLanguage) {
-      this.switchLanguage(this.selectedLanguage)
+      this.switchLanguage(this.selectedLanguage);
+      localStorage.setItem('locale', this.selectedLanguage)
     }
   }
 
