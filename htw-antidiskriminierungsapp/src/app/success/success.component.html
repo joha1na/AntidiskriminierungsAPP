@@ -6,35 +6,39 @@
                 <h1 class="col-9">{{ 'success.page.title.thanks' | translate }}</h1>
                 <div class="col-1"></div>
             </div>
+            <!--Nach erfolgreichem Absenden des Meldeformulars-->
             <div class="text">
                 <div class="case">
-                    Case-ID: xxx
+                    <p>Case-ID: xxx</p>
                 </div>
                 <div>
                     {{ 'success.page.p.1' | translate }}
                 </div>
             </div>
-            <div class="next">
-                <h3>{{ 'success.page.p.2' | translate }}</h3>
-                <div class="list-group list-group-flush">
-                    <button type="button" class="list-group-item list-group-item-action">{{ 'success.page.l.1' |
-                        translate }}</button>
-                    <button type="button" class="list-group-item list-group-item-action" disabled>{{ 'success.page.l.2'
-                        | translate }}</button>
-                    <button type="button" class="list-group-item list-group-item-action">{{ 'success.page.l.3' |
-                        translate }}</button>
-                    <button type="button" class="list-group-item list-group-item-action">{{ 'success.page.l.4' |
-                        translate }}</button>
+            <div class="text">
+                <p class="bold">{{ 'success.page.p.2' | translate }}</p>
+                <p>{{ 'success.page.l.1' | translate }}</p>
+                <p>{{ 'success.page.l.2' | translate }}</p>
+            </div>
+            <div class="col-12 faq">
+                <p [innerHTML]="'success.page.p.3' | translate">
+                </p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <!--Nach erfolgreichem Absenden des Kontaktformulars-->
+            <div class="text">
+                <div class="case">
+                    <p>Case-ID: xxx</p>
+                </div>
+                <div>
+                    {{ 'success.page.p.4' | translate }}
                 </div>
             </div>
             <div class="col-12 faq">
-                <p [innerHTML]="'home.page.p.3.1' | translate">
+                <p [innerHTML]="'success.page.p.3' | translate">
                 </p>
-            </div>
-            <div class="buttons">
-                <button class="btn btn-primary" type="submit" [routerLink]="'/getincontact'">{{
-                    'home.page.button.get.in.contact' | translate
-                    }} </button>
             </div>
         </div>
     </div>
