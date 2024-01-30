@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-getincontact',
@@ -8,5 +9,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./getincontact.component.css']
 })
 export class GetincontactComponent {
+
+  constructor(private location: Location) { }
+
+  navigateBack() {
+    this.location.back();
+  }
 
 }
