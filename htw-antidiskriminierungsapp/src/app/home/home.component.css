@@ -1,19 +1,19 @@
 body,
 .container {
     overflow: hidden;
-
 }
+
 
 .container {
     width: 100%;
     padding: 4% 4% 4% 6%;
-    margin: 0;
+    margin: 2%;
     height: 100%;
 }
 
 .header {
     height: 100px;
-    padding-top: 4%;
+    padding-top: 0%;
 }
 
 h3 {
@@ -23,12 +23,12 @@ h3 {
 
 .bold {
     font-family: HTWBerlinBold;
-    padding-top: 6%;
-    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-bottom: 0%;
 }
 
 .buttons {
-    margin-top: 50px;
+    margin-top: 30px;
     display: block;
     text-align: center;
 }
@@ -44,11 +44,23 @@ img {
     width: 90%;
     margin-top: 15px;
     margin-bottom: 15px;
+    border: 2px  #76B900;
+    box-shadow: 1px 2px 15px -7px rgba(0, 0, 0, 0.22) ;
+
 }
 
-.btn-primary:active:focus {
-    background-color: gray;
+ .btn-primary:hover {
+    background-color: #75b900ad;
 }
+
+@media (min-width: 800px) {
+    .btn-primary
+    {
+        width: 50%;
+    }
+}
+
+
 
 .faq {
     margin-top: 15px;
@@ -68,7 +80,13 @@ a {
 }
 
 .d-md-block img {
+    display: inline-block;
     width: 60%;
     margin-top: 60px;
     margin-bottom: 50px;
 }
+
+
+
+
+

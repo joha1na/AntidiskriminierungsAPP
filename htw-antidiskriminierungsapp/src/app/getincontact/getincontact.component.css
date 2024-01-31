@@ -22,15 +22,32 @@ h1 {
 }
 
 .btn-primary {
+    
     background-color: #76B900;
     width: 90%;
     margin-top: 15px;
     margin-bottom: 15px;
+    box-shadow: 1px 2px 15px -7px rgba(0, 0, 0, 0.22);
+    border-color: #75b900ad;
 }
 
-.btn-primary:active:focus {
-    background-color: gray;
+
+ .btn-primary:hover {
+    background-color: #75b900ad;
 }
+
+@media (min-width: 800px) {
+
+    .btn-primary
+    {
+        width: 52%;
+        
+
+
+    }
+}
+
+
 
 .text {
     margin-top: 15px;
