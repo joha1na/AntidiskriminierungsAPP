@@ -5,7 +5,7 @@
   <div class="container">
     <div class="col-12">
       <div class="header row">
-        <h1 class="col-12">Kontaktformular</h1>
+        <h1 class="col-12">{{ 'kontaktformular.page.h.1' | translate }}</h1>
         <div class="col-1"></div>
       </div>
 
@@ -13,149 +13,241 @@
       <form (ngSubmit)="submitForm()" #contactForm="ngForm" id="myForm">
         <div class="formdiv" *ngIf="!weiter">
           <div>
-            <label for="mitgliedergruppe">Zu welcher Gruppe gehören Sie? *</label>
+            <label for="mitgliedergruppe">{{ 'kontaktformular.page.q.1' | translate }}</label>
             <br>
             <select #errorGruppe="ngModel" id="mitgliedergruppe" name="mitgliedergruppe" required
               [(ngModel)]="formData.mitgliedergruppe">
-              <option value="" disabled selected>Auswählen</option>
-              <option value="Ich studiere an der HTW Berlin.">Ich studiere an der HTW Berlin.</option>
-              <option value="Ich nehme an einem Bildungsangebot der HTW Berlin teil.">Ich nehme an einem Bildungsangebot
-                der HTW Berlin teil.</option>
-              <option value="Ich bin an der HTW Berlin fest beschäftigt.">Ich bin an der HTW Berlin fest beschäftigt.
-              </option>
-              <option value="Ich habe einen Lehrauftrag an der HTW Berlin.">Ich habe einen Lehrauftrag an der HTW
-                Berlin.</option>
-              <option
-                value="Ich habe an der HTW Berlin eine Honorarprofessorur, eine außerplanmäßige Professor oder eine Privatdozentur inne.">
-                Ich habe an der HTW Berlin eine Honorarprofessorur, eine außerplanmäßige Professor oder eine
-                Privatdozentur inne. </option>
-              <option value="Mein Arbeitgeber ist zwar nicht die HTW, aber ich arbeite auf dem Gelände der Hochschule">
-                Mein Arbeitgeber ist zwar nicht die HTW, aber ich arbeite auf dem Gelände der Hochschule.</option>
-              <option value="Andere">Andere</option>
+              <option value="" disabled selected>{{ 'kontaktformular.page.s.1' | translate }} *</option>
+              <option>{{ 'kontaktformular.page.a.1' | translate }}</option>
+              <option>{{ 'kontaktformular.page.a.2' | translate }}</option>
+              <option>{{ 'kontaktformular.page.a.3' | translate }}</option>
+              <option>{{ 'kontaktformular.page.a.4' | translate }}</option>
+              <option>{{ 'kontaktformular.page.a.5' | translate }} </option>
+              <option>{{ 'kontaktformular.page.a.6' | translate }}</option>
+              <option>{{ 'kontaktformular.page.a.7' | translate }}</option>
               <!-- Weitere Kategorien hinzufügen -->
             </select>
           </div>
-          <div *ngIf="errorGruppe.touched && errorGruppe.invalid" class="error-message">Bitte wählen Sie etwas aus.
-          </div>
+          <div *ngIf="errorGruppe.touched && errorGruppe.invalid" class="error-message">{{ 'kontaktformular.page.e.1' |
+            translate }}</div>
           <br>
           <div>
-            <label for="betroffenheit">Betroffenheit? *</label>
+            <label for="betroffenheit">{{ 'kontaktformular.page.q.2' | translate }}*</label>
             <br>
             <select #errorBetroffenheit="ngModel" id="betroffenheit" name="betroffenheit" required
               [(ngModel)]="formData.betroffenheit">
-              <option value="" disabled selected>Auswählen</option>
-              <option value="Ich bin Betroffene*r.">Ich bin Betroffene*r.</option>
-              <option value="Ich bin Zeug*in bzw. Unterstützer*in.">Ich bin Zeug*in bzw. Unterstützer*in.</option>
+              <option value="" disabled selected>{{ 'kontaktformular.page.s.1' | translate }}</option>
+              <option>{{ 'kontaktformular.page.a.8' | translate }}</option>
+              <option>{{ 'kontaktformular.page.a.9' | translate }}</option>
               <!-- Weitere Kategorien hinzufügen -->
             </select>
+
           </div>
-          <div *ngIf="errorBetroffenheit.touched && errorBetroffenheit.invalid" class="error-message">Bitte wählen Sie
-            etwas aus.</div>
+          <div *ngIf="errorBetroffenheit.touched && errorBetroffenheit.invalid" class="error-message">{{
+            'kontaktformular.page.e.1' | translate }}</div>
 
           <br>
 
           <div>
-            <label for="message">Dringlichkeit: *</label>
+            <label for="message">{{ 'kontaktformular.page.q.3' | translate }}*</label>
             <br>
-            Bitte schildern Sie uns Ihr Anliegen. Wenn Sie möchten, können Sie auch etwas zur Dringlichkeit Ihres
-            Anliegens schreiben.
-            <br>
+            {{ 'kontaktformular.page.p.1' | translate }} <br>
             <textarea #errorGeschichte="ngModel" minlength="10" id="message" name="message" rows="4" required
               [(ngModel)]="formData.message"></textarea>
           </div>
-          <div *ngIf="errorGeschichte.invalid && errorGeschichte.touched" class="error-message">Bitte füllen Sie dieses
-            Feld aus. Feld muss mind. 10 Zeichen enthalten.</div>
+          <div *ngIf="errorGeschichte.invalid && errorGeschichte.touched" class="error-message">{{
+            'kontaktformular.page.e.2' | translate }}</div>
 
           <br>
           <div>
-            <label for="category">Welcher Kategorie würden Sie diese Art von Diskriminierung spontan zuordnen? <div
-                id="optional">(optional)</div></label>
+            <label for="category">{{ 'kontaktformular.page.q.4' | translate }}<div id="optional">(optional)</div>
+              </label>
             <select id="category" name="category" [(ngModel)]="formData.category">
-              <option value="" disabled selected>Auswählen</option>
-              <option value="Rassistische Zuschreibung">Rassistische Zuschreibung</option>
-              <option value="Sexualisierte Diskriminierung und Gewalt">Sexualisierte Diskriminierung und Gewalt</option>
-              <option value="Belästigung">Belästigung</option>
-              <option value="Mobbing">Mobbing</option>
-              <option value="Stalking">Stalking</option>
+              <option value="" disabled selected>{{ 'kontaktformular.page.s.1' | translate }}</option>
+              <option>{{ 'kontaktformular.page.a.10' | translate }}</option>
+              <option>{{ 'kontaktformular.page.a.11' | translate }}</option>
+              <option>{{ 'kontaktformular.page.a.12' | translate }}</option>
+              <option>{{ 'kontaktformular.page.a.13' | translate }}</option>
+              <option>{{ 'kontaktformular.page.a.14' | translate }}</option>
               <!-- Weitere Kategorien hinzufügen -->
             </select>
           </div>
           <br>
-          <label for="Kontaktaufnahme">Wie sollen wir in Kontakt mit Ihnen treten?</label>
+          <label for="Kontaktaufnahme">{{ 'kontaktformular.page.q.5' | translate }}</label>
           <div id="Kontaktdaten">
             <div>
-              <label for="lastname" required>Nachname: <div id="optional">(optional)</div></label>
+              <label for="lastname" required>{{ 'kontaktformular.page.n.1' | translate }}<div id="optional">(optional)
+                </div></label>
               <input type="text" id="lastname" name="lastname" [(ngModel)]="formData.lastname">
             </div>
+            <div *ngIf="errorGruppe.touched && errorGruppe.invalid" class="error-message">Bitte wählen Sie etwas aus.
+            </div>
+            <br>
+            <div>
+              <label for="betroffenheit">Betroffenheit? *</label>
+              <br>
+              <select #errorBetroffenheit="ngModel" id="betroffenheit" name="betroffenheit" required
+                [(ngModel)]="formData.betroffenheit">
+                <option value="" disabled selected>Auswählen</option>
+                <option value="Ich bin Betroffene*r.">Ich bin Betroffene*r.</option>
+                <option value="Ich bin Zeug*in bzw. Unterstützer*in.">Ich bin Zeug*in bzw. Unterstützer*in.</option>
+                <!-- Weitere Kategorien hinzufügen -->
+              </select>
+            </div>
+            <div *ngIf="errorBetroffenheit.touched && errorBetroffenheit.invalid" class="error-message">Bitte wählen Sie
+              etwas aus.</div>
+
+            <br>
 
             <div>
-              <label for="firstname">Vorname: <div id="optional">(optional)</div></label>
-              <input type="text" id="firstname" name="firstname" [(ngModel)]="formData.firstname">
+              <<<<<<< HEAD <label for="message">Dringlichkeit: *</label>
+                <br>
+                Bitte schildern Sie uns Ihr Anliegen. Wenn Sie möchten, können Sie auch etwas zur Dringlichkeit Ihres
+                Anliegens schreiben.
+                <br>
+                <textarea #errorGeschichte="ngModel" minlength="10" id="message" name="message" rows="4" required
+                  [(ngModel)]="formData.message"></textarea>
+                =======
+                <label for="firstname">{{ 'kontaktformular.page.n.2' | translate }}<div id="optional">(optional)</div>
+                  </label>
+                <input type="text" id="firstname" name="firstname" [(ngModel)]="formData.firstname">
+                >>>>>>> origin
             </div>
+            <div *ngIf="errorGeschichte.invalid && errorGeschichte.touched" class="error-message">Bitte füllen Sie
+              dieses
+              Feld aus. Feld muss mind. 10 Zeichen enthalten.</div>
+
+            <br>
+            <div>
+              <<<<<<< HEAD <label for="category">Welcher Kategorie würden Sie diese Art von Diskriminierung spontan
+                zuordnen? <div id="optional">(optional)</div></label>
+                <select id="category" name="category" [(ngModel)]="formData.category">
+                  <option value="" disabled selected>Auswählen</option>
+                  <option value="Rassistische Zuschreibung">Rassistische Zuschreibung</option>
+                  <option value="Sexualisierte Diskriminierung und Gewalt">Sexualisierte Diskriminierung und Gewalt
+                  </option>
+                  <option value="Belästigung">Belästigung</option>
+                  <option value="Mobbing">Mobbing</option>
+                  <option value="Stalking">Stalking</option>
+                  <!-- Weitere Kategorien hinzufügen -->
+                </select>
+            </div>
+            <br>
+            <label for="Kontaktaufnahme">Wie sollen wir in Kontakt mit Ihnen treten?</label>
+            <div id="Kontaktdaten">
+              <div>
+                <label for="lastname" required>Nachname: <div id="optional">(optional)</div></label>
+                <input type="text" id="lastname" name="lastname" [(ngModel)]="formData.lastname">
+              </div>
+
+              <div>
+                <label for="firstname">Vorname: <div id="optional">(optional)</div></label>
+                <input type="text" id="firstname" name="firstname" [(ngModel)]="formData.firstname">
+              </div>
+
+              <div>
+                <label for="email">E-Mail: *</label>
+                <input #errorEmail="ngModel" type="email" id="email" name="email" required email
+                  [(ngModel)]="formData.email">
+                Hinweis: Auch E-Mail Adressen aus denen man keine persönlichen Daten identifizieren kann, sind erlaubt.
+              </div>
+              <div *ngIf="errorEmail.touched && errorEmail.invalid" class="error-message">Dies ist keine gültige Email
+                Adresse.</div>
+
+            </div>
+            <br>
 
             <div>
-              <label for="email">E-Mail: *</label>
-              <input #errorEmail="ngModel" type="email" id="email" name="email" required email
-                [(ngModel)]="formData.email">
-              Hinweis: Auch E-Mail Adressen aus denen man keine persönlichen Daten identifizieren kann, sind erlaubt.
+              <div id="Datenschutz">Datenschutzhinweis und Einverständniserklärung</div>
+              <br>
+              <div>Ich erkläre mich damit einverstanden, dass Daten zur Bearbeitung meines Anliegens von der HTW Berlin
+                erhoben, gespeichert, verarbeitet und intern übermittelt werden.
+                Weitere Informationen zur Datenschutzerklärung der HTW Berlin finden Sie unter: <a href="">Datenschutz
+                  der
+                  HTW</a> sowie in der Antidiskriminierungsrichtlinie der HTW Berlin (§10)
+              </div>
+              <br>
             </div>
-            <div *ngIf="errorEmail.touched && errorEmail.invalid" class="error-message">Dies ist keine gültige Email
-              Adresse.</div>
+            <div class="form-group form-check">
+              <br>
+              <div class="checkbox-text">
+                <input required class="form-check-input" #accept="ngModel" type="checkbox" id="Bestätigung"
+                  [(ngModel)]="formData.checkbox" name="accept">
+                <label for="Bestätigung">Ich stimme der Datenschutz- und Einverständniserklärung zu. *</label>
+              </div>
 
-          </div>
-          <br>
-
-          <div>
-            <div id="Datenschutz">Datenschutzhinweis und Einverständniserklärung</div>
-            <br>
-            <div>Ich erkläre mich damit einverstanden, dass Daten zur Bearbeitung meines Anliegens von der HTW Berlin
-              erhoben, gespeichert, verarbeitet und intern übermittelt werden.
-              Weitere Informationen zur Datenschutzerklärung der HTW Berlin finden Sie unter: <a href="">Datenschutz der
-                HTW</a> sowie in der Antidiskriminierungsrichtlinie der HTW Berlin (§10)
+              <div *ngIf="accept.invalid && accept.touched" class="error-message">Zur weiteren Bearbeitung brauchen wir
+                die Zustimmung der Datenschutzbedingungen.</div>
             </div>
             <br>
-          </div>
-          <div class="form-group form-check">
             <br>
-            <div class="checkbox-text">
-              <input required class="form-check-input" #accept="ngModel" type="checkbox" id="Bestätigung"
-                [(ngModel)]="formData.checkbox" name="accept">
-              <label for="Bestätigung">Ich stimme der Datenschutz- und Einverständniserklärung zu. *</label>
-            </div>
-
-            <div *ngIf="accept.invalid && accept.touched" class="error-message">Zur weiteren Bearbeitung brauchen wir
-              die Zustimmung der Datenschutzbedingungen.</div>
+            <button class="btn-primary " (click)="onWeiter()" [disabled]="!contactForm.valid"
+              id="bttnweiter">Weiter</button>
+            <br>
+            * Pflichtfeld
           </div>
-          <br>
-          <br>
-          <button class="btn-primary " (click)="onWeiter()" [disabled]="!contactForm.valid"
-            id="bttnweiter">Weiter</button>
-          <br>
-          * Pflichtfeld
+          =======
+          <label for="email">{{ 'kontaktformular.page.n.3' | translate }}*</label>
+          <input #errorEmail="ngModel" type="email" id="email" name="email" required email [(ngModel)]="formData.email">
+          {{ 'kontaktformular.page.p.2' | translate }}
         </div>
+        <div *ngIf="errorEmail.touched && errorEmail.invalid" class="error-message">{{ 'kontaktformular.page.e.3' |
+          translate }}</div>
 
-        <div class="summary" *ngIf="weiter">
-          <header>Die Zusammenfassung Ihrer Daten:</header>
-          <br>
-          <div>Zu welcher Gruppe gehören Sie? <br> {{ formData.mitgliedergruppe }}</div>
-          <br>
-          <div>Betroffenheit? <br> {{ formData.betroffenheit }}</div>
-          <br>
-          <div>Dringlichkeit <br>{{ formData.message }}</div>
-          <br>
-          <div>Welcher Kategorie würden Sie diese Art von Diskriminierung spontan zuordnen? <br>
-            {{ formData.category }}</div>
-          <br>
-          <div>Nachname: <br> {{ formData.lastname }}</div>
-          <div>Vorname: <br>{{ formData.firstname }}</div>
-          <div>Email: <br>{{ formData.email }}</div>
-          <button class="btn-primary" type="submit">Absenden</button>
-        </div>
+    </div>
+    <br>
 
-      </form>
+    <div>
+      <div id="Datenschutz">{{ 'kontaktformular.page.p.3' | translate }}</div>
       <br>
-      <br>
+      <div>{{ 'kontaktformular.page.p.4' | translate }} <a href="'./privacypolicy'">{{ 'kontaktformular.page.p.5' |
+          translate }}</a>
+        {{ 'kontaktformular.page.p.6' | translate }} </div>
       <br>
     </div>
+    <div class="form-group form-check">
+      <br>
+      <div class="checkbox-text">
+        <input required class="form-check-input" #accept="ngModel" type="checkbox" id="Bestätigung"
+          [(ngModel)]="formData.checkbox" name="accept">
+        <label for="Bestätigung">{{ 'kontaktformular.page.p.7' | translate }}</label>
+      </div>
+
+      <div *ngIf="accept.invalid && accept.touched" class="error-message">{{ 'kontaktformular.page.e.4' | translate }}
+      </div>
+    </div>
+    <br>
+    <br>
+    <button class="btn-primary " (click)="onWeiter()" [disabled]="!contactForm.valid" id="bttnweiter">{{
+      'kontaktformular.page.b.1' | translate }}</button>
+    <br>
+    {{ 'kontaktformular.page.n.4' | translate }}
+
+  </div>
+  >>>>>>> origin
+
+  <div class="summary" *ngIf="weiter">
+    <header>{{ 'kontaktformular.page.h.2' | translate }}</header>
+    <br>
+    <div>{{ 'kontaktformular.page.q.1' | translate }} <br> {{ formData.mitgliedergruppe }}</div>
+    <br>
+    <div>{{ 'kontaktformular.page.q.2' | translate }}<br> {{ formData.betroffenheit }}</div>
+    <br>
+    <div>{{ 'kontaktformular.page.q.3' | translate }} <br>{{ formData.message }}</div>
+    <br>
+    <div>{{ 'kontaktformular.page.q.4' | translate }} <br>
+      {{ formData.category }}</div>
+    <br>
+    <div>{{ 'kontaktformular.page.n.1' | translate }} <br> {{ formData.lastname }}</div>
+    <div>{{ 'kontaktformular.page.n.2' | translate }} <br>{{ formData.firstname }}</div>
+    <div>{{ 'kontaktformular.page.n.3' | translate }} <br>{{ formData.email }}</div>
+    <button class="btn-primary" type="submit">{{ 'kontaktformular.page.b.2' | translate }}</button>
+  </div>
+
+  </form>
+  <br>
+  <br>
+  <br>
+  </div>
   </div>
 </body>
