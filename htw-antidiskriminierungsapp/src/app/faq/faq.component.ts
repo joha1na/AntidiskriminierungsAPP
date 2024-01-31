@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-faq',
@@ -7,10 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FaqComponent implements OnInit {
 
+  constructor(private router: Router, private location: Location) { }
 
   showAnswer = false;
   openedCard = -1;
-  constructor() { }
+
 
   ngOnInit(): void {
   }
@@ -21,5 +24,10 @@ export class FaqComponent implements OnInit {
 
   closeCard() {
     this.openedCard = -1;
+  }
+
+  navigateBack() {
+    this.location.back();
+
   }
 }
