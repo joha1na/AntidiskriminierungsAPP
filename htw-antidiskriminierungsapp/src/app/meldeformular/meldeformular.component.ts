@@ -73,5 +73,3 @@ export class MeldeformularComponent implements OnInit {
   goBack() {this.weiter = false;}
 
 }
-
-}
