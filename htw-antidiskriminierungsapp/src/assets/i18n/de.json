@@ -132,7 +132,6 @@
     "select": "Auswählen",
     "language": "Sprache",
     "find": "Suchen",
-
     "meldeformular.page.m.1": "Hinweis",
     "meldeformular.page.m.2": "Bevor Sie eine Meldung abschicken, sollten Sie",
     "meldeformular.page.m.3": "Beratung",
@@ -140,7 +139,6 @@
     "meldeformular.page.m.5": "Hier",
     "meldeformular.page.m.6": "finden Sie weiterführende Kontaktinformationen.",
     "meldeformular.page.m.7": "Schließen",
-
     "meldeformular.page.h.1": "Meldeformular",
     "meldeformular.page.q.1": "Zu welcher Gruppe gehören Sie? *",
     "meldeformular.page.s.1": "Auswählen",
@@ -152,10 +150,8 @@
     "meldeformular.page.a.6": "Mein Arbeitgeber ist zwar nicht die HTW, aber ich arbeite auf dem Gelände der Hochschule.",
     "meldeformular.page.a.7": "Andere",
     "meldeformular.page.e.1": "Bitte wählen Sie etwas aus.",
-
     "meldeformular.page.q.2": "Bitte schildern Sie den Vorfall möglichst detailliert. (Was ist passiert? Wann und wo? Wer war beteiligt?) *",
     "meldeformular.page.e.2": "Bitte füllen Sie dieses Feld aus. Feld muss mind. 10 Zeichen enthalten.", 
-
     "meldeformular.page.q.3": "Welcher Kategorie würden Sie diese Art von Diskriminierung spontan zuordnen?",
     "meldeformular.page.s.2": "Auswählen",
     "meldeformular.page.a.8": "Mittelbare Diskriminierung",   
