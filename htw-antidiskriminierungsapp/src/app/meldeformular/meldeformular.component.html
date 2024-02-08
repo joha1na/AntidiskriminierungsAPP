@@ -31,7 +31,7 @@
       </div>
       
       <br>
-      
+
       <form (ngSubmit)="submitForm()" #contactForm="ngForm" id="myForm">
 
       <div class="formdiv" *ngIf="!weiter">
@@ -91,10 +91,20 @@
             <label for="lastname" >{{ 'meldeformular.page.n.1' | translate }}<div id="optional">(optional)</div></label>
             <input type="text" id="lastname" name="lastname" [(ngModel)]="formData.lastname" >
           </div>
+
+          <div *ngIf="errorGruppe.touched && errorGruppe.invalid" class="error-message">{{ 'meldeformular.page.e.1' |
+            translate }}</div>
+          <br>
+
           <div>
             <label for="firstname" >{{ 'meldeformular.page.n.2' | translate }}<div id="optional">(optional)</div></label>
             <input type="text" id="firstname" name="firstname" [(ngModel)]="formData.firstname">
           </div>
+
+          <div *ngIf="errorGeschichte.invalid && errorGeschichte.touched" class="error-message">{{
+            'meldeformular.page.e.2' | translate }}</div>
+          <br>
+
           <div>
             <label for="email">{{ 'meldeformular.page.n.3' | translate }}</label>
             <input #errorEmail="ngModel" type="email" id="email" name="email" required email [(ngModel)]="formData.email">
