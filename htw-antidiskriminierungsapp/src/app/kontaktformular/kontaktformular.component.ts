@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { KontaktformularService } from '../kontaktformular.service';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
+import { EmailContactService } from '../shared/email-contact.service';
 
 
 @Component({
@@ -9,7 +10,20 @@ import { Location } from '@angular/common';
   templateUrl: './kontaktformular.component.html',
   styleUrls: ['./kontaktformular.component.css']
 })
-export class KontaktformularComponent {
+export class KontaktformularComponent implements OnInit {
+
+  emailContactPerson: any = '';
+
+  constructor(private kontaktformularService: KontaktformularService, private router: Router, private location: Location, private emailService: EmailContactService) { }
+
+  async ngOnInit(): Promise<void> {
+    this.emailContactPerson = '';
+    this.emailContactPerson = this.setContactPersonEmail(this.emailService);
+  }
+
+
+
+
   formData = {
     mitgliedergruppe: '',
     betroffenheit: '',
@@ -20,8 +34,21 @@ export class KontaktformularComponent {
     email: '',
     checkbox: ''
   };
+  contactPersonEmail: string = '';
 
-  constructor(private kontaktformularService: KontaktformularService, private router: Router, private location: Location) { }
+  setContactPersonEmail(emailService: EmailContactService) {
+    this.emailContactPerson = '';
+    const email = emailService.getContactPersonEmail();
+
+    if (email) {
+      this.emailContactPerson = email;    //emailContactPerson ist die E-Mail Adresse der Kontaktperson 
+    }
+
+
+    //für else{} könnte man eine generelle antidiskriminierungsemail Adresse angeben. z.B else {this.emailContactPerson = 'antidiskriminierung@htw-berlin.de'}
+
+  }
+
 
   submitForm() {
     // Hier kannst du die Logik für das Absenden des Formulars implementieren,

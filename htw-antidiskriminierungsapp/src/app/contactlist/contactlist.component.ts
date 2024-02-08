@@ -2,6 +2,8 @@ import { Component, OnInit, inject } from '@angular/core';
 import { ContactsService } from './../shared/contacts.service';
 import { Contacts } from '../shared/contacts';
 import { FilterService } from '../shared/filter.service';
+import { EmailContactService } from '../shared/email-contact.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contactlist',
@@ -12,11 +14,12 @@ import { FilterService } from '../shared/filter.service';
 export class ContactlistComponent implements OnInit {
 
 
-  constructor(private filterService: FilterService) { }
+  constructor(private filterService: FilterService, private emailService: EmailContactService, private router: Router) { }
 
   private service = inject(ContactsService);
   allcontacts: Contacts[] = [];
   filteredContacts: Contacts[] = [];
+  emailContactPerson: string = '';
 
   async ngOnInit(): Promise<void> {
     this.allcontacts = await this.service.getAllContacts();
@@ -35,6 +38,12 @@ export class ContactlistComponent implements OnInit {
     }
 
     return filteredContacts;
+  }
+
+  contactPerson(emailToBeShared: string) {
+    this.emailService.setContactPersonEmail(emailToBeShared);
+    this.router.navigate(['/kontaktformular']);
+
   }
 
 }

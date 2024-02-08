@@ -5,3 +5,14 @@
 .card-title {
     color: #76B900;
 }
+
+.name-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-envelope {
+    color: #76B900;
+    font-size: x-large;
+    cursor: pointer;
+}
