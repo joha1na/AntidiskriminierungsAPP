@@ -27,7 +27,9 @@ export class MeldeformularComponent implements OnInit {
 
   isLoggedIn = true;
 
-  isLogged() {
+  
+  isLogged()
+  {
     this.isLoggedIn = false;
   }
 
@@ -42,26 +44,34 @@ export class MeldeformularComponent implements OnInit {
       }
     );
     console.log('Formulardaten:', this.formData);
+    // Hier könnte die Logik stehen, um die Formulardaten zu senden oder zu verarbeiten.
+
   }
 
   openModel() {
     const modelDiv = document.getElementById('MyModal');
-    if (modelDiv != null) {
+    if (modelDiv!= null)
+    {
       modelDiv.style.display = 'block';
-    }
+    } 
   }
 
   CloseModel() {
     const modelDiv = document.getElementById('MyModal');
-    if (modelDiv != null) {
+    if (modelDiv!= null)
+    {
       modelDiv.style.display = 'none';
-    }
+    }  
   }
-
+  
   weiter = false;
 
   onWeiter() { this.weiter = true; }
 
-  goBack() { this.weiter = false; }
+  
+
+  goBack() {this.weiter = false;}
+
+}
 
 }
