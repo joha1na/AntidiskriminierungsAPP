@@ -47,7 +47,7 @@ export class ContactlistComponent implements OnInit {
 
     setTimeout(() => {
       this.showFilterMessage = false;
-    }, 5000);
+    }, 8000);
   }
 }
 
