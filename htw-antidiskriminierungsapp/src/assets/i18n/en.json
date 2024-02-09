@@ -176,5 +176,6 @@
     "meldeformular.page.h.2": "The summary of your data:",
     "meldeformular.page.b.2": "Submit",
     "meldeformular.page.p.1": "* Mandatory field",
-    "contactlist.button.get.in.contact": "Get In Contact"
+    "contactlist.button.get.in.contact": "Get In Contact",
+    "contact.filter.message": "It was attempted to find a suitable result"
 }

@@ -20,6 +20,7 @@ export class ContactlistComponent implements OnInit {
   allcontacts: Contacts[] = [];
   filteredContacts: Contacts[] = [];
   emailContactPerson: string = '';
+  showFilterMessage = false;
 
   async ngOnInit(): Promise<void> {
     this.allcontacts = await this.service.getAllContacts();
@@ -27,7 +28,9 @@ export class ContactlistComponent implements OnInit {
   }
 
   filter(filterService: FilterService): Contacts[] {
+
     let filteredContacts = this.allcontacts;
+
     const mitgliedergruppe = filterService.getMitgliedergruppe();
     const gremium = filterService.getGremium();
     const organisationseinheit = filterService.getOrganisationseinheit();
@@ -36,7 +39,9 @@ export class ContactlistComponent implements OnInit {
     if (mitgliedergruppe || gremium || organisationseinheit || sprache) {
       filteredContacts = filteredContacts.filter((contact) => contact.mitgliedergruppe === mitgliedergruppe || contact.gremium === gremium || contact.organisationseinheit === organisationseinheit || contact.sprache === sprache);
     }
-
+    if (filteredContacts.length < this.allcontacts.length) {
+      this.showFilterMsg();
+    }
     return filteredContacts;
   }
 
@@ -46,4 +51,13 @@ export class ContactlistComponent implements OnInit {
 
   }
 
+  showFilterMsg() {
+    this.showFilterMessage = true;
+
+    setTimeout(() => {
+      this.showFilterMessage = false;
+    }, 8000);
+  }
 }
+
+
