@@ -139,8 +139,6 @@
     "meldeformular.page.m.5": "Here",
     "meldeformular.page.m.6": "you will find further contact information.",
     "meldeformular.page.m.7": "Close",
-
-
     "meldeformular.page.h.1": "Report form",
     "meldeformular.page.q.1": "Which Group do you belong to? *",
     "meldeformular.page.s.1": "Select",
@@ -152,13 +150,11 @@
     "meldeformular.page.a.6": "My employer is not HTW, but I work on the university's premises.",
     "meldeformular.page.a.7": "Other",
     "meldeformular.page.e.1": "Please, select something",
-
     "meldeformular.page.q.2": "Please describe the incident in as much detail as possible. (What happened? When and where? Who was involved?*",
-    "meldeformular.page.e.2": "Please fill in this field. Field must contain at least 10 characters.", 
-
+    "meldeformular.page.e.2": "Please fill in this field. Field must contain at least 10 characters.",
     "meldeformular.page.q.3": "Which category would you spontaneously assign this type of discrimination to?",
     "meldeformular.page.s.2": "Select",
-    "meldeformular.page.a.8": "Indirect discrimination",   
+    "meldeformular.page.a.8": "Indirect discrimination",
     "meldeformular.page.a.9": "Racial discrimination",
     "meldeformular.page.a.10": "Sexualized discrimination and violence",
     "meldeformular.page.a.11": "Mobbing",
@@ -168,16 +164,17 @@
     "meldeformular.page.n.1": "Surname: ",
     "meldeformular.page.n.2": "Forename: ",
     "meldeformular.page.n.3": "E-Mail: ",
-    "meldeformular.page.e.3": "This is not a valid email address.", 
-    "meldeformular.page.n.4":"Note: If you do not leave your contact details, we will not be able to contact you to offer you advice and inform you about the case processing. However, we will deal with your request as far as possible.",
-    "meldeformular.page.p.3":"Data protection notice and declaration of consent",
+    "meldeformular.page.e.3": "This is not a valid email address.",
+    "meldeformular.page.n.4": "Note: If you do not leave your contact details, we will not be able to contact you to offer you advice and inform you about the case processing. However, we will deal with your request as far as possible.",
+    "meldeformular.page.p.3": "Data protection notice and declaration of consent",
     "meldeformular.page.p.4": "I agree that data may be collected, stored, processed and transmitted internally by HTW Berlin in order to process my request. Further information on HTW Berlin's privacy policy can be found at:",
     "meldeformular.page.p.5": "Data protection at HTW",
-    "meldeformular.page.p.6": "and in the anti-discrimination guidelines of HTW Berlin (§10)", 
+    "meldeformular.page.p.6": "and in the anti-discrimination guidelines of HTW Berlin (§10)",
     "meldeformular.page.p.7": "I agree to the privacy policy and declaration of consent. *",
-    "meldeformular.page.e.4": "For further processing we need your consent to the data protection conditions.", 
+    "meldeformular.page.e.4": "For further processing we need your consent to the data protection conditions.",
     "meldeformular.page.b.1": "Next",
     "meldeformular.page.h.2": "The summary of your data:",
     "meldeformular.page.b.2": "Submit",
-    "meldeformular.page.p.1":"* Mandatory field"
+    "meldeformular.page.p.1": "* Mandatory field",
+    "contact.filter.message": "It was attempted to find a suitable result"
 }

@@ -1,5 +1,11 @@
 <div class="container table-responsive">
 
+    <div class="information" *ngIf="showFilterMessage">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <p> {{ 'contact.filter.message' | translate }}
+        </p>
+    </div>
+
     <div class="card d-md-none" style="width: 20rem; margin: 3%" *ngFor=" let contact of filteredContacts">
         <div class="card-body">
             <h5 class="card-title">{{ contact.titel }} {{ contact.vorname }} {{ contact.nachname }}</h5>
