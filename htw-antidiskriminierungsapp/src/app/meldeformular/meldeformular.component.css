@@ -56,19 +56,6 @@ a {
 }
 
 
-/* styling for desktop */
-
-.d-md-block {
-  display: flex;
-  text-align: center;
-}
-
-.d-md-block img {
-  width: 60%;
-  margin-top: 60px;
-  margin-bottom: 50px;
-
-}
 
 /* Allgemeine Formatierung für das Formular */
 .form-container {
@@ -128,6 +115,18 @@ button[type="submit"] {
   transition: background-color 0.3s ease;
 }
 
+.button[type="submit"] {
+  background-color: #76B900;
+  width: 90%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 2px;
+  padding: 6px;
+  border: 1px solid;
+  border-radius: 6px;
+  border-color: #1b1f2326;       
+}
+
 #bttnweiter{
   background-color: #76B900;
   color: white ;
@@ -137,6 +136,9 @@ button[type="submit"] {
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease;
+  border: 1px solid;
+  border-radius: 6px;
+  border-color: #1b1f2326;  
   
 }
 
@@ -149,11 +151,10 @@ button[type="submit"] {
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease;
+  border: 1px solid;
+  border-radius: 6px;
+  border-color: #1b1f2326;  
 }
-
-
-
-
 
 
 /* Fehlermeldung für Pflichtfelder */
@@ -183,7 +184,7 @@ button[type="submit"] {
   display: flex;
 }
 
-.summary div {
+.summary div:not(#bttn-container) {
   width: 100%;
   padding: 10px;
   margin: 8px 0;
@@ -201,4 +202,57 @@ button[type="submit"] {
 #weiterbttn {
   color: #ccc;
 }
+/* styling for desktop */
+
+.d-md-block {
+  display: flex;
+  text-align: center;
+}
+
+.d-md-block img {
+  width: 60%;
+  margin-top: 60px;
+  margin-bottom: 50px;
+
+}
+@media (min-width: 800px) {
+  h1
+  {
+      font-size:xx-large;
+      text-align: center;
+  }
+}
+
+@media (min-width: 800px) {
+  .formdiv {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  /* Stil für Eingabefelder */
+  select,
+  textarea,
+  input[type="text"],
+  input[type="email"]
+  {
+    width: 100%; /* Breite auf 100% setzen */
+    margin: 8px 0; /* Margin für den Abstand zwischen den Elementen hinzufügen */
+  }
+
+
+  #bttn-container {
+    display: flex;
+    justify-content: center; /* Zentriert den Button horizontal */
+  }
+  
+  #bttnweiter, button[type="submit"] {
+    max-width: 400px;
+    width: 70%;
+  }
+}
+
 

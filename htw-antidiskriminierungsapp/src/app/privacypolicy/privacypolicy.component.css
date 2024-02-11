@@ -42,3 +42,20 @@ h5 {
 i {
     cursor: pointer;
 }
+
+@media (min-width: 800px) {
+    h1
+    {
+        font-size:xx-large;
+        text-align: center;
+    }
+  }
+
+  @media (min-width: 800px) {
+    h3
+    {
+        font-size:large;
+        font-weight: bold;
+       text-decoration: underline;
+    }
+  }

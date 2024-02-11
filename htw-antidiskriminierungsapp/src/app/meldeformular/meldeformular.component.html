@@ -12,8 +12,8 @@
         </div>
         <div class="modal-body">
           <p>
-            {{ 'meldeformular.page.m.2' | translate }} <a [routerLink]="'/getincontact'">{{ 'meldeformular.page.m.3' | translate }}</a> {{ 'meldeformular.page.m.4' | translate }} 
-            <a href="https://www.htw-berlin.de/einrichtungen/zentrale-referate/frauenfoerderung-gleichstellung/sexualisierte-diskriminierung-gewalt/#c10576">{{ 'meldeformular.page.m.5' | translate }}</a> {{ 'meldeformular.page.m.6' | translate }}
+            {{ 'meldeformular.page.m.2' | translate }} <a [routerLink]="'/getincontact'">{{ 'meldeformular.page.m.3' | translate }}</a> {{ 'meldeformular.page.m.4' | translate }}
+            <a href="https://www.htw-berlin.de/einrichtungen/zentrale-referate/frauenfoerderung-gleichstellung/sexualisierte-diskriminierung-gewalt/#c10576">{{ 'meldeformular.page.m.5' | translate }}</a> 
           </p>
         </div>
         <div class="modal-footer">
@@ -25,7 +25,7 @@
         <i class="col-1 fa-solid fa-chevron-left" *ngIf="!weiter" [routerLink]="''" ></i>
         <i class="col-1 fa-solid fa-chevron-left" *ngIf="weiter" (click)="goBack()"></i>
          
-        <h1 class="col-9">{{ 'meldeformular.page.h.1' | translate }}</h1>
+        <h1 >{{ 'meldeformular.page.h.1' | translate }}</h1>
         
       <div class="col-1"> </div>
       </div>
@@ -50,6 +50,7 @@
             <option >{{ 'meldeformular.page.a.5' | translate }} </option>
             <option >{{ 'meldeformular.page.a.6' | translate }}</option>
             <option >{{ 'meldeformular.page.a.7' | translate }}</option>
+            <option >{{ 'meldeformular.page.a.8' | translate }}</option>
           </select>
         </div>
 
@@ -68,11 +69,13 @@
           <label for="category">{{ 'meldeformular.page.q.3' | translate }} <div id="optional">(optional)</div></label> 
           <select id="category" name="category" [(ngModel)]="formData.category" >
             <option  disabled selected>{{'meldeformular.page.s.2' | translate }}</option>
-            <option >{{ 'meldeformular.page.a.8' | translate }}</option>
             <option >{{ 'meldeformular.page.a.9' | translate }}</option>
             <option >{{ 'meldeformular.page.a.10' | translate }}</option>
             <option >{{ 'meldeformular.page.a.11' | translate }}</option>
             <option >{{ 'meldeformular.page.a.12' | translate }}</option>
+            <option >{{ 'meldeformular.page.a.13' | translate }}</option>
+            <option >{{ 'meldeformular.page.a.14' | translate }}</option>
+            <option >{{ 'meldeformular.page.a.15' | translate }}</option>
             <!-- Weitere Kategorien hinzufügen -->
           </select>
         </div>
@@ -137,7 +140,7 @@
 </div>
         <br>
         <br>
-        <button class="btn-primary " (click)="onWeiter()" [disabled]="!contactForm.valid" id="bttnweiter">{{ 'meldeformular.page.b.1' | translate }}</button>
+        <div id="bttn-container"><button class="btn-primary " (click)="onWeiter()" [disabled]="!contactForm.valid" id="bttnweiter">{{ 'meldeformular.page.b.1' | translate }}</button></div>
 </div>
           
           <div class="summary" *ngIf="weiter">
@@ -157,7 +160,7 @@
           <div> {{ 'meldeformular.page.n.2' | translate }} <br>{{ formData.firstname }}</div>
           <div> {{ 'meldeformular.page.n.3' | translate }} <br>{{ formData.email }}</div>
           </div>
-          <button class="btn-primary " type="submit" [disabled]="!contactForm.valid">{{ 'meldeformular.page.b.2' | translate }}</button>
+          <div id="bttn-container"><button class="btn-primary " type="submit" [disabled]="!contactForm.valid">{{ 'meldeformular.page.b.2' | translate }}</button></div>
           </div>
           <p>{{'meldeformular.page.p.1' | translate }}</p>
 
