@@ -3,6 +3,7 @@ import { KontaktformularService } from '../kontaktformular.service';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 import { EmailContactService } from '../shared/email-contact.service';
+import { EmailService } from '../shared/email.service';
 
 
 @Component({
@@ -14,11 +15,12 @@ export class KontaktformularComponent implements OnInit {
 
   emailContactPerson: any = '';
 
-  constructor(private kontaktformularService: KontaktformularService, private router: Router, private location: Location, private emailService: EmailContactService) { }
+  constructor(private kontaktformularService: KontaktformularService, private router: Router, private location: Location, private emailContactService: EmailContactService, private emailService: EmailService) { }
+
 
   async ngOnInit(): Promise<void> {
     this.emailContactPerson = '';
-    this.emailContactPerson = this.setContactPersonEmail(this.emailService);
+    this.emailContactPerson = this.setContactPersonEmail(this.emailContactService);
   }
 
 
@@ -32,7 +34,8 @@ export class KontaktformularComponent implements OnInit {
     lastname: '',
     firstname: '',
     email: '',
-    checkbox: ''
+    checkbox: '',
+    formulartyp: 'Kontaktformular'
   };
   contactPersonEmail: string = '';
 
@@ -43,18 +46,27 @@ export class KontaktformularComponent implements OnInit {
     if (email) {
       this.emailContactPerson = email;    //emailContactPerson ist die E-Mail Adresse der Kontaktperson 
     }
-
-
     //für else{} könnte man eine generelle antidiskriminierungsemail Adresse angeben. z.B else {this.emailContactPerson = 'antidiskriminierung@htw-berlin.de'}
-
   }
 
 
   submitForm() {
-    // Hier kannst du die Logik für das Absenden des Formulars implementieren,
-    // z. B. eine HTTP-Anfrage an den Server senden, um die Daten zu verarbeiten.
+    this.emailService.sendEmail(this.formData.mitgliedergruppe, this.formData.betroffenheit, this.formData.message, this.formData.category, this.formData.lastname, this.formData.firstname, this.formData.email, this.formData.checkbox, this.formData.formulartyp).subscribe(
+      {
+        next: (response) => {
+          console.log(response);
+          // Erfolgreicher Aufruf - Navigiere zur Success-Komponente für das Meldeformular
+          this.router.navigate(['/kontaktsuccess']);
+        },
+        error: (err) => {
+          console.log(err);
+          // Fehlgeschlagener Aufruf - Navigiere zur Failure-Komponente
+          this.router.navigate(['/error']);
+        },
+        complete: () => console.info('Aufruf abgeschlossen')
+      }
+    );
     console.log('Formulardaten:', this.formData);
-    // Hier könnte die Logik stehen, um die Formulardaten zu senden oder zu verarbeiten.
   }
 
 

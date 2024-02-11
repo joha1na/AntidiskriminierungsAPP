@@ -13,7 +13,6 @@
 
 h1 {
     text-align: center;
-    color: darkred;
 }
 
 .buttons {
@@ -36,27 +35,22 @@ h1 {
 .text {
     margin-top: 25px;
     margin-bottom: 25px;
-    color: darkred;
+}
+
+.faq {
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 i {
     cursor: pointer;
+} 
+
+.case {
+    font-family: HTWBerlinBold;
 }
 
-@media (min-width: 800px) {
-    h1
-    {
-        font-size:xx-large;
-        text-align: center;
-    }
-  }
-
-  @media (min-width: 800px) {
-    h3
-    {
-        font-size:large;
-        font-weight: bold;
-        text-decoration: underline;
-       
-    }
-  }
+.bold {
+    font-family: HTWBerlinBold;
+    padding-top: 6%;
+}
