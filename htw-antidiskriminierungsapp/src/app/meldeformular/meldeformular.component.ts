@@ -39,8 +39,8 @@ export class MeldeformularComponent implements OnInit {
       {
         next: (response) => {
           console.log(response);
-          // Erfolgreicher Aufruf - Navigiere zur Success-Komponente
-          this.router.navigate(['/success']);
+          // Erfolgreicher Aufruf - Navigiere zur Success-Komponente für das Meldeformular
+          this.router.navigate(['/meldesuccess']);
         },
         error: (err) => {
           console.log(err);
