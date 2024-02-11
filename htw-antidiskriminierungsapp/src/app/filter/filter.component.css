@@ -5,12 +5,7 @@
     height: 100%;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Um den Button auf der vertikalen Mitte der Seite zu zentrieren */
-}
+
 
 .buttons {
     margin-top: 50px;
