@@ -10,12 +10,14 @@ import { EmailService } from '../shared/email.service';
 export class MeldeformularComponent implements OnInit {
   formData = {
     mitgliedergruppe: '',
+    betroffenheit: 'NA',
     message: '',
     category: '',
     lastname: '',
     firstname: '',
     email: '',
-    checkbox: ''
+    checkbox: '',
+    formulartyp: 'Meldeformular'
   };
 
   constructor(private emailService: EmailService) { }
@@ -34,7 +36,7 @@ export class MeldeformularComponent implements OnInit {
   }
 
   submitForm() {
-    this.emailService.sendEmail(this.formData.mitgliedergruppe, this.formData.message, this.formData.category, this.formData.lastname, this.formData.firstname, this.formData.email, this.formData.checkbox).subscribe(
+    this.emailService.sendEmail(this.formData.mitgliedergruppe, this.formData.betroffenheit, this.formData.message, this.formData.category, this.formData.lastname, this.formData.firstname, this.formData.email, this.formData.checkbox, this.formData.formulartyp).subscribe(
       {
         next: (response) => {
           console.log(response);

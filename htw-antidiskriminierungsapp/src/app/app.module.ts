@@ -15,6 +15,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { FormsModule } from '@angular/forms';
 import { SuccessComponent } from './success/success.component';
+import { KontaktsuccessComponent } from './kontaktsuccess/kontaktsuccess.component';
 import { ErrorComponent } from './error/error.component';
 import { MeldeformularComponent } from './meldeformular/meldeformular.component';
 import { KontaktformularComponent } from './kontaktformular/kontaktformular.component';
@@ -36,6 +37,7 @@ export function httpTranslateLoaderFactory(http: HttpClient) {
     GetincontactComponent,
     ContactlistComponent,
     SuccessComponent,
+    KontaktsuccessComponent,
     ErrorComponent,
     MeldeformularComponent,
     KontaktformularComponent,

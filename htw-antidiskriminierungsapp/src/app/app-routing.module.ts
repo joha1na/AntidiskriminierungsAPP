@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { FaqComponent } from './faq/faq.component';
 import { GetincontactComponent } from './getincontact/getincontact.component'
 import { SuccessComponent } from './success/success.component';
+import { KontaktsuccessComponent } from './kontaktsuccess/kontaktsuccess.component';
 import { ErrorComponent } from './error/error.component';
 import { MeldeformularComponent } from './meldeformular/meldeformular.component';
 import { KontaktformularComponent } from './kontaktformular/kontaktformular.component';
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'getincontact', component: GetincontactComponent },
   /*ggf. wieder entfernen, zunächst nur fürs Zeigen benötigt*/
   { path: 'success', component: SuccessComponent },
+  { path: 'kontaktsuccess', component: KontaktsuccessComponent},
   { path: 'error', component: ErrorComponent },
   { path: 'meldeformular', component: MeldeformularComponent },
   { path: 'kontaktformular', component: KontaktformularComponent },

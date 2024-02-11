@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { KontaktformularService } from '../kontaktformular.service';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
+import { EmailService } from '../shared/email.service';
 
 
 @Component({
@@ -18,16 +19,29 @@ export class KontaktformularComponent {
     lastname: '',
     firstname: '',
     email: '',
-    checkbox: ''
+    checkbox: '',
+    formulartyp: 'Kontaktformular'
   };
 
-  constructor(private kontaktformularService: KontaktformularService, private router: Router, private location: Location) { }
+  constructor(private kontaktformularService: KontaktformularService, private router: Router, private location: Location, private emailService: EmailService) { }
 
   submitForm() {
-    // Hier kannst du die Logik für das Absenden des Formulars implementieren,
-    // z. B. eine HTTP-Anfrage an den Server senden, um die Daten zu verarbeiten.
+    this.emailService.sendEmail(this.formData.mitgliedergruppe, this.formData.betroffenheit, this.formData.message, this.formData.category, this.formData.lastname, this.formData.firstname, this.formData.email, this.formData.checkbox, this.formData.formulartyp).subscribe(
+      {
+        next: (response) => {
+          console.log(response);
+          // Erfolgreicher Aufruf - Navigiere zur Success-Komponente für das Meldeformular
+          this.router.navigate(['/kontaktsuccess']);
+        },
+        error: (err) => {
+          console.log(err);
+          // Fehlgeschlagener Aufruf - Navigiere zur Failure-Komponente
+          this.router.navigate(['/error']);
+        },  
+        complete: () => console.info('Aufruf abgeschlossen')
+      }
+    );
     console.log('Formulardaten:', this.formData);
-    // Hier könnte die Logik stehen, um die Formulardaten zu senden oder zu verarbeiten.
   }
 
 
