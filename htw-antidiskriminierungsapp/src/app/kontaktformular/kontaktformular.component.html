@@ -10,6 +10,9 @@
       <br>
       <form (ngSubmit)="submitForm()" #contactForm="ngForm" id="myForm">
         <div class="formdiv" *ngIf="!weiter">
+          {{ 'kontaktformular.page.p.8' | translate }} {{ this.titelContactPerson}} {{ this.vornameContactPerson}} {{ this.nachnameContactPerson}} ({{ this.emailContactPerson }}) {{ 'kontaktformular.page.p.9' | translate }} {{ 'kontaktformular.page.p.10' | translate }}
+          <br>
+          <br>
           <div>
             <label for="mitgliedergruppe">{{ 'kontaktformular.page.q.1' | translate }}</label>
             <br>
@@ -104,8 +107,7 @@
           <div>
             <div id="Datenschutz">{{ 'kontaktformular.page.p.3' | translate }}</div>
             <br>
-            <div>{{ 'kontaktformular.page.p.4' | translate }} <a href="'./privacypolicy'">{{ 'kontaktformular.page.p.5'
-                | translate }}</a>
+            <div>{{ 'kontaktformular.page.p.4' | translate }} <a href="https://www.htw-berlin.de/datenschutz/" target="_blank">{{ 'kontaktformular.page.p.5' | translate }}</a>
               {{ 'kontaktformular.page.p.6' | translate }} </div>
             <br>
           </div>
@@ -131,6 +133,10 @@
         <div class="summary" *ngIf="weiter">
           <header>{{ 'kontaktformular.page.h.2' | translate }}</header>
           <br>
+          <div id="summarydiv">
+            {{ 'kontaktformular.page.p.8' | translate }} {{ this.titelContactPerson}} {{ this.vornameContactPerson}} {{ this.nachnameContactPerson}} ({{ this.emailContactPerson }}) {{ 'kontaktformular.page.p.9' | translate }}
+          </div>
+          <br>
           <div id="summarydiv">{{ 'kontaktformular.page.q.1' | translate }} <br> {{ formData.mitgliedergruppe }}</div>
           <br>
           <div id="summarydiv">{{ 'kontaktformular.page.q.2' | translate }}<br> {{ formData.betroffenheit }}</div>
@@ -140,9 +146,12 @@
           <div id="summarydiv">{{ 'kontaktformular.page.q.4' | translate }} <br>
             {{ formData.category }}</div>
           <br>
-          <div id="summarydiv">{{ 'kontaktformular.page.n.1' | translate }} <br> {{ formData.lastname }}</div>
-          <div id="summarydiv">{{ 'kontaktformular.page.n.2' | translate }} <br>{{ formData.firstname }}</div>
-          <div id="summarydiv">{{ 'kontaktformular.page.n.3' | translate }} <br>{{ formData.email }}</div>
+          <div id="summarydiv"> {{ 'kontaktformular.page.q.5' | translate}}
+            <br>
+            <div id="summarydiv"> {{ 'kontaktformular.page.n.1' | translate }} <br> {{ formData.lastname }}</div>
+            <div id="summarydiv"> {{ 'kontaktformular.page.n.2' | translate }} <br> {{ formData.firstname }}</div>
+            <div id="summarydiv"> {{ 'kontaktformular.page.n.3' | translate }} <br> {{ formData.email }}</div>
+          </div>
           <div id="bttn-container"><button class="btn-primary" type="submit">{{ 'kontaktformular.page.b.2' | translate }}</button></div>
         </div>
 

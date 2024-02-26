@@ -14,13 +14,22 @@ import { EmailService } from '../shared/email.service';
 export class KontaktformularComponent implements OnInit {
 
   emailContactPerson: any = '';
+  titelContactPerson: any = '';
+  vornameContactPerson: any = '';
+  nachnameContactPerson: any = '';
 
   constructor(private kontaktformularService: KontaktformularService, private router: Router, private location: Location, private emailContactService: EmailContactService, private emailService: EmailService) { }
 
 
   async ngOnInit(): Promise<void> {
     this.emailContactPerson = '';
+    this.titelContactPerson = '';
+    this.vornameContactPerson = '';
+    this.nachnameContactPerson = '';
     this.emailContactPerson = this.setContactPersonEmail(this.emailContactService);
+    this.titelContactPerson = this.setContactPersonTitel(this.emailContactService);
+    this.vornameContactPerson = this.setContactPersonVorname(this.emailContactService);
+    this.nachnameContactPerson = this.setContactPersonNachname(this.emailContactService);
   }
 
 
@@ -38,6 +47,9 @@ export class KontaktformularComponent implements OnInit {
     formulartyp: 'Kontaktformular'
   };
   contactPersonEmail: string = '';
+  contactPersonTitel: string = '';
+  contactPersonVorname: string = '';
+  contactPersonNachname: string = '';
 
   setContactPersonEmail(emailService: EmailContactService) {
     this.emailContactPerson = '';
@@ -46,7 +58,45 @@ export class KontaktformularComponent implements OnInit {
     if (email) {
       this.emailContactPerson = email;    //emailContactPerson ist die E-Mail Adresse der Kontaktperson 
     }
-    //für else{} könnte man eine generelle antidiskriminierungsemail Adresse angeben. z.B else {this.emailContactPerson = 'antidiskriminierung@htw-berlin.de'}
+    else {
+      this.emailContactPerson = 'antidiskriminierung@htw-berlin.de'; //für else{} eine generelle Antidiskriminierungsemailadresse angeben
+    } 
+    return this.emailContactPerson;
+  }
+
+  setContactPersonTitel(emailService: EmailContactService) {
+    this.titelContactPerson = '';
+    const titel = emailService.getContactPersonTitel();
+
+    if (titel) {
+      this.titelContactPerson = titel;    //titelContactPerson ist der Titel der Kontaktperson 
+    }
+    //bleibt leer, wenn kein Titel angegeben wurde oder keine Person ausgewählt wurde
+    return this.titelContactPerson;
+  }
+
+  setContactPersonVorname(emailService: EmailContactService) {
+    this.vornameContactPerson = '';
+    const vorname = emailService.getContactPersonVorname();
+
+    if (vorname) {
+      this.vornameContactPerson = vorname;    //vornameContactPerson ist der Vorname der Kontaktperson 
+    }
+    //bleibt leer, wenn keine Person ausgewählt wurde
+    return this.vornameContactPerson;
+  }
+
+  setContactPersonNachname(emailService: EmailContactService) {
+    this.nachnameContactPerson = '';
+    const nachname = emailService.getContactPersonNachname();
+
+    if (nachname) {
+      this.nachnameContactPerson = nachname;    //nachnameContactPerson ist der Nachname der Kontaktperson 
+    }
+    else {
+      this.nachnameContactPerson = 'NA'; //für else{} ein passender Text 
+    }
+    return this.nachnameContactPerson;
   }
 
 
