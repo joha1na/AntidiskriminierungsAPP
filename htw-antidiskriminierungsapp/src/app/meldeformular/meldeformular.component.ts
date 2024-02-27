@@ -20,6 +20,11 @@ export class MeldeformularComponent implements OnInit {
     checkbox: '',
     formulartyp: 'Meldeformular'
   };
+  emailContactPerson: any = '';
+  titelContactPerson: any = '';
+  vornameContactPerson: any = '';
+  nachnameContactPerson: any = '';
+  sprache: any = localStorage.getItem('locale');
 
   constructor(private emailService: EmailService, private router: Router) { }
 
@@ -37,7 +42,7 @@ export class MeldeformularComponent implements OnInit {
   }
 
   submitForm() {
-    this.emailService.sendEmail(this.formData.mitgliedergruppe, this.formData.betroffenheit, this.formData.message, this.formData.category, this.formData.lastname, this.formData.firstname, this.formData.email, this.formData.checkbox, this.formData.formulartyp).subscribe(
+    this.emailService.sendEmail(this.formData.mitgliedergruppe, this.formData.betroffenheit, this.formData.message, this.formData.category, this.formData.lastname, this.formData.firstname, this.formData.email, this.formData.checkbox, this.formData.formulartyp, this.emailContactPerson, this.titelContactPerson, this.vornameContactPerson, this.nachnameContactPerson, this.sprache).subscribe(
       {
         next: (response) => {
           console.log(response);

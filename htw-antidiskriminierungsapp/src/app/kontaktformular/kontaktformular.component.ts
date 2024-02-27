@@ -17,6 +17,7 @@ export class KontaktformularComponent implements OnInit {
   titelContactPerson: any = '';
   vornameContactPerson: any = '';
   nachnameContactPerson: any = '';
+  sprache: any = localStorage.getItem('locale');
 
   constructor(private kontaktformularService: KontaktformularService, private router: Router, private location: Location, private emailContactService: EmailContactService, private emailService: EmailService) { }
 
@@ -59,7 +60,7 @@ export class KontaktformularComponent implements OnInit {
       this.emailContactPerson = email;    //emailContactPerson ist die E-Mail Adresse der Kontaktperson 
     }
     else {
-      this.emailContactPerson = 'antidiskriminierung@htw-berlin.de'; //für else{} eine generelle Antidiskriminierungsemailadresse angeben
+      this.emailContactPerson = 'antidiskriminierungs-app@htw-berlin.de'; //für else{} eine generelle Antidiskriminierungsemailadresse angeben
     } 
     return this.emailContactPerson;
   }
@@ -101,7 +102,7 @@ export class KontaktformularComponent implements OnInit {
 
 
   submitForm() {
-    this.emailService.sendEmail(this.formData.mitgliedergruppe, this.formData.betroffenheit, this.formData.message, this.formData.category, this.formData.lastname, this.formData.firstname, this.formData.email, this.formData.checkbox, this.formData.formulartyp).subscribe(
+    this.emailService.sendEmail(this.formData.mitgliedergruppe, this.formData.betroffenheit, this.formData.message, this.formData.category, this.formData.lastname, this.formData.firstname, this.formData.email, this.formData.checkbox, this.formData.formulartyp, this.emailContactPerson, this.titelContactPerson, this.vornameContactPerson, this.nachnameContactPerson, this.sprache).subscribe(
       {
         next: (response) => {
           console.log(response);
