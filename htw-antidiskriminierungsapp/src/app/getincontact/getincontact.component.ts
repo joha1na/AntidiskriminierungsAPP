@@ -20,6 +20,9 @@ export class GetincontactComponent {
 
   navigateContactPerson() {
     this.emailService.setContactPersonEmail('');
+    this.emailService.setContactPersonTitel('');
+    this.emailService.setContactPersonVorname('');
+    this.emailService.setContactPersonNachname('');
     this.router.navigate(['/kontaktformular']);
 
   }

@@ -20,6 +20,7 @@ export class ContactlistComponent implements OnInit {
   allcontacts: Contacts[] = [];
   filteredContacts: Contacts[] = [];
   emailContactPerson: string = '';
+  nachnameContactPerson: string = '';
   showFilterMessage = false;
 
   async ngOnInit(): Promise<void> {
@@ -45,8 +46,11 @@ export class ContactlistComponent implements OnInit {
     return filteredContacts;
   }
 
-  contactPerson(emailToBeShared: string) {
+  contactPerson(emailToBeShared: string, titelToBeShared: string, vornameToBeShared: string, nachnameToBeShared: string) {
     this.emailService.setContactPersonEmail(emailToBeShared);
+    this.emailService.setContactPersonTitel(titelToBeShared);
+    this.emailService.setContactPersonVorname(vornameToBeShared);
+    this.emailService.setContactPersonNachname(nachnameToBeShared);
     this.router.navigate(['/kontaktformular']);
 
   }

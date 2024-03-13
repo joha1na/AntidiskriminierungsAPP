@@ -21,8 +21,8 @@
             <p class="card-text">{{ 'contactlist.organizational.unit' | translate }}: {{ contact.organisationseinheit |
                 translate
                 }}</p>
-            <button class="btn btn-primary" (click)="contactPerson(contact.email)">
-                <i class="fa-solid fa-envelope" (click)="contactPerson(contact.email)"></i>
+            <button class="btn btn-primary" (click)="contactPerson(contact.email, contact.titel, contact.vorname, contact.nachname)">
+                <i class="fa-solid fa-envelope" (click)="contactPerson(contact.email, contact.titel, contact.vorname, contact.nachname)"></i>
                 {{
                 'contactlist.button.get.in.contact' | translate
                 }}</button>
@@ -43,8 +43,8 @@
             <p class="card-text">Mitgliedergruppe: {{ contact.mitgliedergruppe | translate }}</p>
             <p class="card-text">Gremium: {{ contact.gremium | translate }}</p>
             <p class="card-text">Organisationseinheit: {{ contact.organisationseinheit | translate }}</p>
-            <button class="btn btn-primary desktop" (click)="contactPerson(contact.email)">
-                <i class="fa-solid fa-envelope" (click)="contactPerson(contact.email)"></i>
+            <button class="btn btn-primary desktop" (click)="contactPerson(contact.email, contact.titel, contact.vorname, contact.nachname)">
+                <i class="fa-solid fa-envelope" (click)="contactPerson(contact.email, contact.titel, contact.vorname, contact.nachname)"></i>
                 {{
                 'contactlist.button.get.in.contact' | translate
                 }}</button>
