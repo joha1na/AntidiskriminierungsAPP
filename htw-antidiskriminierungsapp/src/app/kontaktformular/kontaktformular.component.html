@@ -107,16 +107,15 @@
           <div>
             <div id="Datenschutz">{{ 'kontaktformular.page.p.3' | translate }}</div>
             <br>
-            <div>{{ 'kontaktformular.page.p.4' | translate }} <a href="https://www.htw-berlin.de/datenschutz/" target="_blank">{{ 'kontaktformular.page.p.5' | translate }}</a>
-              {{ 'kontaktformular.page.p.6' | translate }} </div>
-            <br>
+            <div [innerHTML]="'kontaktformular.page.p.4' | translate">
+            </div>
           </div>
           <div class="form-group form-check">
             <br>
             <div class="checkbox-text">
               <input required class="form-check-input" #accept="ngModel" type="checkbox" id="Bestätigung"
                 [(ngModel)]="formData.checkbox" name="accept">
-              <label for="Bestätigung">{{ 'kontaktformular.page.p.7' | translate }}</label>
+              <label for="Bestätigung">{{ 'kontaktformular.page.p.5' | translate }}</label>
             </div>
 
             <div *ngIf="accept.invalid && accept.touched" class="error-message">{{ 'kontaktformular.page.e.4' |

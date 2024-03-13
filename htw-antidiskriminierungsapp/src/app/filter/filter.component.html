@@ -6,6 +6,12 @@
                 <h1 class="col-9">{{ 'filter.title' | translate }}</h1>
                 <div class="col-1"></div>
             </div>
+            <div>
+                <br>
+                <p>
+                    {{ 'filter.hint' | translate }}
+                </p>
+            </div>
 
             <div class="form">
                 <form (ngSubmit)="submitForm()" #filterForm="ngForm">
