@@ -21,8 +21,8 @@ const routes: Routes = [
   { path: 'getincontact', component: GetincontactComponent },
   /*ggf. wieder entfernen, zunächst nur fürs Zeigen benötigt*/
   { path: 'success', component: SuccessComponent },
-  { path: 'kontaktsuccess', component: KontaktsuccessComponent},
-  { path: 'meldesuccess', component: MeldesuccessComponent},
+  { path: 'kontaktsuccess', component: KontaktsuccessComponent },
+  { path: 'meldesuccess', component: MeldesuccessComponent },
   { path: 'error', component: ErrorComponent },
   { path: 'meldeformular', component: MeldeformularComponent },
   { path: 'kontaktformular', component: KontaktformularComponent },
@@ -30,7 +30,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [[
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled',
+    })
+  ]],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
