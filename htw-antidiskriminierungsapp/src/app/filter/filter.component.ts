@@ -19,15 +19,10 @@ export class FilterComponent {
   constructor(private filterService: FilterService, private router: Router) { }
 
   submitForm() {
-    // Hier kannst du die Logik für das Absenden des Formulars implementieren,
-    // z. B. eine HTTP-Anfrage an den Server senden, um die Daten zu verarbeiten.
-    console.log('Formulardaten:', this.formData);
-    // Hier könnte die Logik stehen, um die Formulardaten zu senden oder zu verarbeiten.
     this.filterService.setMitgliedergruppe(this.formData.mitgliedergruppe);
     this.filterService.setGremium(this.formData.gremium);
     this.filterService.setOrganisationseinheit(this.formData.organisationseinheit);
     this.filterService.setSprache(this.formData.sprache);
     this.router.navigate(['/getincontact']);
   }
-
 }

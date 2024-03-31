@@ -29,15 +29,12 @@ export class MeldeformularComponent implements OnInit {
   constructor(private emailService: EmailService, private router: Router) { }
 
   ngOnInit(): void {
-    // Initialisierungslogik, z.B. Daten abrufen
     this.openModel();
   }
 
   isLoggedIn = true;
 
-  
-  isLogged()
-  {
+  isLogged() {
     this.isLoggedIn = false;
   }
 
@@ -45,44 +42,33 @@ export class MeldeformularComponent implements OnInit {
     this.emailService.sendEmail(this.formData.mitgliedergruppe, this.formData.betroffenheit, this.formData.message, this.formData.category, this.formData.lastname, this.formData.firstname, this.formData.email, this.formData.checkbox, this.formData.formulartyp, this.emailContactPerson, this.titelContactPerson, this.vornameContactPerson, this.nachnameContactPerson, this.sprache).subscribe(
       {
         next: (response) => {
-          console.log(response);
-          // Erfolgreicher Aufruf - Navigiere zur Success-Komponente für das Meldeformular
           this.router.navigate(['/meldesuccess']);
         },
         error: (err) => {
-          console.log(err);
-          // Fehlgeschlagener Aufruf - Navigiere zur Failure-Komponente
           this.router.navigate(['/error']);
         },
-        complete: () => console.info('Aufruf abgeschlossen')
+        complete: () => {},
       }
     );
-    console.log('Formulardaten:', this.formData);
-
   }
 
   openModel() {
     const modelDiv = document.getElementById('MyModal');
-    if (modelDiv!= null)
-    {
+    if (modelDiv != null) {
       modelDiv.style.display = 'block';
-    } 
+    }
   }
 
   CloseModel() {
     const modelDiv = document.getElementById('MyModal');
-    if (modelDiv!= null)
-    {
+    if (modelDiv != null) {
       modelDiv.style.display = 'none';
-    }  
+    }
   }
-  
+
   weiter = false;
 
   onWeiter() { this.weiter = true; }
 
-  
-
-  goBack() {this.weiter = false;}
-
+  goBack() { this.weiter = false; }
 }

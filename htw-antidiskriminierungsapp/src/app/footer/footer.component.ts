@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
-
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -11,7 +10,6 @@ export class FooterComponent implements OnInit {
   selectedLanguage = 'de';
   deutsch = 'de';
   english = 'en';
-
 
   constructor(public translate: TranslateService,) {
     this.selectedLanguage = localStorage.getItem('locale') || 'de';
@@ -30,5 +28,4 @@ export class FooterComponent implements OnInit {
       localStorage.setItem('locale', this.selectedLanguage)
     }
   }
-
 }

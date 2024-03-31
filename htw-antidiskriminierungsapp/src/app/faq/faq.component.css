@@ -40,7 +40,6 @@ h1 {
 
 .answer {
     margin-left: 2rem;
-
 }
 
 .answer p {
@@ -52,19 +51,16 @@ i {
 }
 
 @media (min-width: 800px) {
-    h1
-    {
-        font-size:xx-large;
+    h1 {
+        font-size: xx-large;
         text-align: center;
     }
-  }
+}
 
-  @media (min-width: 800px) {
-    h3
-    {
-        font-size:large;
+@media (min-width: 800px) {
+    h3 {
+        font-size: large;
         font-weight: bold;
         text-decoration: underline;
-       
     }
-  }
+}

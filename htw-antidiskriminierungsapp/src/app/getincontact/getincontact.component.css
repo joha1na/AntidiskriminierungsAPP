@@ -13,7 +13,7 @@
 
 h1 {
     text-align: center;
-    }
+}
 
 .btn-primary {
     background-color: #76B900;
@@ -24,10 +24,10 @@ h1 {
     padding: 6px;
     border: 1px solid;
     border-radius: 6px;
-    border-color: #1b1f2326;       
+    border-color: #1b1f2326;
 }
 
- .btn-primary:hover {
+.btn-primary:hover {
     background-color: #75b900af;
 }
 
@@ -35,6 +35,7 @@ h1 {
     margin-top: 15px;
     margin-bottom: 25px;
 }
+
 .buttons {
     margin-top: 25px;
     display: block;
@@ -45,18 +46,15 @@ i {
     cursor: pointer;
 }
 
-/* styling for desktop */
 @media (min-width: 800px) {
-    h1
-    {
-        font-size:xx-large;
+    h1 {
+        font-size: xx-large;
         text-align: center;
     }
 }
 
 @media (min-width: 800px) {
-    .btn-primary
-    {
+    .btn-primary {
         width: 50%;
     }
 }

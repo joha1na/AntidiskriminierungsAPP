@@ -5,8 +5,6 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-getincontact',
-  /*standalone: true,
-  imports: [],*/
   templateUrl: './getincontact.component.html',
   styleUrls: ['./getincontact.component.css']
 })
@@ -24,7 +22,5 @@ export class GetincontactComponent {
     this.emailService.setContactPersonVorname('');
     this.emailService.setContactPersonNachname('');
     this.router.navigate(['/kontaktformular']);
-
   }
-
 }

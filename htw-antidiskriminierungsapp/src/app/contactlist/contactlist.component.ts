@@ -7,12 +7,10 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contactlist',
-
   templateUrl: './contactlist.component.html',
   styleUrls: ['./contactlist.component.css']
 })
 export class ContactlistComponent implements OnInit {
-
 
   constructor(private filterService: FilterService, private emailService: EmailContactService, private router: Router) { }
 
@@ -29,7 +27,6 @@ export class ContactlistComponent implements OnInit {
   }
 
   filter(filterService: FilterService): Contacts[] {
-
     let filteredContacts = this.allcontacts;
 
     const mitgliedergruppe = filterService.getMitgliedergruppe();
@@ -52,7 +49,6 @@ export class ContactlistComponent implements OnInit {
     this.emailService.setContactPersonVorname(vornameToBeShared);
     this.emailService.setContactPersonNachname(nachnameToBeShared);
     this.router.navigate(['/kontaktformular']);
-
   }
 
   showFilterMsg() {
@@ -63,5 +59,3 @@ export class ContactlistComponent implements OnInit {
     }, 8000);
   }
 }
-
-

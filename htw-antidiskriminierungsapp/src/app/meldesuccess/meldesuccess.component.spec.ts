@@ -10,8 +10,8 @@ describe('MeldesuccessComponent', () => {
     await TestBed.configureTestingModule({
       imports: [MeldesuccessComponent]
     })
-    .compileComponents();
-    
+      .compileComponents();
+
     fixture = TestBed.createComponent(MeldesuccessComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

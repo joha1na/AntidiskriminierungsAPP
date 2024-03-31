@@ -43,5 +43,4 @@ export class FilterService {
   setSprache(newSprache: string | undefined) {
     this.sprache = newSprache;
   }
-
 }

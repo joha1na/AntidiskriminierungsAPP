@@ -14,7 +14,6 @@ export class FaqComponent implements OnInit {
   showAnswer = false;
   openedCard = -1;
 
-
   ngOnInit(): void {
   }
 
@@ -28,6 +27,5 @@ export class FaqComponent implements OnInit {
 
   navigateBack() {
     this.location.back();
-
   }
 }

@@ -8,7 +8,6 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
   constructor(private translate: TranslateService) {
-    // this.translate.setDefaultLang('de');
     const defaultLanguage = 'de';
     const locale = localStorage.getItem('locale');
     if (locale) {
@@ -20,7 +19,6 @@ export class AppComponent {
       localStorage.setItem('locale', defaultLanguage);
     }
   }
-
 
   title = 'htw-antidiskriminierungsapp';
 }
