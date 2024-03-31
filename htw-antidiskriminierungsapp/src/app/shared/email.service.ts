@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EmailService {
 
-  private emailUrl = 'http://localhost:3000/send-email'; // Replace with your backend URL
+  private emailUrl = environment.apiUrl; // Replace with your backend URL
 
   constructor(private http: HttpClient) { }
 
