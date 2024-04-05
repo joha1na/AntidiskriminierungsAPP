@@ -11,5 +11,4 @@ export class ImprintComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

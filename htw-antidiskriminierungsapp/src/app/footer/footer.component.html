@@ -1,9 +1,7 @@
-<!-- Footer for Mobile -->
 <footer class="text-center text-lg-start bg-light text-muted fixed-bottom d-md-none">
     <div class="text-start p-4 row">
         <div class="col-3">
-            <a href="" [routerLink]="''" class="me-4" routerLinkActive="active-link"
-                [routerLinkActiveOptions]="{ exact: true }">{{ 'footer.home' | translate }}</a>
+            <a href="" [routerLink]="''" class="me-4" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">{{ 'footer.home' | translate }}</a>
         </div>
         <div class="col-3">
             <a class="nav-link" [routerLink]="'/imprint'" routerLinkActive="active-link">{{ 'footer.imprint' | translate }}</a>
@@ -16,19 +14,15 @@
                 <option [value]="deutsch">DE</option>
                 <option [value]="english">EN</option>
             </select>
-
         </div>
     </div>
 </footer>
 
-
-<!-- Footer for desktop -->
 <footer class="text-center text-lg-start bg-light text-muted fixed-bottom d-none d-md-block">
     <div class="container d-flex justify-content-center p-4">
         <div class=".d-none .d-lg-block .d-xl-none"></div>
         <div class="col-2">
-            <a href="" [routerLink]="''" class="me-4" routerLinkActive="active-link"
-                [routerLinkActiveOptions]="{ exact: true }">{{ 'footer.home' | translate }}</a>
+            <a href="" [routerLink]="''" class="me-4" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">{{ 'footer.home' | translate }}</a>
         </div>
         <div class="col-2">
             <a class="nav-link" [routerLink]="'/imprint'" routerLinkActive="active-link">{{ 'footer.imprint' | translate }}</a>
@@ -37,13 +31,10 @@
             <a class="nav-link" [routerLink]="'/privacypolicy'" routerLinkActive="active-link">{{ 'footer.privacy' | translate }}</a>
         </div>
         <div class="col-2">
-
             <select [(ngModel)]="selectedLanguage" (ngModelChange)="selectLang()">
                 <option [value]="deutsch">Deutsch</option>
                 <option [value]="english">English</option>
             </select>
         </div>
-
-
     </div>
 </footer>

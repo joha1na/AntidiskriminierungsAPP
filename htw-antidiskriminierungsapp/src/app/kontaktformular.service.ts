@@ -8,7 +8,7 @@ import { Injectable } from '@angular/core';
 export class KontaktformularService {
   formData: any = {};
 
-  constructor() {}
+  constructor() { }
 
   setFormData(data: any) {
     this.formData = data;

@@ -10,8 +10,8 @@ describe('KontaktsuccessComponent', () => {
     await TestBed.configureTestingModule({
       imports: [KontaktsuccessComponent]
     })
-    .compileComponents();
-    
+      .compileComponents();
+
     fixture = TestBed.createComponent(KontaktsuccessComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

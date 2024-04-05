@@ -1,39 +1,28 @@
 <div class="container table-responsive">
-
     <div class="information" *ngIf="showFilterMessage">
         <i class="fa-solid fa-circle-exclamation"></i>
-        <p> {{ 'contact.filter.message' | translate }}
-        </p>
+        <p> {{ 'contact.filter.message' | translate }}</p>
     </div>
-
     <div class="card d-md-none" style="width: 20rem; margin: 3%" *ngFor=" let contact of filteredContacts">
         <div class="card-body">
             <div class="name-contact">
                 <h5 class="card-title">{{ contact.titel }} {{ contact.vorname }} {{ contact.nachname }}</h5>
-
             </div>
             <h6 class="card-subtitle mb-2 text-muted">{{ contact.sprache }}</h6>
             <p class="card-text">{{ 'contactlist.phone' | translate }}: {{ contact.telefon }}</p>
             <p class="card-text">{{ 'contactlist.email' | translate }}: {{ contact.email }}</p>
-            <p class="card-text">{{ 'contactlist.membergroup' | translate }}: {{ contact.mitgliedergruppe | translate }}
-            </p>
+            <p class="card-text">{{ 'contactlist.membergroup' | translate }}: {{ contact.mitgliedergruppe | translate }}</p>
             <p class="card-text">{{ 'contactlist.committee' | translate }}: {{ contact.gremium | translate }}</p>
-            <p class="card-text">{{ 'contactlist.organizational.unit' | translate }}: {{ contact.organisationseinheit |
-                translate
-                }}</p>
+            <p class="card-text">{{ 'contactlist.organizational.unit' | translate }}: {{ contact.organisationseinheit | translate }}</p>
             <button class="btn btn-primary" (click)="contactPerson(contact.email, contact.titel, contact.vorname, contact.nachname)">
                 <i class="fa-solid fa-envelope" (click)="contactPerson(contact.email, contact.titel, contact.vorname, contact.nachname)"></i>
-                {{
-                'contactlist.button.get.in.contact' | translate
-                }}</button>
-
+                {{ 'contactlist.button.get.in.contact' | translate }}
+            </button>
         </div>
     </div>
 
-
     <div class="card d-none d-md-block" style="width: 50rem; margin: 3%" *ngFor=" let contact of filteredContacts">
         <div class="card-body">
-
             <div class="name-contact">
                 <h5 class="card-title">{{ contact.titel }} {{ contact.vorname }} {{ contact.nachname }}</h5>
             </div>
@@ -45,9 +34,8 @@
             <p class="card-text">Organisationseinheit: {{ contact.organisationseinheit | translate }}</p>
             <button class="btn btn-primary desktop" (click)="contactPerson(contact.email, contact.titel, contact.vorname, contact.nachname)">
                 <i class="fa-solid fa-envelope" (click)="contactPerson(contact.email, contact.titel, contact.vorname, contact.nachname)"></i>
-                {{
-                'contactlist.button.get.in.contact' | translate
-                }}</button>
+                {{ 'contactlist.button.get.in.contact' | translate }}
+            </button>
         </div>
     </div>
 </div>

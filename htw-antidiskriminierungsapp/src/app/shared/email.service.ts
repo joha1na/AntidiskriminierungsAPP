@@ -7,7 +7,7 @@ import { environment } from '../../environments/environment';
 })
 export class EmailService {
 
-  private emailUrl = environment.apiUrl; // Replace with your backend URL
+  private emailUrl = environment.apiUrl;
 
   constructor(private http: HttpClient) { }
 

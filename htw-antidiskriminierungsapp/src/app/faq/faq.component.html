@@ -3,12 +3,9 @@
         <div class="col-12">
             <div class="header row">
                 <i class="col-1 fa-solid fa-chevron-left" (click)="navigateBack()"></i>
-
                 <h1 class="col-9">FAQ</h1>
                 <div class="col-1"></div>
             </div>
-
-
 
             <div class="cards">
                 <div class="faq-card col-12">
@@ -22,10 +19,8 @@
                     <div class="answer row" *ngIf="openedCard === 1">
                         <p class="col-10" [innerHTML]="'faq.a1' | translate">
                         </p>
-
                     </div>
                 </div>
-
                 <hr>
 
                 <div class="faq-card col-12">
@@ -133,7 +128,6 @@
                 </div>
                 <hr>
 
-
                 <div class="faq-card col-12">
                     <div class="question row">
                         <p class="col-10">{{ 'faq.q9' | translate }}</p>
@@ -178,8 +172,8 @@
                     </div>
                 </div>
                 <hr>
-            </div>
 
+            </div>
         </div>
     </div>
 </body>

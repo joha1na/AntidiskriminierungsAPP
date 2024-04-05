@@ -8,9 +8,9 @@ describe('MeldeformularComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MeldeformularComponent ]
+      declarations: [MeldeformularComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(MeldeformularComponent);
     component = fixture.componentInstance;
@@ -21,6 +21,3 @@ describe('MeldeformularComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-
-
- 

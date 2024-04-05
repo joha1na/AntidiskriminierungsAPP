@@ -11,10 +11,6 @@
     margin-top: 1rem;
 }
 
-/*.notiz {
-    color: red;
-}*/
-
 a {
     color: #76B900;
 }
@@ -23,39 +19,21 @@ h1 {
     text-align: center;
 }
 
-/*h2 {
-    font-weight: 400;
-}
-
-h3 {
-    font-weight: 600;
-}
-
-h5 {
-    font-weight: 600;
-}
-
-.sub {
-    font-weight: 600;
-}*/
-
 i {
     cursor: pointer;
 }
 
 @media (min-width: 800px) {
-    h1
-    {
-        font-size:xx-large;
+    h1 {
+        font-size: xx-large;
         text-align: center;
     }
-  }
+}
 
-  @media (min-width: 800px) {
-    h3
-    {
-        font-size:large;
+@media (min-width: 800px) {
+    h3 {
+        font-size: large;
         font-weight: bold;
-       text-decoration: underline;
+        text-decoration: underline;
     }
-  }
+}

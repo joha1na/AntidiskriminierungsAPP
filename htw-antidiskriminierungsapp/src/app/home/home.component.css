@@ -47,13 +47,12 @@ img {
     padding: 6px;
     border: 1px solid;
     border-radius: 6px;
-    border-color: #1b1f2326;       
+    border-color: #1b1f2326;
 }
 
- .btn-primary:hover {
+.btn-primary:hover {
     background-color: #75b900af;
 }
-
 
 .faq {
     margin-top: 15px;
@@ -63,9 +62,6 @@ img {
 a {
     color: #76B900;
 }
-
-
-/* styling for desktop */
 
 .d-md-block {
     display: flex;
@@ -80,12 +76,7 @@ a {
 }
 
 @media (min-width: 800px) {
-    .btn-primary
-    {
+    .btn-primary {
         width: 50%;
     }
 }
-
-
-
-

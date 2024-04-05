@@ -19,7 +19,6 @@ const routes: Routes = [
   { path: 'privacypolicy', component: PrivacypolicyComponent, pathMatch: 'full' },
   { path: 'faq', component: FaqComponent },
   { path: 'getincontact', component: GetincontactComponent },
-  /*ggf. wieder entfernen, zunächst nur fürs Zeigen benötigt*/
   { path: 'success', component: SuccessComponent },
   { path: 'kontaktsuccess', component: KontaktsuccessComponent },
   { path: 'meldesuccess', component: MeldesuccessComponent },
